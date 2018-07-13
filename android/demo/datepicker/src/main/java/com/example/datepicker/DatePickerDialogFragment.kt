@@ -50,7 +50,7 @@ class DatePickerDialogFragment : DialogFragment() {
             onClickListener?.ensure(timerView.getTime())
             dismiss()
         }
-        timerView.setScale(1900,2018,1,7,1,31)
+        timerView.setScale(1900,2018,1,7,1,9)
         timerView.setTime(2018, 1, 31)
     }
 

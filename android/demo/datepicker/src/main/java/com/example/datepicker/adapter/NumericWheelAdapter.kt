@@ -3,7 +3,7 @@ package com.example.datepicker.adapter
 import com.example.datepicker.wheel.WheelAdapter
 
 class NumericWheelAdapter(private val minValue : Int, private val maxValue : Int)
-    : WheelAdapter<Any> {
+    : WheelAdapter<Any>{
 
     override fun getItemsCount(): Int {
         return maxValue-minValue+1

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.widget.LinearLayout
 import com.example.datepicker.R
 import com.example.datepicker.adapter.NumericWheelAdapter
+import com.example.datepicker.wheel.OnItemSelectedListener
 import kotlinx.android.synthetic.main.layout_timer.view.dayWheel
 import kotlinx.android.synthetic.main.layout_timer.view.monthWheel
 import kotlinx.android.synthetic.main.layout_timer.view.yearWheel
@@ -58,25 +59,35 @@ class TimerView constructor(context: Context, attrs: AttributeSet) : LinearLayou
         yearWheel.currentItem = year - startYear
         monthWheel.currentItem = month - startMonth
         dayWheel.currentItem = day - startDay
+        yearWheel.setLabel("年")
+        yearWheel.isCenterLabel(false)
+        monthWheel.setLabel("月")
+        monthWheel.isCenterLabel(false)
+        dayWheel.setLabel("日")
+        dayWheel.isCenterLabel(false)
 
         changeMonth(year, month)
         changeDay(year, month, day)
 
-        yearWheel.setOnItemSelectedListener {
-            val yearNum = it + startYear
-            curYear = yearNum
-            changeMonth(curYear, monthWheel.currentItem)
-            changeDay(curYear, monthWheel.currentItem, dayWheel.currentItem)
-        }
+        yearWheel.setOnItemSelectedListener(object : OnItemSelectedListener {
+            override fun onItemSelected(index: Int) {
+                val yearNum = index + startYear
+                curYear = yearNum
+                changeMonth(curYear, monthWheel.currentItem)
+                changeDay(curYear, monthWheel.currentItem, dayWheel.currentItem)
+            }
+        })
 
-        monthWheel.setOnItemSelectedListener {
-            curMonth = it + startMonth
-            changeDay(curYear, it, dayWheel.currentItem)
-        }
+        monthWheel.setOnItemSelectedListener(object : OnItemSelectedListener{
+            override fun onItemSelected(index: Int) {
+                curMonth = index + startMonth
+                changeDay(curYear, index, dayWheel.currentItem)
+            }
+        })
     }
 
     fun getTime() : String {
-        return String.format("%4d-%2d-%2d", curYear,curMonth+1,dayWheel.currentItem)
+        return String.format("%04d-%02d-%02d", curYear,curMonth+1,dayWheel.currentItem)
     }
 
     /**
@@ -116,11 +127,11 @@ class TimerView constructor(context: Context, attrs: AttributeSet) : LinearLayou
     private fun getEndDay(month: Int, eDay: Int, year: Int): Int {
         var eDay1 = eDay
         if (bigMonths.contains(month + 1)) {
-            eDay1 = Math.max(eDay1, 31)
+            eDay1 = Math.min(eDay1, 31)
         } else if (littleMonths.contains(month + 1)) {
-            eDay1 = Math.max(eDay1, 30)
+            eDay1 = Math.min(eDay1, 30)
         } else {
-            eDay1 = Math.max(eDay1, if (isLeapYear(year)) 29 else 28)
+            eDay1 = Math.min(eDay1, if (isLeapYear(year)) 29 else 28)
         }
         return eDay1
     }
