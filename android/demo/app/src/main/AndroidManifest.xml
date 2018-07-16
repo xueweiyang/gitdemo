@@ -3,6 +3,8 @@
     package="com.example.fcl.kotlindemo">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <application
         android:name=".MyApp"
         android:allowBackup="true"
@@ -12,11 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity android:name=".activity.BaseActivity"/>
         <activity android:name=".activity.DemoActivity"/>
@@ -24,9 +22,15 @@
         <activity android:name=".LeakActivity">
         </activity>
         <activity android:name="com.example.fcl.dadademo.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         <activity android:name="com.example.fcl.dadademo.DadaMainActivity">
         </activity>
+        <activity android:name="com.example.fcl.dadademo.account.RegisterActivity"/>
     </application>
 
 </manifest>

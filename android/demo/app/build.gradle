@@ -32,6 +32,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile 'io.reactivex.rxjava2:rxjava:2.0.1'
     compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile "com.android.support:design:28.+"
 
     // Support Libraries
     compile "com.android.support:appcompat-v7:28.+"
@@ -55,4 +56,6 @@ dependencies {
     compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
 
     compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'org.aspectj:aspectjrt:1.8.9'
 }
+apply plugin: 'android-aspectjx'
