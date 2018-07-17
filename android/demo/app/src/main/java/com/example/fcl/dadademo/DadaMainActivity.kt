@@ -7,6 +7,7 @@ import android.view.View
 import android.view.View.OnClickListener
 import com.example.fcl.dadademo.home.ContentAdapter
 import com.example.fcl.dadademo.home.HomeFragment
+import com.example.fcl.dadademo.profile.ProfileFragment
 import com.example.fcl.dadademo.util.RegisterHelper
 import com.example.fcl.kotlindemo.R
 import kotlinx.android.synthetic.main.activity_dada_main.homePager
@@ -26,7 +27,7 @@ class DadaMainActivity : AppCompatActivity() {
         fragments.add(HomeFragment())
         fragments.add(HomeFragment())
         fragments.add(HomeFragment())
-        fragments.add(HomeFragment())
+        fragments.add(ProfileFragment())
         val titles = resources.getStringArray(R.array.homeTitles)
         val adapter = ContentAdapter(supportFragmentManager, fragments, titles)
         homePager.adapter = adapter

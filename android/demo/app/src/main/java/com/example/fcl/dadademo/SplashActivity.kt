@@ -39,9 +39,9 @@ class SplashActivity : AppCompatActivity() {
 
     private fun initDate() {
         downSplashData()
-        Observable.timer(3, SECONDS)
+        Observable.timer(1, SECONDS)
             .subscribe({
-//                                navigationNext()
+                                navigationNext()
             })
 //        val loadSplashAdCache = CacheManager.loadSplashAdCache()
 //        var imgUrl=""

@@ -1,11 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/registerCloseView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/ic_register_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
     <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/registerTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="注册"/>
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="49dp"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="手机号注册"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/registerMobileHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="手机号码"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registerTitle"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/registerCountryCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="+86"
+        app:layout_constraintBottom_toBottomOf="@id/registerMobileInputView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/registerMobileInputView"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/registerMobileInputView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/registerCountryCode"
+        app:layout_constraintTop_toBottomOf="@id/registerMobileHint"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/registerPwdHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="动态密码"
+        app:layout_constraintTop_toBottomOf="@id/registerMobileInputView"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/verifyCodeView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/sendVerifyView"
+        app:layout_constraintTop_toBottomOf="@id/registerPwdHint"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/sendVerifyView"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="获取动态密码"
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/verifyCodeView"/>
 
 </android.support.constraint.ConstraintLayout>
