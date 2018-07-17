@@ -1,6 +1,7 @@
 package com.example.fcl.dadademo.api
 
 import com.example.fcl.dadademo.model.HomeFoundation
+import com.example.fcl.dadademo.model.ImageVerify
 import com.example.fcl.dadademo.model.SplashFoundation
 import io.reactivex.Observable
 import retrofit2.http.Body
@@ -48,7 +49,25 @@ object ApiService {
         return accountApiImpl.fetchHomeFoundation(requestBody)
     }
 
+    /**
+     * 获取图片验证码
+     */
+    fun getImageCaptcha(width:Int,height:Int):Observable<ImageVerify>{
+        val requestBody= mapOf(
+                "width" to width,
+                "height" to height
+        )
+        return normalApiImpl.getImageCaptcha(requestBody)
+    }
+
     private interface Impl {
+
+        /**
+         * 获取图片验证码
+         */
+        @POST("v1/common.captcha.get")
+        fun getImageCaptcha(@Body map: Map<String, @JvmSuppressWildcards Any>): Observable<ImageVerify>
+
 
         @POST("v1/student.allInOne.advertList")
         fun getAdvertData(@Body map: Map<String, @JvmSuppressWildcards Any>): Observable<SplashFoundation>
