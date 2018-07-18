@@ -83,28 +83,5 @@ startActivity(Intent(this, LeakActivity::class.java))
         }
     }
 
-    private fun testrx() {
-        Observable.create(ObservableOnSubscribe<String> {
-            it.onNext("1")
-            it.onComplete()
-        }).map(Function<String, Int> {
-            return@Function it.toInt()
-        }).subscribe(object : Observer<Int> {
-            override fun onComplete() {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-            }
 
-            override fun onSubscribe(d: Disposable?) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-            }
-
-            override fun onNext(value: Int?) {
-                Log.e(TAG, "res:" + value)
-            }
-
-            override fun onError(e: Throwable?) {
-                Log.e(TAG, e.toString())
-            }
-        })
-    }
 }

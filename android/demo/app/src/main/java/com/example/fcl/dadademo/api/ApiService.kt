@@ -1,5 +1,6 @@
 package com.example.fcl.dadademo.api
 
+import com.example.fcl.dadademo.model.Account
 import com.example.fcl.dadademo.model.HomeFoundation
 import com.example.fcl.dadademo.model.ImageVerify
 import com.example.fcl.dadademo.model.SplashFoundation
@@ -60,6 +61,17 @@ object ApiService {
         return normalApiImpl.getImageCaptcha(requestBody)
     }
 
+    /**
+     * 密码登入
+     */
+    fun passwordLogin(mobile: String, password: String): Observable<Account?> {
+        val requestBody = mapOf(
+            "mobile" to mobile,
+            "password" to password
+        )
+        return normalApiImpl.passwordLogin(requestBody)
+    }
+
     private interface Impl {
 
         /**
@@ -77,5 +89,18 @@ object ApiService {
          */
         @POST("v1/student.allInOne.homepage2")
         fun fetchHomeFoundation(@Body map: Map<String, Int?>): Observable<HomeFoundation>
+
+        /**
+         * 手机验证码登入
+         */
+        @POST("v1/student.account.loginWithCode")
+        fun verificationMobileLogin(@Body map: Map<String, @JvmSuppressWildcards Any>): Observable<Account?>
+        /**
+         * 密码登入
+         */
+        @POST("v1/student.account.login")
+        fun passwordLogin(
+            @Body map: Map<String, @JvmSuppressWildcards Any>
+        ): Observable<Account?>
     }
 }

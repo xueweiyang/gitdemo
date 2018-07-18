@@ -10,3 +10,12 @@ fun String.realImageUrl() : String {
         pattern.format(Constant.RESOURCE_DOMAIN, this)
     }
 }
+
+fun String.isPhone(isChina:Boolean):Boolean{
+    return if (isChina) {
+        val regex="^1\\d{10}$".toRegex()
+        regex.matches(this.trim())
+    } else{
+        this.length>=7
+    }
+}
