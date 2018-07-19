@@ -1,5 +1,7 @@
 package com.example.fcl.dadademo
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -9,6 +11,8 @@ import com.example.fcl.dadademo.home.ContentAdapter
 import com.example.fcl.dadademo.home.HomeFragment
 import com.example.fcl.dadademo.profile.ProfileFragment
 import com.example.fcl.dadademo.util.RegisterHelper
+import com.example.fcl.kotlindemo.MyApp
+import com.example.fcl.kotlindemo.Myapp
 import com.example.fcl.kotlindemo.R
 import kotlinx.android.synthetic.main.activity_dada_main.homePager
 import kotlinx.android.synthetic.main.activity_dada_main.homeTab
@@ -22,6 +26,10 @@ class DadaMainActivity : AppCompatActivity() {
     }
 
     private fun initView() {
+//        val sharedPreferences=Myapp.instance.getSharedPreferences("test", Context.MODE_PRIVATE)
+//        val editor = sharedPreferences.edit()
+//        editor.putBoolean("hsssshh", true)
+//        editor.apply()
         val fragments = ArrayList<Fragment>(4)
         fragments.add(HomeFragment())
         fragments.add(HomeFragment())

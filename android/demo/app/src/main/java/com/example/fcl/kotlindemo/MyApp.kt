@@ -11,6 +11,7 @@ class MyApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        instance = this
         if (LeakCanary.isInAnalyzerProcess(this)){
             return
         }
@@ -19,11 +20,10 @@ class MyApp : Application() {
         Looper.getMainLooper().setMessageLogging(MyPrinter())
     }
 
-    fun getContext() : Context {
-        return this
+    companion object {
+
+        lateinit var instance: Context
+            private set
     }
 
-    companion object {
-        val context : Context = MyApp().getContext()
-    }
 }

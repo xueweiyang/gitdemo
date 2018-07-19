@@ -11,6 +11,8 @@ class BannerView @JvmOverloads constructor(context: Context, attrs: AttributeSet
         if (null==adapter){
             return
         }
+        val bannerAdapter=BannerAdapter(adapter)
+        super.setAdapter(bannerAdapter)
 
     }
 

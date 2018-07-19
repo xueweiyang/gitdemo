@@ -4,7 +4,7 @@ import com.example.fcl.dadademo.model.SplashAd
 import com.example.fcl.kotlindemo.MyApp
 
 object CacheManager{
-private val cachePreference:CachePreference= CachePreference(MyApp().getContext())
+private val cachePreference:CachePreference= CachePreference(MyApp.instance)
 
     fun saveSplashAdCache(splashAd: SplashAd) {
         cachePreference.saveSplashData(splashAd)

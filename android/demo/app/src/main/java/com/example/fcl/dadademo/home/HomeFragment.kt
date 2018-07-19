@@ -8,9 +8,14 @@ import android.view.View
 import android.view.View.OnClickListener
 import android.view.ViewGroup
 import com.example.fcl.dadademo.home.HomeContract.Presenter
+import com.example.fcl.dadademo.model.Ad
+import com.example.fcl.dadademo.model.FreePractice
+import com.example.fcl.dadademo.model.HomeFoundation
 import com.example.fcl.dadademo.util.RegisterHelper
 import com.example.fcl.kotlindemo.R
-import kotlinx.android.synthetic.main.layout_home_fragment.checkLogin
+import kotlinx.android.synthetic.main.layout_home_fragment.adBannerView
+import kotlinx.android.synthetic.main.layout_home_fragment.homeFreePracticeLayout
+import kotlinx.android.synthetic.main.layout_home_fragment.homeFreePracticeView
 
 class HomeFragment : Fragment(),HomeContract.View {
 
@@ -27,6 +32,7 @@ class HomeFragment : Fragment(),HomeContract.View {
     private fun setUpPresenter() {
         val homePresenter=HomePresenter(this)
         bindPresenter(homePresenter)
+        homePresenter.fetchFoundation()
     }
 
     override fun bindPresenter(presenter: Presenter) {
@@ -34,17 +40,24 @@ class HomeFragment : Fragment(),HomeContract.View {
     }
 
     private fun initView() {
-        checkLogin.setOnClickListener(object :OnClickListener{
-            override fun onClick(v: View?) {
-                RegisterHelper().register(
-                    activity as Activity,
-                    entranceName = "首页"
-                ).subscribe({
-                    if (it) {
+    }
 
-                    }
-                })
-            }
-        })
+    override fun showFoundation(homeFoundation: HomeFoundation) {
+        setBannerAds(homeFoundation.bannerAds)
+        setupFreePractice(homeFoundation.freePractice)
+    }
+
+    private fun setupFreePractice(freePractice: FreePractice?){
+        if (freePractice!=null&&freePractice.items.isNotEmpty()){
+            homeFreePracticeLayout.title=freePractice.title
+            homeFreePracticeView.setupFreePractice(freePractice.items)
+        }
+    }
+
+    private fun setBannerAds(bannerAds: List<Ad>) {
+        if (bannerAds.isNotEmpty()){
+            val bannerAdapter=HomeBannerAdapter(activity, bannerAds)
+            adBannerView.adapter=bannerAdapter
+        }
     }
 }

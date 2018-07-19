@@ -6,7 +6,7 @@ import com.example.fcl.kotlindemo.MyApp
 
 object AccountManager : IAccountManager<Account> {
 
-    private val sharedPreference = AccountPreference(MyApp().getContext())
+    private val sharedPreference = AccountPreference(MyApp.instance)
 
     override fun login(account: Account) {
         saveAccount(account)

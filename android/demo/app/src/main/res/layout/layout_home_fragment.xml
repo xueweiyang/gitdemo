@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.example.fcl.dadademo.widget.banner.BannerView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/adBannerView"/>
+
+    <com.example.fcl.dadademo.widget.HomeBlockLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="首页"
-        android:id="@+id/checkLogin"/>
+        android:id="@+id/homeFreePracticeLayout"
+        app:layout_constraintTop_toBottomOf="@id/adBannerView">
+
+        <com.example.fcl.dadademo.widget.HomeFreePracticeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/homeFreePracticeView"/>
+
+    </com.example.fcl.dadademo.widget.HomeBlockLayout>
 
 </android.support.constraint.ConstraintLayout>
