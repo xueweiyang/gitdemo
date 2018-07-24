@@ -1,7 +1,6 @@
 package com.example.fcl.kotlindemo.activity
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.support.v7.widget.LinearLayoutManager
 import android.text.Editable
 import android.text.TextWatcher
@@ -11,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_demo.resultRecycler
 import kotlinx.android.synthetic.main.activity_demo.searchCard
 import kotlinx.android.synthetic.main.activity_main.toolbar
 
-class DemoActivity : BaseActivity() {
+class DemoActivityKotlin : KotlinBaseActivity() {
 
     lateinit var resultAdapter : ResultAdapter
 

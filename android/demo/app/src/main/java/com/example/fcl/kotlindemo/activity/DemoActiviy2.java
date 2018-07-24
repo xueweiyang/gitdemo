@@ -13,7 +13,7 @@ import com.example.fcl.kotlindemo.R;
 import com.example.fcl.kotlindemo.adapter.ResultAdapter;
 import com.example.fcl.kotlindemo.view.SearchCardView;
 
-public class DemoActiviy2 extends BaseActivity {
+public class DemoActiviy2 extends KotlinBaseActivity {
 private Toolbar toolbar;
 private RecyclerView recyclerView;
 private SearchCardView searchView;

@@ -5,14 +5,13 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.text.Editable
 import android.text.TextWatcher
-import android.view.View
 import android.widget.EditText
 import android.widget.Toolbar
 import com.example.fcl.kotlindemo.R
 import com.example.fcl.kotlindemo.adapter.ResultAdapter
 import com.example.fcl.kotlindemo.view.SearchCardView
 
-class DemoActiviy3 : BaseActivity() {
+class DemoActiviy3 : KotlinBaseActivity() {
     private var toolbar: Toolbar? = null
     private var recyclerView: RecyclerView? = null
     private var searchView: SearchCardView? = null

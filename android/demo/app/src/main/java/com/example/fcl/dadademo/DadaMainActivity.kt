@@ -1,23 +1,19 @@
 package com.example.fcl.dadademo
 
-import android.content.Context
-import android.content.SharedPreferences
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.View
 import android.view.View.OnClickListener
+import com.example.fcl.dadademo.base.BaseActivity
 import com.example.fcl.dadademo.home.ContentAdapter
 import com.example.fcl.dadademo.home.HomeFragment
 import com.example.fcl.dadademo.profile.ProfileFragment
 import com.example.fcl.dadademo.util.RegisterHelper
-import com.example.fcl.kotlindemo.MyApp
-import com.example.fcl.kotlindemo.Myapp
 import com.example.fcl.kotlindemo.R
 import kotlinx.android.synthetic.main.activity_dada_main.homePager
 import kotlinx.android.synthetic.main.activity_dada_main.homeTab
 
-class DadaMainActivity : AppCompatActivity() {
+class DadaMainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

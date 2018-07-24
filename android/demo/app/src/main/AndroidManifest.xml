@@ -16,8 +16,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
         </activity>
-        <activity android:name=".activity.BaseActivity"/>
-        <activity android:name=".activity.DemoActivity"/>
+        <activity android:name=".activity.KotlinBaseActivity"/>
+        <activity android:name=".activity.DemoActivityKotlin"/>
         <activity android:name=".activity.DemoActiviy2"/>
         <activity android:name=".LeakActivity">
         </activity>
@@ -33,6 +33,7 @@
         <activity android:name="com.example.fcl.dadademo.account.RegisterActivity"/>
         <activity android:name="com.example.fcl.dadademo.account.login.LoginActivity">
         </activity>
+        <activity android:name="com.example.fcl.dadademo.web.WebBearerActivity"/>
     </application>
 
 </manifest>

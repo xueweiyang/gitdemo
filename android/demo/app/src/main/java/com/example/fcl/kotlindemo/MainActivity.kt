@@ -3,7 +3,6 @@ package com.example.fcl.kotlindemo
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -11,19 +10,10 @@ import android.widget.Toast
 import com.example.datepicker.DatePickerDialogFragment
 import com.example.datepicker.DatePickerDialogFragment.ClickListener
 import com.example.fcl.dadademo.SplashActivity
-import com.example.fcl.kotlindemo.activity.DemoActivity
-import com.squareup.leakcanary.LeakCanary
-import com.squareup.leakcanary.RefWatcher
-import io.reactivex.Observable
-import io.reactivex.ObservableOnSubscribe
-import io.reactivex.Observer
-import io.reactivex.disposables.Disposable
-import io.reactivex.functions.Consumer
-import io.reactivex.functions.Function
+import com.example.fcl.kotlindemo.activity.DemoActivityKotlin
 import kotlinx.android.synthetic.main.activity_main.changeui
 import kotlinx.android.synthetic.main.activity_main.dialog
 import kotlinx.android.synthetic.main.activity_main.toolbar
-import org.reactivestreams.Subscriber
 
 class MainActivity : AppCompatActivity() {
 
@@ -51,7 +41,7 @@ startActivity(Intent(this, LeakActivity::class.java))
     fun click(view: View) {
         Toast.makeText(this, "点击", Toast.LENGTH_SHORT).show()
         when (view.id) {
-            R.id.demo -> startActivity(Intent(this, DemoActivity::class.java))
+            R.id.demo -> startActivity(Intent(this, DemoActivityKotlin::class.java))
             R.id.dialog -> dialog()
             R.id.leak -> leak()
             R.id.anr -> anr()

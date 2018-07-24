@@ -13,6 +13,8 @@ class HomeFreePracticeLayout @JvmOverloads constructor(
     defStyleAttr:Int=0
 ) : FlexboxLayout(context, attrs, defStyleAttr) {
 
+    var freePracticeClickCallback:HomeFreePracticeClickCallback?=null
+
     fun setupFreePractice(items:List<FreePracticeItem>) {
         removeAllViews()
         items.take(2).forEach { item->
@@ -24,7 +26,11 @@ class HomeFreePracticeLayout @JvmOverloads constructor(
 
             addView(freePracticeView)
             freePracticeView.setupFreePractice(item)
+            freePracticeView.setOnClickListener {
+                freePracticeClickCallback?.invoke(item)
+            }
         }
     }
 
 }
+typealias HomeFreePracticeClickCallback = ((FreePracticeItem)-> Unit)

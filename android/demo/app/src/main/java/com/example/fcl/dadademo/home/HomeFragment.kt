@@ -11,7 +11,10 @@ import com.example.fcl.dadademo.home.HomeContract.Presenter
 import com.example.fcl.dadademo.model.Ad
 import com.example.fcl.dadademo.model.FreePractice
 import com.example.fcl.dadademo.model.HomeFoundation
+import com.example.fcl.dadademo.util.AccountManager
+import com.example.fcl.dadademo.util.ActivityManager
 import com.example.fcl.dadademo.util.RegisterHelper
+import com.example.fcl.dadademo.util.ToastHelper
 import com.example.fcl.kotlindemo.R
 import kotlinx.android.synthetic.main.layout_home_fragment.adBannerView
 import kotlinx.android.synthetic.main.layout_home_fragment.homeFreePracticeLayout
@@ -51,6 +54,9 @@ class HomeFragment : Fragment(),HomeContract.View {
         if (freePractice!=null&&freePractice.items.isNotEmpty()){
             homeFreePracticeLayout.title=freePractice.title
             homeFreePracticeView.setupFreePractice(freePractice.items)
+            homeFreePracticeView.freePracticeClickCallback = {
+                ActivityManager.navigateToH5(it.jumpUrl)
+            }
         }
     }
 
