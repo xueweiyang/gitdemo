@@ -25,7 +25,7 @@ class HomeBannerAdapter(val context: Context?,private val bannerAds:List<Ad>) :P
         val imageView = AppCompatImageView(container.context)
         imageView.scaleType=CENTER_CROP
         container.addView(imageView, DefaultParams.MATCH_PARENT,DefaultParams.MATCH_PARENT)
-        ImageLoader.loadImage(ad.imageUrl.realImageUrl(), imageView, container.context)
+        ImageLoader.loadImage(ad.imageUrl.realImageUrl(), imageView)
         return imageView
     }
 

@@ -83,7 +83,8 @@ dadaWebView= DadaWebView(this)
         val map = HashMap<String,Any>()
         map["Android"]=jsBridge
         map["DadaApp"]=jsBridge
-        dadaWebView?.addJavascriptInterface(map)
+        dadaWebView?.addJavascriptInterface(jsBridge, "Android")
+        dadaWebView?.addJavascriptInterface(jsBridge, "DadaApp")
     }
 
     override fun gotoVoiceChapter(bookCategoryId: String, courseTitle: String) {

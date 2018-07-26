@@ -1,6 +1,7 @@
 package com.example.fcl.dadademo.api
 
 import com.example.fcl.dadademo.model.Account
+import com.example.fcl.dadademo.model.CoursewareResult
 import com.example.fcl.dadademo.model.HomeFoundation
 import com.example.fcl.dadademo.model.ImageVerify
 import com.example.fcl.dadademo.model.SplashFoundation
@@ -23,6 +24,15 @@ object ApiService {
                 .addInterceptor(RpcResponseInterceptor())
                 .addInterceptor(AccountInfoInterceptor())
         }
+    }
+
+    fun fetchCoursewareList(pageNum: Int, numRow: Int, bookIdEncrypt: String): Observable<CoursewareResult> {
+        val requestBody = mapOf(
+            "page" to pageNum,
+            "num_row" to numRow,
+            "book_id_encrypt" to bookIdEncrypt
+        )
+        return accountApiImpl.fetchCoursewareList(requestBody)
     }
 
     /**
@@ -73,6 +83,15 @@ object ApiService {
     }
 
     private interface Impl {
+
+        /**
+         * 请求课件列表
+         */
+        @POST("v1/student.voicePractice.getCourse1")
+        fun fetchCoursewareList(
+            @Body map: Map<String, @JvmSuppressWildcards Any>
+        ): Observable<CoursewareResult>
+
 
         /**
          * 获取图片验证码

@@ -1,18 +1,21 @@
 package com.example.fcl.dadademo.home
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.OnClickListener
 import android.view.ViewGroup
+import com.example.fcl.dadademo.courselist.CoursewareListActivity
 import com.example.fcl.dadademo.home.HomeContract.Presenter
 import com.example.fcl.dadademo.model.Ad
 import com.example.fcl.dadademo.model.FreePractice
 import com.example.fcl.dadademo.model.HomeFoundation
 import com.example.fcl.dadademo.util.AccountManager
 import com.example.fcl.dadademo.util.ActivityManager
+import com.example.fcl.dadademo.util.Constant
 import com.example.fcl.dadademo.util.RegisterHelper
 import com.example.fcl.dadademo.util.ToastHelper
 import com.example.fcl.kotlindemo.R
@@ -55,9 +58,17 @@ class HomeFragment : Fragment(),HomeContract.View {
             homeFreePracticeLayout.title=freePractice.title
             homeFreePracticeView.setupFreePractice(freePractice.items)
             homeFreePracticeView.freePracticeClickCallback = {
-                ActivityManager.navigateToH5(it.jumpUrl)
+//                ActivityManager.navigateToH5(it.jumpUrl)
+                gotoCoursewareList()
             }
         }
+    }
+
+    private fun gotoCoursewareList() {
+        val intent = Intent(context, CoursewareListActivity::class.java)
+        intent.putExtra(Constant.EVALUATE_BOOK_CATEGORY_ID_EXTRA, "155_e7c9fef05ac2465e7799e33534c55c2d")
+        intent.putExtra(Constant.EVALUATE_COURSE_NAME_EXTRA, "Phonics wonderland 3")
+        startActivity(intent)
     }
 
     private fun setBannerAds(bannerAds: List<Ad>) {

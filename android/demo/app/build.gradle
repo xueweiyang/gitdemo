@@ -3,11 +3,12 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.hujiang.android-aspectjx'
 android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.example.fcl.kotlindemo"
-        minSdkVersion 15
+        minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -23,7 +24,7 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
@@ -50,11 +51,12 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:2.2.0'
     compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
     compile 'com.github.bumptech.glide:glide:3.6.1'
-    implementation files('libs/aspectjrt.jar')
+
     compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
     compile 'io.reactivex.rxjava2:rxkotlin:2.1.0'
     compile 'com.google.android:flexbox:0.3.0'
+
+    compile 'org.aspectj:aspectjrt:1.8.9'
 }
 
-apply plugin: 'android-aop'
 

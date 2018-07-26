@@ -63,7 +63,7 @@ class SplashActivity : AppCompatActivity() {
                         Log.e("Splash", it.adList[0].imageUrl)
                         val imgUrl = it.adList[0].imageUrl.realImageUrl()
 //                        CacheManager.saveSplashAdCache(it.adList[0])
-                        ImageLoader.loadImage(imgUrl, splashAdImg, this)
+                        ImageLoader.loadImage(imgUrl, splashAdImg)
                     }
                 }
             }, {

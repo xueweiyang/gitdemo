@@ -7,8 +7,8 @@ import com.example.fcl.kotlindemo.MyApp
 
 object ImageLoader{
 
-    fun loadImage(url:String, imageView: ImageView, context: Context) {
-        Glide.with(context)
+    fun loadImage(url:String, imageView: ImageView) {
+        Glide.with(MyApp.instance)
             .load(url)
             .into(imageView)
     }

@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.os.Looper
 import android.util.Printer
 import com.example.fcl.dadademo.util.ActivityManager
+import com.facebook.stetho.Stetho
 import com.github.moduth.blockcanary.BlockCanary
 import com.squareup.leakcanary.LeakCanary
 
@@ -21,6 +22,7 @@ class MyApp : Application() {
         LeakCanary.install(this)
         BlockCanary.install(this, MyBlockCanaryContext())
         Looper.getMainLooper().setMessageLogging(MyPrinter())
+        Stetho.initializeWithDefaults(this)
         registerActivityLifecycleCallbacks(object:Application.ActivityLifecycleCallbacks{
             override fun onActivityPaused(activity: Activity?) {
             }

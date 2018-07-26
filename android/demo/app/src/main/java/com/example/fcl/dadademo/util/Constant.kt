@@ -10,4 +10,5 @@ object Constant{
     const val EVALUATE_BOOK_CATEGORY_ID_EXTRA = "book_category_id"
     const val EVALUATE_BOOK_CATEGORY_NAME_EXTRA = "book_category_name"
     const val EVALUATE_COURSE_NAME_EXTRA = "course_name"
+    const val EVALUATE_COURSE_WARE_LOCK = 1
 }

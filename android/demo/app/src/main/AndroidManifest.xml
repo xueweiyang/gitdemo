@@ -34,6 +34,8 @@
         <activity android:name="com.example.fcl.dadademo.account.login.LoginActivity">
         </activity>
         <activity android:name="com.example.fcl.dadademo.web.WebBearerActivity"/>
+        <activity android:name="com.example.fcl.dadademo.courselist.CoursewareListActivity"/>
+        <activity android:name="com.example.fcl.dadademo.evaluatelist.EvaluateListActivity"/>
     </application>
 
 </manifest>

@@ -1,0 +1,41 @@
+apply from: 'ext.gradle'
+
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+//        classpath 'org.aspectj:aspectjtools:1.8.9'
+    }
+}
+
+allprojects {
+    buildscript {
+        repositories {
+            mavenLocal()
+            mavenCentral()
+            jcenter {
+               url 'http://jcenter.bintray.com'
+            }
+        }
+    }
+    
+    dependencies {
+        repositories {
+            mavenLocal()
+            mavenCentral()
+            jcenter {
+                url 'http://jcenter.bintray.com'
+            }
+        }
+    }
+
+    apply plugin: 'maven'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.14.1'
+}
