@@ -13,7 +13,7 @@ import com.example.fcl.dadademo.util.ToastHelper
 import com.example.fcl.dadademo.widget.WebViewProgressBar
 import com.example.fcl.kotlindemo.R
 import kotlinx.android.synthetic.main.activity_h5.swipeChild
-import kotlinx.android.synthetic.main.view_normal_layout.dadaToolbar
+import kotlinx.android.synthetic.main.view_normal_toolbar.dadaToolbar
 
 open class WebBearerActivity : BaseActivity(),JsBridgeDelegate {
 
