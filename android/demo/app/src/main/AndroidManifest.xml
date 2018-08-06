@@ -36,6 +36,12 @@
         <activity android:name="com.example.fcl.dadademo.web.WebBearerActivity"/>
         <activity android:name="com.example.fcl.dadademo.courselist.CoursewareListActivity"/>
         <activity android:name="com.example.fcl.dadademo.evaluatelist.EvaluateListActivity"/>
+        <activity android:name=".test.EspressActivity">
+        </activity>
+        <activity android:name=".test.RecyclerActivity">
+        </activity>
+        <activity android:name=".test.WebActivity">
+        </activity>
     </application>
 
 </manifest>

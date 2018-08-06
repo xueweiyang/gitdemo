@@ -7,7 +7,7 @@ import com.example.fcl.dadademo.provider.EvaluateScoreDbHelper
 
 class EvaluatePresenter(private val view: View) : EvaluateContract.Presenter{
     override fun fetchEvaluateList(courseId: String, bookCategoryId: String) {
-        EvaluateScoreDbHelper()
+//        EvaluateScoreDbHelper()
     }
 
     override fun addListenTime(voicePractise: VoicePractise) {
