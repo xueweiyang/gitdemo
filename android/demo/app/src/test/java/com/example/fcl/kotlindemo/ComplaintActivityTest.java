@@ -16,7 +16,7 @@ public class ComplaintActivityTest extends BaseRobolectricTestCase {
         PowerMockito.mockStatic(AppUtil.class);
         PowerMockito.when(AppUtil.getVersionName()).thenReturn("1.4.0");
 
-        
+
     }
 
 }
