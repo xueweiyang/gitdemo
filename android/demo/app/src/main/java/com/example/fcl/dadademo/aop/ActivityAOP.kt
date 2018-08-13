@@ -6,7 +6,7 @@ import org.aspectj.lang.annotation.Aspect
 import org.aspectj.lang.annotation.Before
 import org.aspectj.lang.annotation.Pointcut
 
-const val POINT_METHOD = "execution(* android.app.Activity.onCreate(..))"
+
 
 @Aspect
 class ActivityAOP {
@@ -17,9 +17,13 @@ class ActivityAOP {
     fun methodAnnotated() {
     }
 
-    @Before("methodAnnotated()")
+    @Before("execution(* android.app.Activity.onCreate(..))")
     fun onActivityMethodBefore(joinPoint: JoinPoint) {
         val key = joinPoint.signature.toString()
         Log.e(TAG, "onActivityMethodBefore: " + key)
+    }
+
+    companion object {
+        const val POINT_METHOD = "execution(* com.example.fcl.dadademo.DadaMainActivity.onCreate(..))"
     }
 }

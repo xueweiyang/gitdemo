@@ -22,10 +22,15 @@ import com.example.fcl.kotlindemo.R
 import kotlinx.android.synthetic.main.layout_home_fragment.adBannerView
 import kotlinx.android.synthetic.main.layout_home_fragment.homeFreePracticeLayout
 import kotlinx.android.synthetic.main.layout_home_fragment.homeFreePracticeView
+import javax.inject.Inject
 
-class HomeFragment : Fragment(),HomeContract.View {
+class HomeFragment : Fragment(), HomeContract.View {
+
+    @Inject
+    lateinit var homePresenter: HomePresenter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        DaggerHomeComponent.builder().homeMoudle(HomeMoudle(this)).build().inject(this)
         return inflater.inflate(R.layout.layout_home_fragment, container, false)
     }
 
@@ -36,13 +41,11 @@ class HomeFragment : Fragment(),HomeContract.View {
     }
 
     private fun setUpPresenter() {
-        val homePresenter=HomePresenter(this)
         bindPresenter(homePresenter)
         homePresenter.fetchFoundation()
     }
 
     override fun bindPresenter(presenter: Presenter) {
-
     }
 
     private fun initView() {
@@ -53,12 +56,12 @@ class HomeFragment : Fragment(),HomeContract.View {
         setupFreePractice(homeFoundation.freePractice)
     }
 
-    private fun setupFreePractice(freePractice: FreePractice?){
-        if (freePractice!=null&&freePractice.items.isNotEmpty()){
-            homeFreePracticeLayout.title=freePractice.title
+    private fun setupFreePractice(freePractice: FreePractice?) {
+        if (freePractice != null && freePractice.items.isNotEmpty()) {
+            homeFreePracticeLayout.title = freePractice.title
             homeFreePracticeView.setupFreePractice(freePractice.items)
             homeFreePracticeView.freePracticeClickCallback = {
-//                ActivityManager.navigateToH5(it.jumpUrl)
+                //                ActivityManager.navigateToH5(it.jumpUrl)
                 gotoCoursewareList()
             }
         }
@@ -72,9 +75,9 @@ class HomeFragment : Fragment(),HomeContract.View {
     }
 
     private fun setBannerAds(bannerAds: List<Ad>) {
-        if (bannerAds.isNotEmpty()){
-            val bannerAdapter=HomeBannerAdapter(activity, bannerAds)
-            adBannerView.adapter=bannerAdapter
+        if (bannerAds.isNotEmpty()) {
+            val bannerAdapter = HomeBannerAdapter(activity, bannerAds)
+            adBannerView.adapter = bannerAdapter
         }
     }
 }
