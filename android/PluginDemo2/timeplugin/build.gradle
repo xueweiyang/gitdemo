@@ -4,7 +4,9 @@ apply plugin:'maven'
 dependencies {
     repositories {
         mavenLocal()
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
         jcenter()
+        google()
     }
     compile gradleApi()
     compile localGroovy()
@@ -14,11 +16,16 @@ dependencies {
     compile 'javassist:javassist:3.12.1.GA'
 
     compile 'commons-io:commons-io:2.5'
+
+    compile 'org.aspectj:aspectjrt:1.8.9'
+    compile "org.aspectj:aspectjtools:1.8.13"
 }
 
 repositories {
     mavenCentral()
     jcenter()
+    google()
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
 }
 
 group = 'com.fcl'
