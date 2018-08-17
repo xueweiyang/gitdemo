@@ -1,18 +1,31 @@
 apply plugin: 'groovy'
 apply plugin: 'maven'
+apply plugin: 'jcenter'
 
 dependencies {
-    compile gradleApi()//gradle sdk
-    compile localGroovy()//groovy sdk
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+
+    compile gradleApi()
+    compile localGroovy()
+
+    compile 'com.android.tools.build:gradle:2.1.2'
     compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile 'com.android.tools.build:transform-api:1.5.0'
 }
 
 repositories {
-    mavenCentral()
+    mavenLocal()
+    jcenter()
 }
 
-group='com.fcl.plugin'
-version='1.0.0'
+
+
+group = 'com.fcl'
+version = '1.0.0'
 
 uploadArchives {
     repositories {
