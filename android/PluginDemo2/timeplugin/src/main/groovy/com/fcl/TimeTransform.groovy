@@ -10,6 +10,7 @@ import com.android.build.api.transform.TransformException
 import com.android.build.api.transform.TransformInput
 import com.android.build.api.transform.TransformOutputProvider
 import com.android.build.gradle.internal.pipeline.TransformManager
+import org.apache.commons.codec.digest.DigestUtils
 import org.apache.commons.io.FileUtils
 import org.gradle.api.Project
 
@@ -57,6 +58,14 @@ public class TimeTransform extends Transform{
             }
             input.jarInputs.each {JarInput jarInput->
 //                println("---jarinput file---" + jarInput.file.absolutePath)
+                def jarName = jarInput.name
+                def md5Name = DigestUtils.md5Hex(jarInput.file.getAbsolutePath())
+                if (jarName.endsWith(".jar")) {
+                    jarName = jarName.substring(0,jarName.length()-4)
+                }
+                def dest = outputProvider.getContentLocation(jarName+md5Name,jarInput.contentTypes,jarInput.scopes,
+                    Format.JAR)
+                FileUtils.copyFile(jarInput.file,dest)
             }
 
         }

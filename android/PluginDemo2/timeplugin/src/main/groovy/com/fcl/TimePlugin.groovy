@@ -8,10 +8,11 @@ import com.android.build.gradle.AppExtension
 public class TimePlugin implements Plugin<Project> {
     @Override
     void apply(Project project) {
+        println("TimePlugin:apply")
         def android = project.extensions.getByType(AppExtension)
         android.registerTransform(new TimeTransform(project))
 
-        project.extensions.create("testCreateJavaConfig",MyPluginTestClass)
+//        project.extensions.create("testCreateJavaConfig",MyPluginTestClass)
 //        if (project.plugins.hasPlugin(AppPlugin)) {
 //            android.applicationVariants.all { variant->
 //                def variantData = variant.variantData
@@ -30,15 +31,15 @@ public class TimePlugin implements Plugin<Project> {
 //        }
     }
 
-    def void createJavaTest(variant, config) {
-        println("create")
-        def content = """package com.example.fcl.plugindemo2;
-public class MyPluginTestClass {
-    public static final String str = "test";
-}"""
-    File outputDir = variant.getVariantData().getScope().getBuildConfigSourceOutputDir()
-        def javaFile = new File(outputDir, "MyPluginTestClass.java")
-        javaFile.write(content, 'UTF-8')
-    }
+//    def void createJavaTest(variant, config) {
+//        println("create")
+//        def content = """package com.example.fcl.plugindemo2;
+//public class MyPluginTestClass {
+//    public static final String str = "test";
+//}"""
+//    File outputDir = variant.getVariantData().getScope().getBuildConfigSourceOutputDir()
+//        def javaFile = new File(outputDir, "MyPluginTestClass.java")
+//        javaFile.write(content, 'UTF-8')
+//    }
 }
 

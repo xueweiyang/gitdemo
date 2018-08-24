@@ -1,1 +1,1 @@
-include ':app', ':time', ':timeplugin'
+include ':app', ':time', ':timeplugin', ':hack'
