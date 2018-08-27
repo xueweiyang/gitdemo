@@ -37,6 +37,7 @@ dependencies {
 
 apply plugin: 'time'
 apply plugin: 'aspect'
+apply plugin: 'predex'
 buildscript {
     repositories {
         maven {

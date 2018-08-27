@@ -15,6 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         <activity android:name=".activity.KotlinBaseActivity"/>
         <activity android:name=".activity.DemoActivityKotlin"/>
@@ -22,11 +27,7 @@
         <activity android:name=".LeakActivity">
         </activity>
         <activity android:name="com.example.fcl.dadademo.SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity android:name="com.example.fcl.dadademo.DadaMainActivity">
         </activity>
@@ -41,6 +42,9 @@
         <activity android:name=".test.RecyclerActivity">
         </activity>
         <activity android:name=".test.WebActivity">
+        </activity>
+        <activity android:name="com.example.fcl.dadademo.drawable.PaletteActivity">
+
         </activity>
     </application>
 

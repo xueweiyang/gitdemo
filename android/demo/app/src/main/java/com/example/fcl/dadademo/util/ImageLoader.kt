@@ -12,5 +12,9 @@ object ImageLoader{
             .load(url)
             .into(imageView)
     }
-
+    fun loadImage(url:Int, imageView: ImageView) {
+        Glide.with(MyApp.instance)
+            .load(url)
+            .into(imageView)
+    }
 }
