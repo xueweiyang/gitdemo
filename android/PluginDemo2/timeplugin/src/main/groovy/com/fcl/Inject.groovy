@@ -3,6 +3,7 @@ package com.fcl
 import javassist.ClassPool
 import javassist.CtClass
 import javassist.CtConstructor
+import org.apache.commons.io.FileUtils
 
 public class Inject{
 
@@ -49,8 +50,12 @@ public class Inject{
                 && !className.contains('R.class')
                 && !className.contains("BuildConfig.class")) {
                     className = className.substring(0,className.length()-6)
+                    injectClass(className, jarZipDir)
                 }
             }
+
+            JarZipUtil.zipJar(jarZipDir, path)
+            FileUtils.deleteDirectory(new File(jarZipDir))
         }
     }
 

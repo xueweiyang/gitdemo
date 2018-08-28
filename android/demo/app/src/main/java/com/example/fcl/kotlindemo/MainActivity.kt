@@ -11,6 +11,7 @@ import com.example.datepicker.DatePickerDialogFragment
 import com.example.datepicker.DatePickerDialogFragment.ClickListener
 import com.example.fcl.dadademo.SplashActivity
 import com.example.fcl.dadademo.drawable.PaletteActivity
+import com.example.fcl.dadademo.drawable.RippleActivity
 import com.example.fcl.kotlindemo.activity.DemoActivityKotlin
 import kotlinx.android.synthetic.main.activity_main.changeui
 import kotlinx.android.synthetic.main.activity_main.dialog
@@ -48,7 +49,7 @@ startActivity(Intent(this, LeakActivity::class.java))
             R.id.anr -> anr()
             R.id.changeui -> changeui()
             R.id.dadademo -> dadademo()
-            R.id.platte -> startActivity(Intent(this, PaletteActivity::class.java))
+            R.id.platte -> startActivity(Intent(this, RippleActivity::class.java))
         }
 //        dialog()
     }
