@@ -5,6 +5,8 @@ import android.os.Environment;
 import android.util.Log;
 import dalvik.system.DexClassLoader;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
 import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 
@@ -16,6 +18,11 @@ String TAG="HotPatchApplication";
     @Override
     public void onCreate() {
         super.onCreate();
+        //initHack();
+        initPatch();
+    }
+
+    private void initPatch() {
         String dexPath = Environment.getExternalStorageDirectory().getAbsolutePath().concat("/patch_dex.jar");
         File file = new File(dexPath);
         if (file.exists()) {
@@ -25,7 +32,29 @@ String TAG="HotPatchApplication";
         }
     }
 
+    private void initHack() {
+        try {
+            File hackDir = getDir("hackDir", 0);
+            File hackJar = new File(hackDir, "hack.jar");
+            FileOutputStream out = new FileOutputStream(hackJar);
+            InputStream in = getAssets().open("hack.jar");
+
+            byte[] buf = new byte[1024];
+            int len;
+            while ((len = in.read(buf)) != -1) {
+                out.write(buf,0,len);
+            }
+            in.close();
+            out.close();
+            Log.e(TAG, "fuck path"+hackJar.getAbsolutePath()+"       "+hackJar.getName());
+            inject(hackJar.getAbsolutePath());
+        } catch (Exception e) {
+            Log.e(TAG, "what error:"+e.getMessage());
+        }
+    }
+
     void inject(String path) {
+
         try {
             Class<?> cl = Class.forName("dalvik.system.BaseDexClassLoader");
             Object pathList = getField(cl, "pathList", getClassLoader());
@@ -45,7 +74,7 @@ String TAG="HotPatchApplication";
             Log.e(TAG, "length="+length);
 
         } catch (Exception e) {
-
+            Log.e(TAG, "what error:"+e.getMessage());
         }
     }
 

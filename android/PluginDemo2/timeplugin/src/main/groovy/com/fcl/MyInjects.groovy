@@ -12,6 +12,9 @@ public class MyInjects{
 
     public static void inject(String path, Project project) {
         //当前路径加入类池，不然找不到这个类
+        String libpath = project.project(':hack').buildDir.absolutePath.concat("/intermediates/classes/debug")
+        println("libpath:"+libpath)
+        pool.appendClassPath(libpath)
         pool.appendClassPath(path)
         pool.appendClassPath(project.android.bootClasspath[0].toString())
         pool.importPackage("android.os.Bundle")
@@ -23,6 +26,8 @@ public class MyInjects{
                 if (filename.endsWith(".class")
 && !filename.contains('R$')
 && !filename.contains('R.class')
+                    && !filename.contains("BuildConfig.class")
+                    && !filename.contains("HotPatchApplication.class")
                 ) {
                     String classname = "com.example.fcl.plugindemo2." + filename.substring(0, filename.lastIndexOf("" +
                         "."))
@@ -33,11 +38,15 @@ public class MyInjects{
                     }
                     CtConstructor[] cts = c.getDeclaredConstructors()
                     if (cts==null || cts.length==0) {
+                        println("no con")
                         insertNewConstructor(c)
                     }
-//                    else {
-//                        cts[0].insertBeforeBody("System.out.println()")
-//                    }
+                    else {
+                        println("has con")
+                        String insetBeforeStr = """
+System.out.println(com.example.hack.AntilazyLoad.class);"""
+                        cts[0].insertBeforeBody(insetBeforeStr)
+                    }
                     c.writeFile(path)
                     c.detach()
                 }

@@ -2,4 +2,6 @@ package com.example.fcl.daggerdemo
 
 import javax.inject.Inject
 
-class Student
+class Student{
+    val name = "galio"
+}

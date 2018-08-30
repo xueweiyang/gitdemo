@@ -1,8 +1,10 @@
 package com.example.fcl.daggerdemo;
 
 import android.app.Application;
+import dagger.android.AndroidInjector;
+import dagger.android.support.DaggerApplication;
 
-public class MyApp extends Application {
+public class MyApp extends DaggerApplication {
 
     @Override
     public void onCreate() {
@@ -11,10 +13,15 @@ public class MyApp extends Application {
     }
 
     private void inject() {
-        AppComponent appComponent = DaggerAppComponent
-            .builder()
-            .appModule(new AppModule(this))
-            .build();
+        //AppComponent appComponent = DaggerAppComponent
+        //    .builder()
+        //    .appModule(new AppModule(this))
+        //    .build();
 
+    }
+
+    @Override
+    protected AndroidInjector<? extends DaggerApplication> applicationInjector() {
+        return DaggerAppComponent.builder().appModule(new AppModule(this)).build();
     }
 }
