@@ -49,7 +49,7 @@ public class TimeTransform extends Transform{
         println('transform   eee')
         inputs.each { TransformInput input->
             input.directoryInputs.each {DirectoryInput directoryInput->
-                MyInjects.inject(directoryInput.file.absolutePath,project)
+//                MyInjects.inject(directoryInput.file.absolutePath,project)
 
                 def dest=outputProvider.getContentLocation(directoryInput.name,
                 directoryInput.contentTypes,directoryInput.scopes,Format.DIRECTORY)
