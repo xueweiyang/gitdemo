@@ -5,6 +5,19 @@ package com.example.fcl.kotlindemo.live.data
  */
 interface TaskDataSource {
 
+    interface LoadTasksCallback {
+        fun onTasksLoaded(tasks:List<Task>)
+        fun onDataNotAvailable()
+    }
 
+    interface GetTaskCallback{
+        fun onTaskLoaded(task: Task)
+        fun onDataNotAvailable()
+    }
 
+    fun getTasks(callback:LoadTasksCallback)
+
+    fun getTask(taskId:String,callback: GetTaskCallback)
+
+    fun saveTask(task: Task)
 }

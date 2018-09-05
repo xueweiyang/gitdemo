@@ -12,6 +12,10 @@
         <activity android:name=".MainActivity">
         </activity>
         <activity android:name=".live.TaskActivity">
+        </activity>
+        <activity android:name=".live.edit.AddEditTaskActivity">
+        </activity>
+        <activity android:name=".save.SaveInstanceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

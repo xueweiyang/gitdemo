@@ -29,7 +29,7 @@ import com.example.android.architecture.blueprints.todoapp.data.Task
 @Dao interface TasksDao {
 
     /**
-     * Select all tasks from the tasks table.
+     * Select all tasks from the tasks table.@
      *
      * @return all tasks.
      */
