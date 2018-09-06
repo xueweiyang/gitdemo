@@ -16,6 +16,8 @@
         <activity android:name=".live.edit.AddEditTaskActivity">
         </activity>
         <activity android:name=".save.SaveInstanceActivity">
+        </activity>
+        <activity android:name=".design.FlexLayoutActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
