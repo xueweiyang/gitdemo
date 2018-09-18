@@ -1,6 +1,7 @@
 package com.example.fcl.aopdemo.aop;
 
 import android.util.Log;
+import kotlin.jvm.Throws;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
@@ -12,7 +13,7 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect
 public class ActivityAspect {
 
-    static final String POINT_METHOD = "execution(* com.example.fcl.aopd.MainActivity.onCreate(..))";
+    static final String POINT_METHOD = "execution(* com.example.fcl.aop.MainActivity.onCreate(..))";
 
     @Pointcut(POINT_METHOD)
     public void methodAnnotated() {
@@ -27,9 +28,9 @@ public class ActivityAspect {
 
     @Around("execution(* android.app.Activity.onCreate(..))")
     public void onMethod(ProceedingJoinPoint joinPoint) throws Throwable{
-        Log.e("helloAop", "aspect around::"+joinPoint.getSignature());
-        joinPoint.proceed();
-        Log.e("helloAop", "aspect2 around::"+joinPoint.getSignature());
+        //Log.e("helloAop", "aspect around::"+joinPoint.getSignature());
+        //joinPoint.proceed();
+        //Log.e("helloAop", "aspect2 around::"+joinPoint.getSignature());
     }
 
 }
