@@ -18,7 +18,7 @@ String TAG="HotPatchApplication";
     @Override
     public void onCreate() {
         super.onCreate();
-        //initHack();
+        initHack();
         initPatch();
     }
 

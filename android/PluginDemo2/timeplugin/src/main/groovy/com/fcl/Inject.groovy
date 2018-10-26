@@ -10,6 +10,7 @@ public class Inject{
     private static ClassPool pool = ClassPool.getDefault()
 
     public static void appendClassPath(String libPath) {
+//        println("libpath:"+libPath)
         pool.appendClassPath(libPath)
     }
 
@@ -24,10 +25,12 @@ public class Inject{
                 && !filePath.contains('R.class')
                 && !filePath.contains("BuildConfig.class")
                 && !filePath.contains("HotPatchApplication.class")) {
-                    int index = filePath.indexOf("com\\example\\fcl\\plugindemo2")
+                    int index = filePath.indexOf("com/example/fcl/plugindemo2")
+//                    println("class filepath2222:"+filePath +"  index:"+index)
                     if (index != -1) {
                         int end = filePath.length() - 6
-                        String className = filePath.substring(index,end).replace('\\','.')
+                        String className = filePath.substring(index,end).replace('/','.')
+                        println("className:"+className)
                         injectClass(className,path)
                     }
                 }
@@ -68,7 +71,8 @@ public class Inject{
         if (cts==null||cts.length == 0) {
             insertNewConstructor(c)
         } else {
-            cts[0].insertBeforeBody("System.out.println(com.example.hack.AntilazyLoad.class")
+            cts[0].insertBeforeBody("System.out.println(com.example.hack.AntilazyLoad.class);")
+            cts[0].insertBeforeBody("System.out.println(com.example.fcl.plugindemo2.HotPatchApplication.class);")
         }
         c.writeFile(path)
         c.detach()
@@ -76,7 +80,7 @@ public class Inject{
 
     private static void insertNewConstructor(CtClass c) {
         CtConstructor constructor = new CtConstructor(new CtClass[0], c)
-        constructor.insertBeforeBody("System.out.println(com.example.hack.AntilazyLoad.class")
+        constructor.insertBeforeBody("System.out.println(com.example.hack.AntilazyLoad.class);")
         c.addConstructor(constructor)
     }
 

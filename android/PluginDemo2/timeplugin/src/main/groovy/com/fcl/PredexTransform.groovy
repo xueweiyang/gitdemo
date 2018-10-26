@@ -12,6 +12,9 @@ public class PredexTransform extends Transform{
 
     public PredexTransform(Project project) {
         this.project =project
+        def libPath = project.project(':hack').buildDir.absolutePath.concat("/intermediates/classes/debug")
+        Inject.appendClassPath(libPath)
+        Inject.appendClassPath("/home/fcl/Android/Sdk/platforms/android-28/android.jar")
     }
 
     @Override
@@ -45,7 +48,7 @@ public class PredexTransform extends Transform{
 
                 def dest=outputProvider.getContentLocation(directoryInput.name,
                 directoryInput.contentTypes,directoryInput.scopes,Format.DIRECTORY)
-                println("dest:"+dest)
+//                println("dest:"+dest)
                 FileUtils.copyDirectory(directoryInput.file,dest)
             }
             input.jarInputs.each {JarInput jarInput->
