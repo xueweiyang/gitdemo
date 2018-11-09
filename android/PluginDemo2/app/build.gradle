@@ -19,6 +19,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug1 {
+            initWith(debug)
+        }
     }
     applicationVariants.all { variant->
         def dexTask = project.tasks.findByName("transformClassesWithDexForDebug")
@@ -57,9 +60,10 @@ dependencies {
 
     compile 'com.android.tools.build:transform-api:1.5.0'
     compile 'org.aspectj:aspectjrt:1.8.9'
+    compile 'com.android.tools.build:gradle:2.3.2'
 }
 
-//apply plugin: 'time'
+apply plugin: 'time'
 apply plugin: 'aspect'
 apply plugin: 'predex'
 apply plugin: 'dex'
@@ -73,5 +77,35 @@ buildscript {
     }
     dependencies {
         classpath 'com.fcl:timeplugin:1.0.0'
+    }
+}
+
+task hello{
+    println("-------------------------------------------hello")
+}
+
+class Person {
+    String personName = '李四'
+    int personAge = 18
+    def printPerson() {
+        println "name is ${personName},age is ${personAge}"
+    }
+}
+def person(Closure<Person> closure) {
+    Person p = new Person()
+    closure.delegate = p
+    closure.setResolveStrategy(Closure.DELEGATE_FIRST)
+    return closure
+}
+
+def closure = person {
+    personName = '张三'
+    personAge = 20
+    printPerson()
+}
+
+task configClosure {
+    doLast {
+        closure()
     }
 }

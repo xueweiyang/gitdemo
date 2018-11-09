@@ -1,0 +1,11 @@
+language: groovy
+
+jdk:
+  - oraclejdk8
+
+env:
+  global:
+    - TERM=dumb
+
+notifications:
+  email: false

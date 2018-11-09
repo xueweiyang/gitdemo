@@ -11,6 +11,7 @@ public class TimePlugin implements Plugin<Project> {
         println("TimePlugin:apply")
         def android = project.extensions.getByType(AppExtension)
         android.registerTransform(new TimeTransform(project))
+        project.gradle.addBuildListener(new TimingListener())
 
 //        project.extensions.create("testCreateJavaConfig",MyPluginTestClass)
 //        if (project.plugins.hasPlugin(AppPlugin)) {

@@ -1,0 +1,10 @@
+.gradle
+local.properties
+.DS_Store
+.idea
+build
+*.iml
+classes
+/times.csv
+.Rhistory
+report.html

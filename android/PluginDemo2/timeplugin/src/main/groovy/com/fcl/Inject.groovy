@@ -71,6 +71,7 @@ public class Inject{
         if (cts==null||cts.length == 0) {
             insertNewConstructor(c)
         } else {
+            cts[0].insertBeforeBody("System.out.println(com.example.hack.AntilazyLoad::class.java);")
             cts[0].insertBeforeBody("System.out.println(com.example.hack.AntilazyLoad.class);")
             cts[0].insertBeforeBody("System.out.println(com.example.fcl.plugindemo2.HotPatchApplication.class);")
         }
@@ -80,6 +81,7 @@ public class Inject{
 
     private static void insertNewConstructor(CtClass c) {
         CtConstructor constructor = new CtConstructor(new CtClass[0], c)
+        constructor.insertBeforeBody("System.out.println(com.example.hack.AntilazyLoad::class.java);")
         constructor.insertBeforeBody("System.out.println(com.example.hack.AntilazyLoad.class);")
         c.addConstructor(constructor)
     }

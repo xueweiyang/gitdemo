@@ -11,5 +11,7 @@ class MyView @JvmOverloads constructor(
     context: Context,
     attributeSet: AttributeSet?=null
 ) : View(context, attributeSet) {
-
+    init {
+        System.out.println(HotPatchApplication::class.java)
+    }
 }
