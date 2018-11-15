@@ -1,0 +1,59 @@
+plugins {
+    id "org.jetbrains.intellij" version "0.2.4"
+}
+
+apply plugin: 'org.jetbrains.intellij'
+apply plugin: 'java'
+
+version = '1.0.4'
+
+compileJava {
+    sourceCompatibility = 1.6
+    targetCompatibility = 1.6
+}
+
+intellij {
+    version 'IC-2016.2.5'
+    pluginName 'Fastdex Plugin'
+
+    plugins = ['android', 'gradle', 'Groovy', 'terminal']
+    // Uncomment to test against Android Studio
+    // intellij.alternativeIdePath = '/Applications/Android Studio.app'
+}
+
+
+project.tasks['patchPluginXml'].doLast {
+    //<idea-version since-build="162.2228" until-build="162.*"/>
+    //=>
+    //<idea-version since-build="141.0"/>
+
+    File xmlFile = project.file('build/patchedPluginXmlFiles/plugin.xml')
+
+    def ideaPlugin = new XmlParser().parse(new InputStreamReader(new FileInputStream(xmlFile.absolutePath), "utf-8"))
+
+    if (ideaPlugin) {
+        def ideaVersions = ideaPlugin['idea-version']
+        if (ideaVersions) {
+            ideaVersions.findAll {
+                it.parent().remove(it)
+            }
+        }
+
+        ideaPlugin.appendNode('idea-version', ["since-build": "141.0"])
+
+        def versions = ideaPlugin['version']
+        if (versions) {
+            versions.findAll {
+                it.parent().remove(it)
+            }
+        }
+        ideaPlugin.appendNode('version', project.version)
+
+        // Write the manifest file
+        def printer = new XmlNodePrinter(new PrintWriter(xmlFile.absolutePath, "utf-8"))
+        printer.preserveWhitespace = true
+        printer.print(ideaPlugin)
+
+        println("parse: ${xmlFile} \n<idea-version since-build=\"162.2228\" until-build=\"162.*\"/> \n=> \n<idea-version since-build=\"141.0\"/>")
+    }
+}

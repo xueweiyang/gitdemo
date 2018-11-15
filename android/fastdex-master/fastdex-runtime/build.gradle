@@ -1,0 +1,81 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        //minSdkVersion Integer.parseInt(project.ANDROID_BUILD_MIN_SDK_VERSION)
+
+        minSdkVersion 8
+        targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
+
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile project(':fastdex-common')
+}
+
+//如果runtime代码有变化,生成fastdex-runtime.dex放进fastdex-gradle/src/main/resources/fastdex-runtime.dex
+project.afterEvaluate {
+    android.libraryVariants.all { variant ->
+        def variantName = variant.name.capitalize()
+        if (!"Release".equals(variantName)) {
+            return
+        }
+        Task generateDexTask = project.tasks.create("generateRuntimeDexFor${variantName}")
+        generateDexTask.group = 'fastdex'
+        generateDexTask.dependsOn variant.javaCompile
+        generateDexTask.doLast {
+            File inputDirectory = project.file("build/intermediates/classes/release")
+            new File(inputDirectory,"com").deleteDir()
+            project.copy {
+                from project.rootProject.file("fastdex-common/build/classes/main/fastdex")
+                into project.file("build/intermediates/classes/release/fastdex")
+            }
+
+            String sdkDirectory = project.android.getSdkDirectory()
+            if (sdkDirectory.contains("\\")) {
+                sdkDirectory = sdkDirectory.replace("\\", "/");
+            }
+            String dxcmd = ""
+            File dx = new File(sdkDirectory,"build-tools${File.separator}${project.android.getBuildToolsVersion()}${File.separator}dx")
+            dxcmd = dx.absolutePath
+            if (org.apache.tools.ant.taskdefs.condition.Os.isFamily(org.apache.tools.ant.taskdefs.condition.Os.FAMILY_WINDOWS)) {
+                dxcmd =  "${dxcmd}.bat"
+            }
+            project.file("build/outputs/fastdex/${variantName.toLowerCase()}").mkdirs()
+            File outDex = project.file("build/outputs/fastdex/${variantName.toLowerCase()}/fastdex-runtime.dex")
+            dxcmd = "${dxcmd} --dex --output=${outDex} ${inputDirectory}"
+
+            println("==dxcmd: \n${dxcmd}")
+            def process = dxcmd.execute()
+            int status = process.waitFor()
+            process.destroy()
+            if (status != 0) {
+                throw new GradleException("generate fastdex runtime dex fail!")
+            }
+
+            project.copy {
+                from outDex
+                into project.rootProject.file('fastdex-gradle/src/main/resources')
+            }
+
+            project.file("build/intermediates/classes/release").deleteDir()
+        }
+    }
+}

@@ -1,0 +1,114 @@
+<idea-plugin version="2">
+    <id>com.github.typ0520.plugin.fastdex</id>
+    <name>Fastdex Plugin</name>
+    <vendor email="" url="https://github.com/typ0520/fastdex">typ0520</vendor>
+
+    <description><![CDATA[
+      android studio plugin for <a href='https://github.com/typ0520/fastdex'>Fastdex</a><br/><br/>
+      <img src='https://github.com/typ0520/fastdex/raw/master/fastdex-idea-plugin/src/main/resources/icons/bg_update.png' width='600' height='122'/> <br/>
+      <img src='https://github.com/typ0520/fastdex-test-project/raw/master/assets/rocket_desc.png' width='198' height='45'/> <br/>
+
+      <br/><b>Contributors</b><br/>
+      <a href='https://github.com/typ0520/fastdex'>typ0520</a>
+
+      <br/><br/>
+      <br/><b>ISSUES</b><br/>
+      <a href='https://github.com/typ0520/fastdex/issues'>Submit Suggestions or Bugs</a><br/><br/>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      <ul>
+       <li>
+          <b>1.0.4</b><br/>
+          Record the last selected device
+        </li>
+
+        <br/>
+
+        <li>
+          <b>1.0.3</b><br/>
+          Optimize build cache
+        </li>
+
+        <br/>
+
+         <li>
+          <b>1.0.2</b><br/>
+          Detects the minimum supported fastdex version
+          <br />
+          Detects fastdex versions that support multiple device connections
+          <br />
+          Fixbug
+        </li>
+
+        <br/>
+        <li>
+          <b>1.0.1</b><br/>
+          Supports multiple devices(The minimum version of fastdex is 0.4.2)
+          <br />
+          Fix the problem that the project path can not contain spaces
+        </li>
+        <br/>
+        <li>
+          <b>1.0.0</b><br/>
+          First release
+        </li>
+      </ul>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="141.0"/>
+
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <depends>org.jetbrains.android</depends>
+    <depends>org.jetbrains.plugins.terminal</depends>
+    <depends>org.jetbrains.plugins.gradle</depends>
+    <depends>org.intellij.groovy</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Fastdex" anchor="bottom" icon="/icons/icon.png"
+                    factoryClass="fastdex.idea.views.FastdexToolWindowFactory" secondary="false"/>
+    </extensions>
+
+    <actions>
+        <!-- Fastdex default run action -->
+        <action id="Plugin_Fastdex_Run" class="fastdex.idea.actions.FastdexRunAction"
+                text="Run Fastdex" description="Run Fastdex">
+            <add-to-group group-id="ToolbarRunGroup" anchor="after" relative-to-action="RunnerActions"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl shift F10"/>
+        </action>
+
+        <group>
+            <separator/>
+            <add-to-group group-id="BuildMenu" anchor="last"/>
+        </group>
+
+        <!-- Fastdex tools -->
+        <group id="Plugin_Fastdex_Tools" text="Fastdex" description="Fastdex" popup="true">
+            <action id="Plugin_Fastdex_Run_Update" class="fastdex.idea.actions.UpdateAction" text="Check Fastdex Update"
+                    description="Check Update">
+            </action>
+            <separator />
+            <add-to-group group-id="BuildMenu" anchor="last"/>
+        </group>
+
+        <group>
+            <separator/>
+            <add-to-group group-id="BuildMenu" anchor="last"/>
+        </group>
+    </actions>
+
+    <project-components>
+        <component>
+            <interface-class>fastdex.idea.views.FastdexTerminal</interface-class>
+            <implementation-class>fastdex.idea.views.FastdexTerminal</implementation-class>
+        </component>
+    </project-components>
+</idea-plugin>

@@ -1,0 +1,5 @@
+include ':app'
+include ':common'
+include ':common-group:common2'
+include ':javalib'
+//include ':kotlinlib'

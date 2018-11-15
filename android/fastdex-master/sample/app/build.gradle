@@ -1,0 +1,160 @@
+apply plugin: 'com.android.application'
+
+if (com.android.builder.model.Version.ANDROID_GRADLE_PLUGIN_VERSION.compareTo("3.0") < 0) {
+    //3.0.0支持了lambda不需要这个插件了
+    apply plugin: 'me.tatarka.retrolambda'
+
+    retrolambda {
+        javaVersion JavaVersion.VERSION_1_7
+    }
+}
+
+apply plugin: 'fastdex.app'
+
+fastdex {
+    //default true (可以用来区分是开发机器调试，还是jenkins机器打包，如果是开发机器就在local.properties加fastdex.enabled=true)
+    //Properties localProperties = new Properties()
+    //localProperties.load(project.rootProject.file('local.properties').newDataInputStream())
+    //fastdexEnable = Boolean.valueOf(localProperties.getProperty("fastdex.enabled", "false"))
+
+    //开启
+    fastdexEnable = true
+
+    //default false
+    //自定义的compile任务,用来代替compileXXXXJavaWithJavac
+    useCustomCompile = false
+
+    //default 3
+    //当变化的java文件数量大于等于这个值时触发dex merge(随着变化的java文件的增多,补丁打包会越来越慢,dex merge以后当前的状态相当于全量打包以后的状态)
+    dexMergeThreshold = 3
+
+    //是否仅hook debug
+    onlyHookDebug = false
+}
+
+android {
+    compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
+
+    if (com.android.builder.model.Version.ANDROID_GRADLE_PLUGIN_VERSION.compareTo("3.0") < 0) {
+        buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION   
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.xml'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.properties'
+    }
+
+    defaultConfig {
+        minSdkVersion Integer.parseInt(project.ANDROID_BUILD_MIN_SDK_VERSION)
+        targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
+
+        applicationId "com.github.typ0520.fastdex.sample"
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        config {
+            storeFile file('../keystore.jks')
+            keyAlias 'testres'
+            keyPassword 'testres'
+            storePassword 'testres'
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.config
+        }
+
+        release {
+            minifyEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.config
+        }
+    }
+
+//    productFlavors {
+//        flavor1 {
+//            if (com.android.builder.model.Version.ANDROID_GRADLE_PLUGIN_VERSION.compareTo("3.0") >= 0) {
+//                flavorDimensions "versionCode"
+//            }
+//        }
+//
+//        flavor2 {
+//            if (com.android.builder.model.Version.ANDROID_GRADLE_PLUGIN_VERSION.compareTo("3.0") >= 0) {
+//                flavorDimensions "versionCode"
+//            }
+//        }
+//    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile project(':common')
+    compile project(':common-group:common2')
+    compile project(':javalib')
+    //compile project(':kotlinlib')
+
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.squareup:otto:1.3.5'
+    compile 'com.squareup.okio:okio:1.0.1'
+    compile "io.reactivex:rxandroid:1.2.0"
+    compile "io.reactivex:rxjava:1.1.5"
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    compile 'org.xutils:xutils:3.3.36'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'de.hdodenhof:circleimageview:2.0.0'//
+//    compile 'com.squareup.retrofit:retrofit:1.9.0'
+//    compile 'info.hoang8f:android-segmented:1.0.6'
+//    compile 'com.squareup.okio:okio:1.0.1'
+//    compile 'com.zhy:okhttputils:2.4.1'
+//    compile 'joda-time:joda-time:2.6'
+//    compile 'com.squareup.retrofit:retrofit:1.8.0'
+//    compile 'com.squareup.okhttp:okhttp:2.2.0'
+//    compile 'com.squareup.okhttp:okhttp-urlconnection:2.2.0'
+
+//
+//    compile "org.greenrobot:eventbus:3.0.0"
+//    compile "org.glassfish:javax.annotation:10.0-b28"
+//    compile 'com.android.volley:volley:1.0.0'
+//    compile 'com.dialonce:dialonce-android:2.3.1'
+//    compile 'com.facebook.fresco:fresco:1.1.0'
+//    compile 'com.google.guava:guava:18.0'
+
+//    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+//    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    testCompile 'junit:junit:4.12'
+}
+
+project.afterEvaluate {
+    android.applicationVariants.all { variant ->
+        def variantName = variant.name.capitalize()
+        def variantOutput = variant.outputs.first()
+
+        if (variantName.contains("Debug")) {
+
+        }
+    }
+}
+
+task mytest {
+}
+
