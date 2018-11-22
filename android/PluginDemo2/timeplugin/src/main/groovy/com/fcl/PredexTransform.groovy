@@ -60,13 +60,7 @@ public class PredexTransform extends Transform{
                 && !jarPath.contains("exploded-aar\\"+projectName+"\\hotpatch")) {
                     Inject.injectJar(jarPath)
                 }
-
-                def jarName = jarInput.name
-                def md5Name = DigestUtils.md5Hex(jarInput.file.getAbsolutePath())
-                if (jarName.endsWith(".jar")) {
-                    jarName = jarName.substring(0,jarName.length()-4)
-                }
-                def dest = outputProvider.getContentLocation(jarName+md5Name,jarInput.contentTypes,jarInput.scopes,
+                def dest = outputProvider.getContentLocation(jarInput.name,jarInput.contentTypes,jarInput.scopes,
                     Format.JAR)
                 FileUtils.copyFile(jarInput.file,dest)
             }
