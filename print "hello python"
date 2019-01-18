@@ -1,0 +1,5 @@
+import os
+print "hello python"
+
+
+os.popen("cwebp bg_version_update.png -o bg_version_update.webp")
