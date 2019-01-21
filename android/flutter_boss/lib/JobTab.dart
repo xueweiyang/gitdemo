@@ -25,20 +25,22 @@ class JobList extends State<JobsTab> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return new Scaffold(
-      backgroundColor: new Color.fromARGB(255, 242, 242, 245),
-      appBar: new AppBar(
-        elevation: 0.0,
-        title: new Text(
-          'Android',
-          style: new TextStyle(fontSize: 20.0, color: Colors.red),
-        ),
-      ),
-//      body: new ListView.builder(itemBuilder: buildJobItem),
-      body: new Text("hhhh"),
+//      backgroundColor: new Color.fromARGB(255, 242, 242, 245),
+//      appBar: new AppBar(
+//        elevation: 0.0,
+//        title: new Text(
+//          'Android',
+//          style: new TextStyle(fontSize: 20.0, color: Colors.red),
+//        ),
+//      ),
+      body: new ListView.builder(
+          itemCount: _jobs.length,
+          itemBuilder: buildJobItem),
+//      body: new Center(child :new Text("hhhh")),
     );
   }
 
-  buildJobItem(BuildContext context, int index) {
+  Widget buildJobItem(BuildContext context, int index) {
     Job job = _jobs[index];
     var jobItem = new InkWell(
       onTap: () {
@@ -51,6 +53,7 @@ class JobList extends State<JobsTab> {
       },
       child: new JobListItem(job),
     );
+    return jobItem;
   }
 
   void getJobList() {
@@ -79,4 +82,10 @@ class JobList extends State<JobsTab> {
       """);
     });
   }
+}
+
+void main() {
+  runApp(new MaterialApp(
+    home: new JobsTab(),
+  ));
 }

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
-class TabbarSample extends StatelessWidget {
+class TabbarSample extends StatelessWidget with SingleTickerProviderStateMixin{
+
+  TabController _tabController = new TabController(length: 3, vsync: this);
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
