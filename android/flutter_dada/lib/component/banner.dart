@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 import 'dart:async';
 
+import 'package:flutter_dada/util/toast.dart';
+
 typedef Widget BuildShowView<D>(int index, D itemData);
 
 const IntegerMax = 0x7fffffff;
@@ -42,11 +44,12 @@ class BannerViewState extends State<BannerView> {
 
   resetTimer() {
     clearTimer();
-    timer = new Timer.periodic(new Duration(seconds: widget.delayTime),
+    timer = new Timer.periodic(new Duration(milliseconds: widget.delayTime),
         (Timer timer) {
+      print(timer.tick);
       if (pageController.positions.isNotEmpty) {
         var i = pageController.page.toInt() + 1;
-        pageController.animateToPage(i == 3 ? 0 : i,
+        pageController.animateToPage(i % widget.data.length,
             duration: new Duration(milliseconds: widget.scrollTime),
             curve: Curves.linear);
       }
@@ -69,10 +72,16 @@ class BannerViewState extends State<BannerView> {
       child: widget.data.length == 0
           ? null
           : new GestureDetector(
+        onTap: () {
+          Toast.show(context, "哈哈哈");
+        },
               child: new PageView.builder(
+                controller: pageController,
                 itemBuilder: (BuildContext context, int index) {
-                  return widget.buildShowView(
-                      index, widget.data[index % widget.data.length]);
+//                  return widget.buildShowView(
+//                      index, widget.data[index % widget.data.length]);
+                  var data = widget.data[index % widget.data.length];
+                  return Image.network(data);
                 },
                 itemCount: IntegerMax,
               ),

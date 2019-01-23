@@ -21,6 +21,12 @@ class Home extends State<HomeFragment> {
 
   @override
   Widget build(BuildContext context) {
+
+
+    Widget build(int index, String data) {
+      return Text('参数');
+    }
+
     // TODO: implement build
     return new Padding(
       padding: new EdgeInsets.only(left: 20, right: 20, top: 44),
@@ -42,7 +48,7 @@ class Home extends State<HomeFragment> {
               ],
             ),
             new BannerView(data: <String>[url2, url3, url4, url5],
-            buildShowView: BuildShowView<String>(),),
+            buildShowView: build,),
           ],
         ),
       ),
