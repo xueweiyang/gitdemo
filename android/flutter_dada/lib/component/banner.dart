@@ -46,7 +46,7 @@ class BannerViewState extends State<BannerView> {
     clearTimer();
     timer = new Timer.periodic(new Duration(milliseconds: widget.delayTime),
         (Timer timer) {
-      print(timer.tick);
+//      print(timer.tick);
       if (pageController.positions.isNotEmpty) {
         var i = pageController.page.toInt() + 1;
         pageController.animateToPage(i % widget.data.length,
@@ -72,16 +72,19 @@ class BannerViewState extends State<BannerView> {
       child: widget.data.length == 0
           ? null
           : new GestureDetector(
-        onTap: () {
-          Toast.show(context, "哈哈哈");
-        },
+              onTap: () {
+                Toast.show(context, "哈哈哈");
+              },
               child: new PageView.builder(
                 controller: pageController,
                 itemBuilder: (BuildContext context, int index) {
 //                  return widget.buildShowView(
 //                      index, widget.data[index % widget.data.length]);
                   var data = widget.data[index % widget.data.length];
-                  return Image.network(data);
+                  return new Material(child: new Image(image: new
+                      NetworkImage(data), width: screenWidth,height: 200,fit:
+                  BoxFit.cover,),
+                  borderRadius: BorderRadius.circular(8),);
                 },
                 itemCount: IntegerMax,
               ),
