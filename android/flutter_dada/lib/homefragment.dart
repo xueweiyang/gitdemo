@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dada/component/banner.dart';
+import 'package:flutter_dada/component/ShortcutView.dart';
+import 'package:flutter_dada/component/RecommendLayout.dart';
+import 'package:flutter_dada/model/ShortcutModel.dart';
 
 class HomeFragment extends StatefulWidget {
   @override
@@ -21,8 +24,6 @@ class Home extends State<HomeFragment> {
 
   @override
   Widget build(BuildContext context) {
-
-
     Widget build(int index, String data) {
       return Text('参数');
     }
@@ -47,8 +48,24 @@ class Home extends State<HomeFragment> {
                 ),
               ],
             ),
-            new BannerView(data: <String>[url2, url3, url4, url5],
-            buildShowView: build,),
+            new BannerView(
+              data: <String>[url2, url3, url4, url5],
+              buildShowView: build,
+            ),
+            new Container(
+              margin: const EdgeInsets.only(top: 10),
+              child: new Row(
+                  children: <Widget>[
+                    new ShortcutView(new ShortcutModel(content: "口语练习")),
+                    new ShortcutView(new ShortcutModel(content: "有声绘本")),
+                    new ShortcutView(new ShortcutModel(content: "DaDa TV")),
+                    new ShortcutView(new ShortcutModel(content: "直播课")),
+                    new ShortcutView(new ShortcutModel(content: "公开课")),
+                  ],
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround),
+            ),
+            new RecommendLayout(),
           ],
         ),
       ),

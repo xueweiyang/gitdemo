@@ -3,6 +3,7 @@ package com.example.fcl.leakdemo
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.fcl.leakdemo.R.id.jumpView
 import kotlinx.android.synthetic.main.activity_main2.jumpView
 
 class Main2Activity : AppCompatActivity() {
