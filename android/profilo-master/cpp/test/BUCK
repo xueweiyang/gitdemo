@@ -1,0 +1,148 @@
+load("//tools/build_defs/oss:profilo_defs.bzl", "profilo_cxx_test", "profilo_path")
+
+profilo_cxx_test(
+    name = "providers",
+    srcs = [
+        "TraceProvidersTest.cpp",
+    ],
+    compiler_flags = [
+        "-fexceptions",
+        "-std=gnu++14",
+        "-DLOG_TAG=\"Profilo\"",
+    ],
+    labels = ["opt-in-sandcastle-sanitized-test"],
+    linker_flags = [
+        "-pthread",
+        "-ldl",
+    ],
+    deps = [
+        profilo_path("cpp:providers"),
+    ],
+)
+
+profilo_cxx_test(
+    name = "codegen",
+    srcs = [
+        "EntryCodegenTest.cpp",
+    ],
+    compiler_flags = [
+        "-fexceptions",
+        "-std=gnu++14",
+        "-DLOG_TAG=\"Profilo\"",
+    ],
+    labels = ["opt-in-sandcastle-sanitized-test"],
+    linker_flags = [
+        "-pthread",
+    ],
+    deps = [
+        profilo_path("cpp/generated:cpp"),
+        profilo_path("cpp/writer:print_visitor"),
+    ],
+)
+
+profilo_cxx_test(
+    name = "delta_visitor",
+    srcs = [
+        "DeltaEncodingVisitorTest.cpp",
+    ],
+    compiler_flags = [
+        "-fexceptions",
+        "-std=gnu++14",
+        "-DLOG_TAG=\"Profilo\"",
+    ],
+    labels = ["opt-in-sandcastle-sanitized-test"],
+    linker_flags = [
+        "-pthread",
+    ],
+    deps = [
+        profilo_path("cpp/writer:delta_visitor"),
+        profilo_path("cpp/writer:print_visitor"),
+    ],
+)
+
+profilo_cxx_test(
+    name = "stack_visitor",
+    srcs = [
+        "StackTraceInvertingVisitorTest.cpp",
+    ],
+    compiler_flags = [
+        "-fexceptions",
+        "-std=gnu++14",
+        "-DLOG_TAG=\"Profilo\"",
+    ],
+    labels = ["opt-in-sandcastle-sanitized-test"],
+    linker_flags = [
+        "-pthread",
+    ],
+    deps = [
+        profilo_path("cpp/writer:print_visitor"),
+        profilo_path("cpp/writer:stack_visitor"),
+    ],
+)
+
+profilo_cxx_test(
+    name = "packet_logger",
+    srcs = [
+        "PacketLoggerTest.cpp",
+    ],
+    compiler_flags = [
+        "-fexceptions",
+        "-std=gnu++14",
+        "-DLOG_TAG=\"Profilo\"",
+    ],
+    labels = ["opt-in-sandcastle-sanitized-test"],
+    linker_flags = [
+        "-pthread",
+    ],
+    deps = [
+        "fbsource//xplat/folly:test-util",
+        "fbsource//xplat/third-party/gmock:gmock",
+        profilo_path("cpp/logger:logger_static"),
+        profilo_path("cpp/writer:packet_reassembler"),
+    ],
+)
+
+profilo_cxx_test(
+    name = "trace_writer",
+    srcs = [
+        "TraceWriterTest.cpp",
+    ],
+    compiler_flags = [
+        "-fexceptions",
+        "-std=gnu++14",
+        "-DLOG_TAG=\"Profilo\"",
+    ],
+    labels = ["opt-in-sandcastle-sanitized-test"],
+    linker_flags = [
+        "-pthread",
+    ],
+    deps = [
+        "fbsource//xplat/folly:test-util",
+        "fbsource//xplat/third-party/gmock:gmock",
+        profilo_path("cpp/logger:logger_static"),
+        profilo_path("cpp/writer:writer"),
+    ],
+)
+
+profilo_cxx_test(
+    name = "ring_buffer",
+    srcs = [
+        "LockFreeRingBufferTest.cpp",
+    ],
+    compiler_flags = [
+        "-fexceptions",
+        "-std=gnu++14",
+        "-DLOG_TAG=\"Profilo\"",
+    ],
+    labels = ["opt-in-sandcastle-sanitized-test"],
+    linker_flags = [
+        "-pthread",
+        "-ldl",
+    ],
+    deps = [
+        "fbsource//xplat/folly:test-util",
+        profilo_path("deps/zstr:zstr"),
+        profilo_path("cpp/logger/lfrb:lfrb"),
+        profilo_path("cpp/util:util"),
+    ],
+)

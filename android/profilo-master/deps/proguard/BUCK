@@ -1,0 +1,17 @@
+load("//tools/build_defs/oss:profilo_defs.bzl", "profilo_oss_only_java_library")
+
+profilo_oss_only_java_library(
+    name = "annotations",
+    srcs = ["DoNotStrip.java"],
+    visibility = [
+        "PUBLIC",
+    ],
+)
+
+profilo_oss_only_java_library(
+    name = "annotations-jni",
+    srcs = ["jni/DoNotStrip.java"],
+    visibility = [
+        "PUBLIC",
+    ],
+)

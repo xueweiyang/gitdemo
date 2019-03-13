@@ -1,0 +1,41 @@
+load("//tools/build_defs/oss:profilo_defs.bzl", "profilo_cxx_binary", "profilo_cxx_test", "profilo_path")
+
+profilo_cxx_binary(
+    name = "procfs_perf",
+    srcs = [
+        "procfs_perf.cpp",
+    ],
+    compiler_flags = [
+        "-fexceptions",
+        "-DLOG_TAG=\"Profilo\"",
+        "-g3",
+        "-fPIE",
+    ],
+    linker_flags = [
+        "-pie",
+    ],
+    deps = [
+        profilo_path("cpp/util:util"),
+    ],
+)
+
+profilo_cxx_test(
+    name = "procfs",
+    srcs = [
+        "ProcFsTest.cpp",
+    ],
+    compiler_flags = [
+        "-fexceptions",
+        "-std=gnu++14",
+        "-DLOG_TAG=\"Profilo\"",
+    ],
+    labels = ["opt-in-sandcastle-sanitized-test"],
+    linker_flags = [
+        "-pthread",
+        "-ldl",
+    ],
+    deps = [
+        "fbsource//xplat/folly:test-util",
+        profilo_path("cpp/util:util"),
+    ],
+)

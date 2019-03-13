@@ -1,0 +1,25 @@
+load("//tools/build_defs/oss:profilo_defs.bzl", "profilo_oss_cxx_library", "profilo_path")
+
+profilo_oss_cxx_library(
+    name = "xplat_init",
+    srcs = [
+        "xplat_init.cpp",
+    ],
+    header_namespace = "fb",
+    exported_headers = [
+        "xplat_init.h",
+    ],
+    compiler_flags = [
+        "-fexceptions",
+        "-fno-omit-frame-pointer",
+        "-frtti",
+        "-ffunction-sections",
+    ],
+    preferred_linkage = "static",
+    visibility = [
+        "PUBLIC",
+    ],
+    deps = [
+        profilo_path("deps/fbjni:fbjni"),
+    ],
+)

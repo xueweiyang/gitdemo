@@ -1,0 +1,42 @@
+load("//tools/build_defs/android:fb_xplat_cxx_library.bzl", "fb_xplat_cxx_library")
+load("//tools/build_defs/oss:profilo_defs.bzl", "profilo_path")
+
+SYSTEM_COUNTERS_EXPORTED_HEADERS = [
+    "ProcessCounters.h",
+    "SystemCounterThread.h",
+    "ThreadCounters.h",
+    "common.h",
+]
+
+fb_xplat_cxx_library(
+    name = "systemcounters",
+    srcs = glob(["*.cpp"]),
+    headers = glob(
+        ["*.h"],
+        exclude = SYSTEM_COUNTERS_EXPORTED_HEADERS,
+    ),
+    header_namespace = "profilo/systemcounters",
+    exported_headers = SYSTEM_COUNTERS_EXPORTED_HEADERS,
+    allow_jni_merging = True,
+    compiler_flags = [
+        "-fvisibility=hidden",
+        "-fexceptions",
+        "-std=gnu++14",
+    ],
+    soname = "libprofilo_systemcounters.$(ext)",
+    tests = [
+        profilo_path("cpp/test/systemcounters:processcounters"),
+        profilo_path("cpp/test/systemcounters:threadcounters"),
+    ],
+    visibility = [
+        profilo_path("cpp/test/systemcounters/..."),
+        profilo_path("java/main/com/facebook/profilo/provider/systemcounters:"),
+    ],
+    deps = [
+        profilo_path("cpp:profilo"),
+        profilo_path("cpp/logger:logger"),
+        profilo_path("cpp/util:util"),
+        profilo_path("deps/fb:fb"),
+        profilo_path("deps/fbjni:fbjni"),
+    ],
+)

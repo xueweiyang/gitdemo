@@ -1,0 +1,18 @@
+load("//tools/build_defs/oss:profilo_defs.bzl", "profilo_oss_android_library", "setup_profilo_oss_xplat_cxx_library")
+
+setup_profilo_oss_xplat_cxx_library()
+
+profilo_oss_android_library(
+    name = "fbjni-java",
+    srcs = glob([
+        "**/*.java",
+    ]),
+    visibility = [
+        "PUBLIC",
+    ],
+    deps = [
+        "//deps/jsr-305:jsr-305",
+        "//deps/proguard:annotations",
+        "//deps/soloader:soloader",
+    ],
+)

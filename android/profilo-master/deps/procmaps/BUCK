@@ -1,0 +1,3 @@
+load("//tools/build_defs/oss:profilo_defs.bzl", "setup_profilo_oss_cxx_library")
+
+setup_profilo_oss_cxx_library()

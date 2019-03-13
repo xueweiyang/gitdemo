@@ -1,0 +1,27 @@
+load("//tools/build_defs/android:fb_xplat_cxx_library.bzl", "fb_xplat_cxx_library")
+load("//tools/build_defs/oss:profilo_defs.bzl", "profilo_path")
+
+fb_xplat_cxx_library(
+    name = "jni",
+    srcs = [
+        "NativeTraceWriter.cpp",
+    ],
+    header_namespace = "profilo/jni",
+    exported_headers = [
+        "NativeTraceWriter.h",
+    ],
+    compiler_flags = [
+        "-fvisibility=hidden",
+        "-fexceptions",
+        "-std=gnu++14",
+        "-DLOG_TAG=\"Profilo/Writer\"",
+    ],
+    force_static = True,
+    visibility = [
+        profilo_path("..."),
+    ],
+    exported_deps = [
+        profilo_path("cpp/writer:writer"),
+        profilo_path("deps/fbjni:fbjni"),
+    ],
+)
