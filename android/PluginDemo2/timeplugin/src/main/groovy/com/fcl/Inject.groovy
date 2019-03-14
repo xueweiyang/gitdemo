@@ -3,6 +3,7 @@ package com.fcl
 import javassist.ClassPool
 import javassist.CtClass
 import javassist.CtConstructor
+import jdk.internal.org.objectweb.asm.ClassWriter
 import org.apache.commons.io.FileUtils
 
 public class Inject{
@@ -70,7 +71,7 @@ public class Inject{
         if (cts==null||cts.length == 0) {
             insertNewConstructor(c)
         } else {
-            cts[0].insertBeforeBody("System.out.println(com.example.hack.AntilazyLoad.class);")
+            cts[0].insertBeforeBody("System.out.println(\"com.example.hack.AntilazyLoad.class\");")
         }
         c.writeFile(path)
         c.detach()
@@ -78,7 +79,8 @@ public class Inject{
 
     private static void insertNewConstructor(CtClass c) {
         CtConstructor constructor = new CtConstructor(new CtClass[0], c)
-        constructor.insertBeforeBody("System.out.println(com.example.hack.AntilazyLoad.class);")
+        ClassWriter
+        constructor.insertBeforeBody("System.out.println(\"com.example.hack.AntilazyLoad.class\");")
         c.addConstructor(constructor)
     }
 
