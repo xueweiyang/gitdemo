@@ -2,6 +2,7 @@ package com.fcl
 
 import com.android.build.api.transform.*
 import com.android.build.gradle.internal.pipeline.TransformManager
+import com.fcl.asm.AsmInject
 import org.apache.commons.codec.digest.DigestUtils
 import org.apache.commons.io.FileUtils
 import org.gradle.api.Project
@@ -43,8 +44,10 @@ public class PredexTransform extends Transform{
         throws IOException, TransformException, InterruptedException {
         inputs.each { TransformInput input->
             input.directoryInputs.each {DirectoryInput directoryInput->
-                println("filepath:"+directoryInput.file.absolutePath)
-                Inject.injectDir(directoryInput.file.absolutePath)
+//                println("filepath:"+directoryInput.file.absolutePath)
+//                Inject.injectDir(directoryInput.file.absolutePath)
+                AsmInject.injectDir(directoryInput.file.absolutePath)
+
 
                 def dest=outputProvider.getContentLocation(directoryInput.name,
                 directoryInput.contentTypes,directoryInput.scopes,Format.DIRECTORY)

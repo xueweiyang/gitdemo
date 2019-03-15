@@ -14,8 +14,8 @@
       <file leaf-file-name="Trace.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java/main/com/facebook/profilo/logger/Trace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="20" column="45" lean-forward="false" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+            <state relative-caret-position="198">
+              <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
               <folding>
                 <element signature="e#0#607#0" expanded="true" />
               </folding>
@@ -55,10 +55,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="177" />
+    <option name="x" value="445" />
     <option name="y" value="98" />
     <option name="width" value="1697" />
-    <option name="height" value="1044" />
+    <option name="height" value="1041" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -274,7 +274,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="177" y="98" width="1697" height="1044" extended-state="0" />
+    <frame x="445" y="98" width="1697" height="1041" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -336,8 +336,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/main/com/facebook/profilo/logger/Trace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="20" column="45" lean-forward="false" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        <state relative-caret-position="198">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding>
             <element signature="e#0#607#0" expanded="true" />
           </folding>
