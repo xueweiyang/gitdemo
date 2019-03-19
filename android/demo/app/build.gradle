@@ -3,21 +3,16 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'com.hujiang.android-aspectjx'
-
-apply plugin: 'kotlin-kapt' // kapt 插件
 
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.fcl.kotlindemo"
-        minSdkVersion 21
+        applicationId "com.example.fcl.demo"
+        minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
-        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -27,67 +22,12 @@ android {
     }
 }
 
-kapt {
-    generateStubs = true
-}
-
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
-    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
-    compile 'com.android.support:design:28.+'
-    // Support Libraries
-    compile 'com.android.support:appcompat-v7:28.+'
-    compile 'com.android.support:cardview-v7:28.+'
-    compile 'com.android.support:recyclerview-v7:28.+'
-    compile project(':datepicker')
-    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
-    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
-    // 仅在debug包启用BlockCanary进行卡顿监控和提示的话，可以这么用
-    debugCompile 'com.github.markzhai:blockcanary-android:1.5.0'
-    releaseCompile 'com.github.markzhai:blockcanary-no-op:1.5.0'
-    compile 'com.google.code.gson:gson:2.6.2'
-    compile 'com.squareup.okhttp3:okhttp:3.8.0'
-    compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
-    compile 'com.facebook.stetho:stetho:1.3.1'
-    compile 'com.facebook.stetho:stetho-okhttp3:1.3.1'
-    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
-    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
-    compile 'com.github.bumptech.glide:glide:3.6.1'
-
-    compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
-    compile 'io.reactivex.rxjava2:rxkotlin:2.1.0'
-    compile 'com.google.android:flexbox:0.3.0'
-
-    compile 'org.aspectj:aspectjrt:1.8.9'
-    implementation 'com.android.support:multidex:1.0.3'
-    implementation 'com.squareup.sqlbrite3:sqlbrite-kotlin:3.2.0'
-
-    androidTestCompile 'com.android.support.test:runner:0.2'
-    androidTestCompile 'com.android.support.test:rules:0.2'
-    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.1'
-
-    // UiAutomator Testing
-    androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.1'
-    androidTestCompile 'org.hamcrest:hamcrest-integration:1.3'
-
-    testCompile 'org.robolectric:robolectric:3.0'
-    testCompile "org.mockito:mockito-core:1.+"
-    testCompile "org.assertj:assertj-core:1.7.0"
-    testCompile 'org.powermock:powermock-module-junit4:1.6.5'
-    testCompile 'org.powermock:powermock-module-junit4-rule:1.6.5'
-    testCompile 'org.powermock:powermock-api-mockito:1.6.5'
-    testCompile 'org.powermock:powermock-classloading-xstream:1.6.5'
-
-    compile 'com.google.dagger:dagger:2.7'
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.7'
-    kapt 'com.google.dagger:dagger-compiler:2.12' // Dagger 2 注解处理
-
-    compile 'com.android.support:palette-v7:28.+'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }

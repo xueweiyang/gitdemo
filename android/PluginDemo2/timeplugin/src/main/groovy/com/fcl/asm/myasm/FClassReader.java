@@ -115,6 +115,49 @@ public class FClassReader {
         int currentOffset = header;
         int accessFlags = readUnsignedShort(currentOffset);
         String thisClass = readClass(currentOffset+2,charBuffer);
+        String superClass = readClass(currentOffset+4,charBuffer);
+        String[] interfaces=new String[readUnsignedShort(currentOffset+6)];
+        currentOffset+=8;
+        for (int i = 0; i < interfaces.length; i++) {
+            interfaces[i] =readClass(currentOffset,charBuffer);
+            currentOffset+=2;
+        }
+
+        int innerClassOffset=0;
+
+        FAttribute attributes = null;
+        int currentAttributeOffset=getFirstAttributeOffset();
+        for (int i=readUnsignedShort(currentAttributeOffset-2);i>0;--i) {
+
+        }
+    }
+
+    private int getFirstAttributeOffset() {
+        // Skip the access_flags, this_class, super_class, and interfaces_count fields (using 2 bytes
+        // each), as well as the interfaces array field (2 bytes per interface).
+        int currentOffset=header+8+readUnsignedShort(header+6)*2;
+
+        int fieldsCount=readUnsignedShort(currentOffset);
+        currentOffset+=2;
+        while (fieldsCount-->0) {
+            int attributesCount=readUnsignedShort(currentOffset+6);
+            currentOffset+=8;
+            while (attributesCount-->0) {
+currentOffset+=6+readInt(currentOffset+2);
+            }
+        }
+
+        int methodsCount=readUnsignedShort(currentOffset);
+        currentOffset+=2;
+        while (methodsCount-->0) {
+            int attributesCount=readUnsignedShort(currentOffset+6);
+            currentOffset+=8;
+            while (attributesCount-->0){
+                currentOffset+=6+readInt(currentOffset+2);
+            }
+        }
+        //skip attributes_count
+        return currentOffset+2;
     }
 
     private int[] readBootstrapMethodsAttribute(final int maxStringLength) {
@@ -156,6 +199,7 @@ public class FClassReader {
 
     String readStringish(int offset,char[] charBuffer) {
         //this_class 和super_class存储的都是在常量池中的索引
+        //而且Class_info类型的数据是全限定名在常量池的索引头
         return readUTF8(cpInfoOffsets[readUnsignedShort(offset)], charBuffer);
     }
 
@@ -174,10 +218,30 @@ public class FClassReader {
         }
         int cpInfoOffset = cpInfoOffsets[constantPoolEntryIndex];
         return constantUtf8Values[constantPoolEntryIndex] =
-            readUtf(cpInfoOffset+2,readUnsignedShort(cpInfoOffset),charBuffer)
+            readUtf(cpInfoOffset+2,readUnsignedShort(cpInfoOffset),charBuffer);
     }
 
     String readUtf(int utfOffset,int utfLength,char[] charBuffer) {
-        return "";
+        int currentOffset=utfOffset;
+        int endOffset=currentOffset+utfLength;
+        int strLength=0;
+        byte[] classBuffer = classFileBuffer;
+        while (currentOffset<endOffset) {
+            int currentByte=classBuffer[currentOffset++];
+            //todo
+            if ((currentByte & 0x80) == 0) {
+                charBuffer[strLength++] = (char) (currentByte&0x7f);
+            } else if ((currentByte&0xe0) == 0xc0) {
+                charBuffer[strLength++]=
+                        (char)(((currentByte&0x1f)<<6)+(classBuffer[currentOffset++]&0x3f));
+            } else {
+                charBuffer[strLength++]=
+                        (char)
+                                (((currentByte & 0xF) << 12)
+                                        + ((classBuffer[currentOffset++] & 0x3F) << 6)
+                                        + (classBuffer[currentOffset++] & 0x3F));
+            }
+        }
+        return new String(charBuffer,0,strLength);
     }
 }

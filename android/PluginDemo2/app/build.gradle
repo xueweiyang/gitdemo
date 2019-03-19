@@ -68,7 +68,7 @@ dependencies {
 
 apply plugin: 'time'
 apply plugin: 'aspect'
-apply plugin: 'predex'
+//apply plugin: 'predex'
 apply plugin: 'dex'
 buildscript {
     repositories {
