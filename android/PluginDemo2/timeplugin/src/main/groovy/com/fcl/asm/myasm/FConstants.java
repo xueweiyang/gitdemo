@@ -33,4 +33,6 @@ public class FConstants {
     static final String MODULE_MAIN_CLASS = "ModuleMainClass";
     static final String NEST_HOST = "NestHost";
     static final String NEST_MEMBERS = "NestMembers";
+
+    static final int ACC_CONSTRUCTOR = 0x40000;
 }

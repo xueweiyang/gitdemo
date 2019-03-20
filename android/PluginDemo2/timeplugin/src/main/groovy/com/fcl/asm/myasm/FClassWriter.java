@@ -47,5 +47,8 @@ symbolTable = classReader==null?new FSymbolTable(this) :new FSymbolTable(this,cl
         }
     }
 
+    @Override
+    FMethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
 
+    }
 }

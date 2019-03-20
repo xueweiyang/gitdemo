@@ -36,6 +36,11 @@ public abstract class FClassVisitor {
         String desc,
         String signature,
         String[] exceptions
-    )
+    ) {
+        if (cv!=null) {
+            return cv.visitMethod(access,name,desc,signature,exceptions);
+        }
+        return null;
+    }
 
 }
