@@ -1,5 +1,7 @@
 package com.fcl.asm.myasm;
 
+import org.gradle.internal.impldep.org.eclipse.jgit.util.FS;
+
 /**
  * Created by galio.fang on 19-3-19
  */
@@ -24,4 +26,27 @@ public class FSymbol {
     static final int CONSTANT_INVOKE_DYNAMIC_TAG = 18;
     static final int CONSTANT_MODULE_TAG = 19;
     static final int CONSTANT_PACKAGE_TAG = 20;
+
+    int index;
+    int tag;
+    String owner;
+    String name;
+    String value;
+    long data;
+
+    FSymbol(
+        int index,
+        int tag,
+        String owner,
+        String name,
+        String value,
+        long data
+    ) {
+        this.index = index;
+        this.tag = tag;
+        this.owner = owner;
+        this.name = name;
+        this.value = value;
+        this.data = data;
+    }
 }

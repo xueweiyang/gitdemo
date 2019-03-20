@@ -124,12 +124,27 @@ public class FClassReader {
         }
 
         int innerClassOffset=0;
+        String sourceFile = null;
+        int innerClassesOffset = 0;
+        String signature = null;
 
         FAttribute attributes = null;
         int currentAttributeOffset=getFirstAttributeOffset();
         for (int i=readUnsignedShort(currentAttributeOffset-2);i>0;--i) {
+            String attributeName = readUTF8(currentAttributeOffset, charBuffer);
+            int attributeLength = readInt(currentAttributeOffset+2);
+            currentAttributeOffset+=6;
+            if (FConstants.SOURCE_FILE.equals(attributeName)) {
+sourceFile = readUTF8(currentAttributeOffset,charBuffer);
+            } else if (FConstants.INNER_CLASSES.equals(attributeName)) {
+                innerClassOffset = currentAttributeOffset; //这个位置记录了内部类的个数
+            } else if (FConstants.ENCLOSING_METHOD.equals(attributeName)) {
 
+            }
+            currentAttributeOffset+=attributeLength;
         }
+
+        classVisitor.visit(readInt(cpInfoOffsets[1]-7),accessFlags,thisClass,signature,superClass,interfaces);
     }
 
     private int getFirstAttributeOffset() {
@@ -243,5 +258,13 @@ currentOffset+=6+readInt(currentOffset+2);
             }
         }
         return new String(charBuffer,0,strLength);
+    }
+
+    public int getItem(int constantPoolEntryIndex) {
+        return cpInfoOffsets[constantPoolEntryIndex];
+    }
+
+    public int getItemCount() {
+        return cpInfoOffsets.length;
     }
 }
