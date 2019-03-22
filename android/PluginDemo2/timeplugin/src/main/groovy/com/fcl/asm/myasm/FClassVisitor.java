@@ -43,4 +43,10 @@ public abstract class FClassVisitor {
         return null;
     }
 
+    void visitSource(String source,String debug) {
+        if (cv!=null){
+            cv.visitSource(source, debug);
+        }
+    }
+
 }

@@ -24,6 +24,9 @@ public class FClassWriter extends FClassVisitor{
 
     FSymbolTable symbolTable;
 
+    int sourceFileIndex;
+    FByteVector debugExtension;
+
     public FClassWriter(FClassReader classReader,int flags) {
         super(FOpcodes.ASM7);
 symbolTable = classReader==null?new FSymbolTable(this) :new FSymbolTable(this,classReader);
@@ -50,5 +53,15 @@ symbolTable = classReader==null?new FSymbolTable(this) :new FSymbolTable(this,cl
     @Override
     FMethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
 
+    }
+
+    @Override
+    void visitSource(String file, String debug) {
+        if (file != null) {
+            sourceFileIndex = symbolTable.addConstantUtf8(file);
+        }
+        if (debug!=null){
+debugExtension=new FByteVector().encodeUtf8(debug,0,Integer.MAX_VALUE);
+        }
     }
 }

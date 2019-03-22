@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ClassReader.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClassReader.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/ClassReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="480" column="56" selection-start-line="480" selection-start-column="56" selection-end-line="480" selection-end-column="56" />
+            <state relative-caret-position="720">
+              <caret line="3616" column="45" selection-start-line="3616" selection-start-column="45" selection-end-line="3616" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -24,8 +24,8 @@
       <file leaf-file-name="ClassVisitor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/ClassVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4275">
-              <caret line="313" column="21" selection-start-line="313" selection-start-column="21" selection-end-line="313" selection-end-column="21" />
+            <state relative-caret-position="275">
+              <caret line="111" column="14" selection-start-line="111" selection-start-column="14" selection-end-line="111" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -33,17 +33,26 @@
       <file leaf-file-name="ClassWriter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/ClassWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5640">
-              <caret line="404" column="16" selection-start-line="404" selection-start-column="16" selection-end-line="404" selection-end-column="16" />
+            <state relative-caret-position="350">
+              <caret line="284" column="14" selection-start-line="284" selection-start-column="14" selection-end-line="284" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MethodWriter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MethodWriter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/MethodWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="620" column="16" lean-forward="true" selection-start-line="620" selection-start-column="16" selection-end-line="620" selection-end-column="16" />
+            <state relative-caret-position="270">
+              <caret line="586" column="9" selection-start-line="586" selection-start-column="9" selection-end-line="586" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Label.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/Label.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="444" column="21" selection-start-line="444" selection-start-column="21" selection-end-line="444" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -51,7 +60,7 @@
       <file leaf-file-name="Opcodes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/Opcodes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
+            <state relative-caret-position="3945">
               <caret line="289" column="6" selection-start-line="289" selection-start-column="6" selection-end-line="289" selection-end-column="6" />
             </state>
           </provider>
@@ -60,7 +69,7 @@
       <file leaf-file-name="Type.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/Type.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="10200">
               <caret line="723" column="34" selection-start-line="723" selection-start-column="34" selection-end-line="723" selection-end-column="34" />
             </state>
           </provider>
@@ -117,10 +126,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="96" />
-    <option name="y" value="123" />
+    <option name="x" value="94" />
+    <option name="y" value="62" />
     <option name="width" value="990" />
-    <option name="height" value="937" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -234,14 +243,15 @@
       <updated>1552991495413</updated>
       <workItem from="1552991496559" duration="1100000" />
       <workItem from="1553135902966" duration="2012000" />
+      <workItem from="1553222554574" duration="8464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3112000" />
+    <option name="totallyTimeSpent" value="11576000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="96" y="123" width="990" height="937" extended-state="0" />
+    <frame x="94" y="62" width="990" height="1096" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -251,15 +261,15 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="ASM" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="ASM" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -281,6 +291,73 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/ClassReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6720">
+          <caret line="480" column="56" selection-start-line="480" selection-start-column="56" selection-end-line="480" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/ClassVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4275">
+          <caret line="313" column="21" selection-start-line="313" selection-start-column="21" selection-end-line="313" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/ClassWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5640">
+          <caret line="404" column="16" selection-start-line="404" selection-start-column="16" selection-end-line="404" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/Opcodes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3945">
+          <caret line="289" column="6" selection-start-line="289" selection-start-column="6" selection-end-line="289" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/Type.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10200">
+          <caret line="723" column="34" selection-start-line="723" selection-start-column="34" selection-end-line="723" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/MethodVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+          <folding>
+            <element signature="e#3821#3822#0" expanded="true" />
+            <element signature="e#3846#3847#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/MethodWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8910">
+          <caret line="620" column="16" lean-forward="true" selection-start-line="620" selection-start-column="16" selection-end-line="620" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/ClassReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6720">
@@ -368,20 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/ClassVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4275">
-          <caret line="313" column="21" selection-start-line="313" selection-start-column="21" selection-end-line="313" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/ClassWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5640">
-          <caret line="404" column="16" selection-start-line="404" selection-start-column="16" selection-end-line="404" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/MethodVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -400,31 +463,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/ClassReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="480" column="56" selection-start-line="480" selection-start-column="56" selection-end-line="480" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/Type.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="10200">
           <caret line="723" column="34" selection-start-line="723" selection-start-column="34" selection-end-line="723" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/Opcodes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
+        <state relative-caret-position="3945">
           <caret line="289" column="6" selection-start-line="289" selection-start-column="6" selection-end-line="289" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/Label.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="444" column="21" selection-start-line="444" selection-start-column="21" selection-end-line="444" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/MethodWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="620" column="16" lean-forward="true" selection-start-line="620" selection-start-column="16" selection-end-line="620" selection-end-column="16" />
+        <state relative-caret-position="270">
+          <caret line="586" column="9" selection-start-line="586" selection-start-column="9" selection-end-line="586" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/ClassWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="284" column="14" selection-start-line="284" selection-start-column="14" selection-end-line="284" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/ClassVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="111" column="14" selection-start-line="111" selection-start-column="14" selection-end-line="111" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/org/objectweb/asm/ClassReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="3616" column="45" selection-start-line="3616" selection-start-column="45" selection-end-line="3616" selection-end-column="45" />
         </state>
       </provider>
     </entry>

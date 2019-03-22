@@ -47,6 +47,8 @@ public class FMethodWriter extends FMethodVisitor {
     int compute;
     int maxLocals;
     int currentLocals;
+    FLabel firstBasicBlock;
+    boolean hasAsmInstructions;
 
     FMethodWriter(
         FSymbolTable symbolTable,
@@ -83,6 +85,12 @@ public class FMethodWriter extends FMethodVisitor {
             }
             maxLocals=argumentsSize;
             currentLocals = argumentsSize;
+            firstBasicBlock=new FLabel();
+            visitLabel(firstBasicBlock);
         }
+    }
+
+    private void visitLabel(FLabel label) {
+        hasAsmInstructions |= label.resolve()
     }
 }
