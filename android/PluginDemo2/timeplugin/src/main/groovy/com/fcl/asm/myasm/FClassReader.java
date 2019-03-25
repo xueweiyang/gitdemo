@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import jdk.internal.org.objectweb.asm.ClassReader;
 import jdk.internal.org.objectweb.asm.Opcodes;
+import jdk.internal.org.objectweb.asm.Type;
 import org.stringtemplate.v4.ST;
 
 /**
@@ -12,9 +13,9 @@ import org.stringtemplate.v4.ST;
  */
 public class FClassReader {
 
-    int SKIP_CODE=1;
-    int SKIP_DEBUG=2;
-    int SKIP_FRAMES=4;
+    int SKIP_CODE = 1;
+    int SKIP_DEBUG = 2;
+    int SKIP_FRAMES = 4;
     int EXPAND_FRAMES = 8;
 
     private static final int INPUT_STREAM_DATA_CHUNK_SIZE = 4096;
@@ -132,7 +133,7 @@ public class FClassReader {
         String sourceFile = null;
         int innerClassesOffset = 0;
         String signature = null;
-        String sourceDebugExtension=null;
+        String sourceDebugExtension = null;
 
         FAttribute attributes = null;
         int currentAttributeOffset = getFirstAttributeOffset();
@@ -147,7 +148,7 @@ public class FClassReader {
             } else if (FConstants.ENCLOSING_METHOD.equals(attributeName)) {
 
             } else if (FConstants.SOURCE_DEBUG_EXTENSION.equals(attributeName)) {
-sourceDebugExtension=readUtf(currentAttributeOffset,attributeLength,new char[attributeLength]);
+                sourceDebugExtension = readUtf(currentAttributeOffset, attributeLength, new char[attributeLength]);
             }
             currentAttributeOffset += attributeLength;
         }
@@ -156,12 +157,12 @@ sourceDebugExtension=readUtf(currentAttributeOffset,attributeLength,new char[att
 
         if ((parsingOptions & SKIP_DEBUG) == 0
             && (sourceFile != null || sourceDebugExtension != null)) {
-classVisitor.visitSource(sourceFile,sourceDebugExtension);
+            classVisitor.visitSource(sourceFile, sourceDebugExtension);
         }
 
         int fieldsCount = readUnsignedShort(currentOffset);
-        currentOffset+=2;
-        while (fieldsCount-->0){
+        currentOffset += 2;
+        while (fieldsCount-- > 0) {
             currentOffset = readField(classVisitor, context, currentOffset);
         }
     }
@@ -170,32 +171,72 @@ classVisitor.visitSource(sourceFile,sourceDebugExtension);
         char[] charBuffer = context.charBuffer;
         int currentOffset = fieldInfoOffset;
         int accessFlags = readUnsignedShort(currentOffset);
-        String name = readUTF8(currentOffset+2,charBuffer);
-        String desc = readUTF8(currentOffset+4,charBuffer);
-        currentOffset+=6;
+        String name = readUTF8(currentOffset + 2, charBuffer);
+        String desc = readUTF8(currentOffset + 4, charBuffer);
+        currentOffset += 6;
 
-        Object constantValue=null;
+        Object constantValue = null;
 
         int attributesCount = readUnsignedShort(currentOffset);
-        currentOffset+=2;
-        while (attributesCount-->0) {
-            String attributeName = readUTF8(currentOffset,charBuffer);
-            int attributeLength = readInt(currentOffset+2);
-            currentOffset +=6;
+        currentOffset += 2;
+        while (attributesCount-- > 0) {
+            String attributeName = readUTF8(currentOffset, charBuffer);
+            int attributeLength = readInt(currentOffset + 2);
+            currentOffset += 6;
             if (FConstants.CONSTANT_VALUE.equals(attributeName)) {
                 int constantValueIndex = readUnsignedShort(currentOffset);
-constantValue = constantValueIndex == 0?null:
+                constantValue = constantValueIndex == 0 ? null :
             }
         }
-
     }
 
     Object readConst(int constantPoolEntryIndex, char[] charBuffer) {
         int cpInfoOffset = cpInfoOffsets[constantPoolEntryIndex];
-        switch (classFileBuffer[cpInfoOffset-1]) {
+        switch (classFileBuffer[cpInfoOffset - 1]) {
             case FSymbol.CONSTANT_INTEGER_TAG:
                 return readInt(cpInfoOffset);
+            case FSymbol.CONSTANT_FLOAT_TAG:
+                return Float.intBitsToFloat(readInt(cpInfoOffset));
+            case FSymbol.CONSTANT_LONG_TAG:
+                return readLong(cpInfoOffset);
+            case FSymbol.CONSTANT_DOUBLE_TAG:
+                return Double.longBitsToDouble(readLong(cpInfoOffset));
+            case FSymbol.CONSTANT_CLASS_TAG:
+                return FType.getObjectType(readUTF8(cpInfoOffset, charBuffer));
+            case FSymbol.CONSTANT_STRING_TAG:
+                return readUTF8(cpInfoOffset, charBuffer);
+            case FSymbol.CONSTANT_METHOD_TYPE_TAG:
+                return FType.getMethodType(readUTF8(cpInfoOffset, charBuffer));
+            case FSymbol.CONSTANT_METHOD_HANDLE_TAG:
+                int referenceKind = readByte(cpInfoOffset);
+                int referenceCpInfoOffset = cpInfoOffsets[readUnsignedShort(cpInfoOffset + 1)];
+                int nameAndTypeCpInfoOffset = cpInfoOffsets[readUnsignedShort(referenceCpInfoOffset + 2)];
+                String owner = readClass(referenceCpInfoOffset, charBuffer);
+                String name = readUTF8(nameAndTypeCpInfoOffset, charBuffer);
+                String desc = readUTF8(nameAndTypeCpInfoOffset + 2, charBuffer);
+                boolean isInterface =
+                    classFileBuffer[referenceCpInfoOffset - 1] == FSymbol.CONSTANT_INTERFACE_METHODREF_TAG;
+                return new FHandle(referenceKind, owner, name, desc, isInterface);
+            case FSymbol.CONSTANT_DYNAMIC_TAG:
+                return readConstantDynamic(constantPoolEntryIndex, charBuffer);
+            default:
+                throw new IllegalArgumentException();
         }
+    }
+
+    FConstantDynamic readConstantDynamic(int constantPoolEntryIndex, char[] charBuffer) {
+        FConstantDynamic constantDynamic = constantDynamicValues[constantPoolEntryIndex];
+        if (constantDynamic!=null) {
+            return constantDynamic;
+        }
+        int cpInfoOffset = cpInfoOffsets[constantPoolEntryIndex];
+        int nameAndTypeCpInfoOffset = cpInfoOffsets[readUnsignedShort(cpInfoOffset+2)];
+        String name = readUTF8(nameAndTypeCpInfoOffset,charBuffer);
+        String desc = readUTF8(nameAndTypeCpInfoOffset+2,charBuffer);
+        int bootstrapMethodOffset = bootstrapMethodOffsets[readUnsignedShort(cpInfoOffset)];
+        FHandle handle = (FHandle) readConst(readUnsignedShort(bootstrapMethodOffset),charBuffer);
+        Object[] bootstrapMethodArguments = new Object[readUnsignedShort(bootstrapMethodOffset+2)];
+        bootstrapMethodOffset+=4;
     }
 
     int readMethod(
