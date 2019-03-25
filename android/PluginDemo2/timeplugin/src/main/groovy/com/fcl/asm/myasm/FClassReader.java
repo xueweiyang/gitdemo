@@ -190,6 +190,14 @@ constantValue = constantValueIndex == 0?null:
 
     }
 
+    Object readConst(int constantPoolEntryIndex, char[] charBuffer) {
+        int cpInfoOffset = cpInfoOffsets[constantPoolEntryIndex];
+        switch (classFileBuffer[cpInfoOffset-1]) {
+            case FSymbol.CONSTANT_INTEGER_TAG:
+                return readInt(cpInfoOffset);
+        }
+    }
+
     int readMethod(
         FClassVisitor classVisitor, FContext context, int methodInfoOffset) {
 
