@@ -28,6 +28,20 @@ public class FByteVector {
         return this;
     }
 
+    FByteVector putInt(int value){
+        int currentLength=length;
+        if (currentLength+4>data.length){
+            enlarge(4);
+        }
+        byte[] currentData=data;
+        currentData[currentLength++]=(byte)(value>>>24);
+        currentData[currentLength++]=(byte)(value>>>16);
+        currentData[currentLength++]=(byte)(value>>>8);
+        currentData[currentLength++]=(byte)value;
+        length = currentLength;
+        return this;
+    }
+
     FByteVector putUTF8(String stringValue) {
         int charLength = stringValue.length();
         if (charLength>65535) {

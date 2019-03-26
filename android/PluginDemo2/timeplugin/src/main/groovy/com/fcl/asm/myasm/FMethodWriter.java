@@ -91,6 +91,6 @@ public class FMethodWriter extends FMethodVisitor {
     }
 
     private void visitLabel(FLabel label) {
-        hasAsmInstructions |= label.resolve()
+        //hasAsmInstructions |= label.resolve()
     }
 }

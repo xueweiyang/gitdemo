@@ -5,6 +5,7 @@ package com.example.fcl.plugindemo2;
  */
 public class Cat {
 
+    int testFlag=1;
     static final int a = 3;
     @Deprecated
     static final String B = "哈哈哈";

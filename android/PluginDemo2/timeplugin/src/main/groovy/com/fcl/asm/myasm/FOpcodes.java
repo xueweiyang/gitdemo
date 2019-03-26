@@ -9,6 +9,20 @@ public interface FOpcodes {
     int ASM6 = 6 << 16 | 0 << 8;
     int ASM7 = 7 << 16 | 0 << 8;
 
+    int V1_1 = 3 << 16 | 45;
+    int V1_2 = 0 << 16 | 46;
+    int V1_3 = 0 << 16 | 47;
+    int V1_4 = 0 << 16 | 48;
+    int V1_5 = 0 << 16 | 49;
+    int V1_6 = 0 << 16 | 50;
+    int V1_7 = 0 << 16 | 51;
+    int V1_8 = 0 << 16 | 52;
+    int V9 = 0 << 16 | 53;
+    int V10 = 0 << 16 | 54;
+    int V11 = 0 << 16 | 55;
+    int V12 = 0 << 16 | 56;
+    int V13 = 0 << 16 | 57;
+
     int ACC_PUBLIC = 0x0001; // class, field, method
     int ACC_PRIVATE = 0x0002; // class, field, method
     int ACC_PROTECTED = 0x0004; // class, field, method

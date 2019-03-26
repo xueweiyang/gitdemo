@@ -49,4 +49,16 @@ public abstract class FClassVisitor {
         }
     }
 
+    FFieldVisitor visitField(
+        int access,
+        String name,
+        String desc,
+        String signature,
+        Object value
+    ) {
+        if (cv!=null){
+            return cv.visitField(access,name,desc,signature,value);
+        }
+        return null;
+    }
 }

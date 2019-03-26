@@ -1,12 +1,5 @@
 package com.fcl.asm.myasm;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import jdk.internal.org.objectweb.asm.ClassReader;
-import jdk.internal.org.objectweb.asm.Opcodes;
-import jdk.internal.org.objectweb.asm.Type;
-import org.stringtemplate.v4.ST;
 
 /**
  * Created by galio.fang on 19-3-19
@@ -41,7 +34,7 @@ public class FClassReader {
 
     FClassReader(byte[] classFileBuffer, int classFileOffset, boolean checkClassVersion) {
         this.classFileBuffer = classFileBuffer;
-        if (checkClassVersion && readShort(classFileOffset + 6) > Opcodes.V1_3) {
+        if (checkClassVersion && readShort(classFileOffset + 6) > FOpcodes.V1_3) {
             throw new IllegalArgumentException("unsupported class file major version" + readShort(classFileOffset + 6));
         }
         int constantPoolCount = readUnsignedShort(classFileOffset + 8);
@@ -176,6 +169,12 @@ public class FClassReader {
         currentOffset += 6;
 
         Object constantValue = null;
+        String signature=null;
+        int runtimeVisibleAnnotationsOffset = 0;
+        int runtimeInvisibleAnnotationsOffset = 0;
+        int runtimeVisibleTypeAnnotationsOffset = 0;
+        int runtimeInvisibleTypeAnnotationsOffset = 0;
+        FAttribute attributes = null;
 
         int attributesCount = readUnsignedShort(currentOffset);
         currentOffset += 2;
@@ -185,9 +184,68 @@ public class FClassReader {
             currentOffset += 6;
             if (FConstants.CONSTANT_VALUE.equals(attributeName)) {
                 int constantValueIndex = readUnsignedShort(currentOffset);
-                constantValue = constantValueIndex == 0 ? null :
+                constantValue = constantValueIndex == 0 ? null :readConst(constantValueIndex,charBuffer);
+            } else if (FConstants.SIGNATURE.equals(attributeName)) {
+                signature=readUTF8(currentOffset,charBuffer);
+            } else if (FConstants.DEPRECATED.equals(attributeName)){
+                accessFlags|=FOpcodes.ACC_DEPRECATED;
+            } else if (FConstants.SYNTHETIC.equals(attributeName)){
+                accessFlags|=FOpcodes.ACC_SYNTHETIC;
+            } else if (FConstants.RUNTIME_INVISIBLE_ANNOTATIONS.equals(attributeName)){
+                runtimeVisibleAnnotationsOffset=currentOffset;
+            }else if (FConstants.RUNTIME_VISIBLE_PARAMETER_ANNOTATIONS.equals(attributeName)){
+                runtimeVisibleTypeAnnotationsOffset=currentOffset;
+            }else if (FConstants.RUNTIME_INVISIBLE_ANNOTATIONS.equals(attributeName)){
+                runtimeInvisibleAnnotationsOffset=currentOffset;
+            }else if (FConstants.RUNTIME_INVISIBLE_TYPE_ANNOTATIONS.equals(attributeName)){
+                runtimeInvisibleTypeAnnotationsOffset=currentOffset;
+            } else {
+                FAttribute attribute = readAttribute(
+                    context.attributePrototypes,
+                    attributeName,
+                    currentOffset,
+                    attributeLength,charBuffer,-1,null
+                );
+                attribute.nextAttribute=attributes;
+                attributes = attribute;
+            }
+            currentOffset+=attributeLength;
+        }
+
+        FFieldVisitor fieldVisitor=
+            classVisitor.visitField(accessFlags,name,desc,signature,constantValue);
+        if (fieldVisitor==null){
+            return currentOffset;
+        }
+
+        while (attributes != null) {
+            FAttribute nextAttribute = attributes.nextAttribute;
+            attributes.nextAttribute = null;
+            fieldVisitor.visitAttribute(attributes);
+            attributes=nextAttribute;
+        }
+        fieldVisitor.visitEnd();
+        return currentOffset;
+
+    }
+
+    FAttribute readAttribute(
+        FAttribute[] attributePrototypes,
+        String type,
+        int offset,
+        int length,
+        char[] charBuffer,
+        int codeAttributeOffset,
+        FLabel[] labels
+    ) {
+        for (FAttribute attributePrototype : attributePrototypes) {
+            if (attributePrototype.type.equals(type)) {
+                return attributePrototype.read(
+                    this,offset,length,charBuffer,codeAttributeOffset,labels
+                );
             }
         }
+        return new FAttribute(type).read(this,offset,length,null,-1,null);
     }
 
     Object readConst(int constantPoolEntryIndex, char[] charBuffer) {
@@ -237,11 +295,17 @@ public class FClassReader {
         FHandle handle = (FHandle) readConst(readUnsignedShort(bootstrapMethodOffset),charBuffer);
         Object[] bootstrapMethodArguments = new Object[readUnsignedShort(bootstrapMethodOffset+2)];
         bootstrapMethodOffset+=4;
+        for (int i = 0; i < bootstrapMethodArguments.length; i++) {
+            bootstrapMethodArguments[i] = readConst(readUnsignedShort(bootstrapMethodOffset),charBuffer);
+            bootstrapMethodOffset+=2;
+        }
+        return constantDynamicValues[constantPoolEntryIndex]
+            = new FConstantDynamic(name,desc,handle,bootstrapMethodArguments);
     }
 
     int readMethod(
         FClassVisitor classVisitor, FContext context, int methodInfoOffset) {
-
+return 0;
     }
 
     private int getFirstAttributeOffset() {

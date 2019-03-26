@@ -21,6 +21,6 @@ public class FLabel {
     boolean resolve(byte[] code, int bytecodeOffset) {
         this.flags |= FLAG_RESOLVED;
         this.bytecodeOffset=bytecodeOffset;
-
+return false;
     }
 }

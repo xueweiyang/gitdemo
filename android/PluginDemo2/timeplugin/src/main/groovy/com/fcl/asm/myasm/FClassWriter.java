@@ -27,6 +27,9 @@ public class FClassWriter extends FClassVisitor{
     int sourceFileIndex;
     FByteVector debugExtension;
 
+    FFieldWriter firstField;
+    FFieldWriter lastField;
+
     public FClassWriter(FClassReader classReader,int flags) {
         super(FOpcodes.ASM7);
 symbolTable = classReader==null?new FSymbolTable(this) :new FSymbolTable(this,classReader);
@@ -50,9 +53,26 @@ symbolTable = classReader==null?new FSymbolTable(this) :new FSymbolTable(this,cl
         }
     }
 
+    FFieldVisitor visitField(
+        int access,
+        String name,
+        String desc,
+        String signature,
+        Object value
+    ) {
+        FFieldWriter fieldWriter=
+            new FFieldWriter(symbolTable,access,name,desc,signature,value);
+        if (firstField==null){
+            firstField=fieldWriter;
+        }else {
+            lastField.fv=fieldWriter;
+        }
+        return lastField=fieldWriter;
+    }
+
     @Override
     FMethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
-
+return null;
     }
 
     @Override

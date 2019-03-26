@@ -128,6 +128,13 @@ public class FSymbolTable {
         add(new FEntry(itemIndex, tag, owner, name, desc, referenceKind, hashCode));
     }
 
+    FSymbol addConstant(Object value) {
+        if (value instanceof Integer){
+            return null;
+        }
+        return null;
+    }
+
     int addConstantUtf8(String value) {
         int hashCode = hash(FSymbol.CONSTANT_UTF8_TAG,value);
         FEntry entry = get(hashCode);
@@ -155,6 +162,27 @@ public class FSymbolTable {
     private void addConstantNameAndType(int itemIndex, String name, String desc) {
         int tag = FSymbol.CONSTANT_NAME_AND_TYPE_TAG;
         add(new FEntry(itemIndex, tag, name, desc, hash(tag, name, desc)));
+    }
+
+    FSymbol addConstantInerger(int value) {
+        return addConstantIntegerOrFloat(FSymbol.CONSTANT_INTEGER_TAG, value);
+    }
+
+    FSymbol addConstantFloat(float value) {
+        return addConstantIntegerOrFloat(FSymbol.CONSTANT_FLOAT_TAG,Float.floatToRawIntBits(value));
+    }
+
+    FSymbol addConstantIntegerOrFloat(int tag,int value) {
+        int hashCode = hash(tag, value);
+        FEntry entry = get(hashCode);
+        while (entry != null) {
+            if (entry.tag==tag&&entry.hashCode==hashCode&&entry.data==value){
+                return entry;
+            }
+            entry=entry.next;
+        }
+        constantPool.putByte(tag).putInt(value);
+        return put(new FEntry(constantPoolCount++,tag,value,hashCode));
     }
 
     private void addConstantIntegerOrFloat(int itemIndex, int itemTag, int value) {
