@@ -9,4 +9,8 @@ public class FContext {
     int parsingOptions;
 
     char[] charBuffer;
+
+    int currentMethodAccessFlags;
+    String currentMethodName;
+    String currentMethodDesc;
 }

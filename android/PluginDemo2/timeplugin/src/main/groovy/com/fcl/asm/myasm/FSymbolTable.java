@@ -235,6 +235,14 @@ public class FSymbolTable {
         return addConstantClass(className).index;
     }
 
+    FClassReader getSource() {
+        return sourceClassReader;
+    }
+
+    int getMajorVersion() {
+        return majorVersion;
+    }
+
     FSymbol addConstantClass(String value) {
         return addConstantUtf8Reference(FSymbol.CONSTANT_CLASS_TAG, value);
     }

@@ -1,6 +1,5 @@
 package com.fcl.asm.myasm;
 
-
 /**
  * Created by galio.fang on 19-3-19
  */
@@ -158,6 +157,13 @@ public class FClassReader {
         while (fieldsCount-- > 0) {
             currentOffset = readField(classVisitor, context, currentOffset);
         }
+
+        int methodsCount = readUnsignedShort(currentOffset);
+        currentOffset += 2;
+        while (methodsCount-- > 0) {
+            currentOffset = readMethod(classVisitor, context, currentOffset);
+        }
+        classVisitor.visitEnd();
     }
 
     private int readField(FClassVisitor classVisitor, FContext context, int fieldInfoOffset) {
@@ -169,7 +175,7 @@ public class FClassReader {
         currentOffset += 6;
 
         Object constantValue = null;
-        String signature=null;
+        String signature = null;
         int runtimeVisibleAnnotationsOffset = 0;
         int runtimeInvisibleAnnotationsOffset = 0;
         int runtimeVisibleTypeAnnotationsOffset = 0;
@@ -184,37 +190,37 @@ public class FClassReader {
             currentOffset += 6;
             if (FConstants.CONSTANT_VALUE.equals(attributeName)) {
                 int constantValueIndex = readUnsignedShort(currentOffset);
-                constantValue = constantValueIndex == 0 ? null :readConst(constantValueIndex,charBuffer);
+                constantValue = constantValueIndex == 0 ? null : readConst(constantValueIndex, charBuffer);
             } else if (FConstants.SIGNATURE.equals(attributeName)) {
-                signature=readUTF8(currentOffset,charBuffer);
-            } else if (FConstants.DEPRECATED.equals(attributeName)){
-                accessFlags|=FOpcodes.ACC_DEPRECATED;
-            } else if (FConstants.SYNTHETIC.equals(attributeName)){
-                accessFlags|=FOpcodes.ACC_SYNTHETIC;
-            } else if (FConstants.RUNTIME_INVISIBLE_ANNOTATIONS.equals(attributeName)){
-                runtimeVisibleAnnotationsOffset=currentOffset;
-            }else if (FConstants.RUNTIME_VISIBLE_PARAMETER_ANNOTATIONS.equals(attributeName)){
-                runtimeVisibleTypeAnnotationsOffset=currentOffset;
-            }else if (FConstants.RUNTIME_INVISIBLE_ANNOTATIONS.equals(attributeName)){
-                runtimeInvisibleAnnotationsOffset=currentOffset;
-            }else if (FConstants.RUNTIME_INVISIBLE_TYPE_ANNOTATIONS.equals(attributeName)){
-                runtimeInvisibleTypeAnnotationsOffset=currentOffset;
+                signature = readUTF8(currentOffset, charBuffer);
+            } else if (FConstants.DEPRECATED.equals(attributeName)) {
+                accessFlags |= FOpcodes.ACC_DEPRECATED;
+            } else if (FConstants.SYNTHETIC.equals(attributeName)) {
+                accessFlags |= FOpcodes.ACC_SYNTHETIC;
+            } else if (FConstants.RUNTIME_INVISIBLE_ANNOTATIONS.equals(attributeName)) {
+                runtimeVisibleAnnotationsOffset = currentOffset;
+            } else if (FConstants.RUNTIME_VISIBLE_PARAMETER_ANNOTATIONS.equals(attributeName)) {
+                runtimeVisibleTypeAnnotationsOffset = currentOffset;
+            } else if (FConstants.RUNTIME_INVISIBLE_ANNOTATIONS.equals(attributeName)) {
+                runtimeInvisibleAnnotationsOffset = currentOffset;
+            } else if (FConstants.RUNTIME_INVISIBLE_TYPE_ANNOTATIONS.equals(attributeName)) {
+                runtimeInvisibleTypeAnnotationsOffset = currentOffset;
             } else {
                 FAttribute attribute = readAttribute(
                     context.attributePrototypes,
                     attributeName,
                     currentOffset,
-                    attributeLength,charBuffer,-1,null
+                    attributeLength, charBuffer, -1, null
                 );
-                attribute.nextAttribute=attributes;
+                attribute.nextAttribute = attributes;
                 attributes = attribute;
             }
-            currentOffset+=attributeLength;
+            currentOffset += attributeLength;
         }
 
-        FFieldVisitor fieldVisitor=
-            classVisitor.visitField(accessFlags,name,desc,signature,constantValue);
-        if (fieldVisitor==null){
+        FFieldVisitor fieldVisitor =
+            classVisitor.visitField(accessFlags, name, desc, signature, constantValue);
+        if (fieldVisitor == null) {
             return currentOffset;
         }
 
@@ -222,11 +228,10 @@ public class FClassReader {
             FAttribute nextAttribute = attributes.nextAttribute;
             attributes.nextAttribute = null;
             fieldVisitor.visitAttribute(attributes);
-            attributes=nextAttribute;
+            attributes = nextAttribute;
         }
         fieldVisitor.visitEnd();
         return currentOffset;
-
     }
 
     FAttribute readAttribute(
@@ -241,11 +246,11 @@ public class FClassReader {
         for (FAttribute attributePrototype : attributePrototypes) {
             if (attributePrototype.type.equals(type)) {
                 return attributePrototype.read(
-                    this,offset,length,charBuffer,codeAttributeOffset,labels
+                    this, offset, length, charBuffer, codeAttributeOffset, labels
                 );
             }
         }
-        return new FAttribute(type).read(this,offset,length,null,-1,null);
+        return new FAttribute(type).read(this, offset, length, null, -1, null);
     }
 
     Object readConst(int constantPoolEntryIndex, char[] charBuffer) {
@@ -284,28 +289,83 @@ public class FClassReader {
 
     FConstantDynamic readConstantDynamic(int constantPoolEntryIndex, char[] charBuffer) {
         FConstantDynamic constantDynamic = constantDynamicValues[constantPoolEntryIndex];
-        if (constantDynamic!=null) {
+        if (constantDynamic != null) {
             return constantDynamic;
         }
         int cpInfoOffset = cpInfoOffsets[constantPoolEntryIndex];
-        int nameAndTypeCpInfoOffset = cpInfoOffsets[readUnsignedShort(cpInfoOffset+2)];
-        String name = readUTF8(nameAndTypeCpInfoOffset,charBuffer);
-        String desc = readUTF8(nameAndTypeCpInfoOffset+2,charBuffer);
+        int nameAndTypeCpInfoOffset = cpInfoOffsets[readUnsignedShort(cpInfoOffset + 2)];
+        String name = readUTF8(nameAndTypeCpInfoOffset, charBuffer);
+        String desc = readUTF8(nameAndTypeCpInfoOffset + 2, charBuffer);
         int bootstrapMethodOffset = bootstrapMethodOffsets[readUnsignedShort(cpInfoOffset)];
-        FHandle handle = (FHandle) readConst(readUnsignedShort(bootstrapMethodOffset),charBuffer);
-        Object[] bootstrapMethodArguments = new Object[readUnsignedShort(bootstrapMethodOffset+2)];
-        bootstrapMethodOffset+=4;
+        FHandle handle = (FHandle) readConst(readUnsignedShort(bootstrapMethodOffset), charBuffer);
+        Object[] bootstrapMethodArguments = new Object[readUnsignedShort(bootstrapMethodOffset + 2)];
+        bootstrapMethodOffset += 4;
         for (int i = 0; i < bootstrapMethodArguments.length; i++) {
-            bootstrapMethodArguments[i] = readConst(readUnsignedShort(bootstrapMethodOffset),charBuffer);
-            bootstrapMethodOffset+=2;
+            bootstrapMethodArguments[i] = readConst(readUnsignedShort(bootstrapMethodOffset), charBuffer);
+            bootstrapMethodOffset += 2;
         }
         return constantDynamicValues[constantPoolEntryIndex]
-            = new FConstantDynamic(name,desc,handle,bootstrapMethodArguments);
+            = new FConstantDynamic(name, desc, handle, bootstrapMethodArguments);
     }
 
     int readMethod(
         FClassVisitor classVisitor, FContext context, int methodInfoOffset) {
-return 0;
+        char[] charBuffer = context.charBuffer;
+
+        int currentOffset = methodInfoOffset;
+        context.currentMethodAccessFlags = readUnsignedShort(currentOffset);
+        context.currentMethodName = readUTF8(currentOffset + 2, charBuffer);
+        context.currentMethodDesc = readUTF8(currentOffset + 4, charBuffer);
+        currentOffset += 6;
+
+        int codeOffset = 0;
+        int signatureIndex = 0;
+        String[] exceptions = null;
+        int exceptionsOffset = 0;
+
+        int attributesCount = readUnsignedShort(currentOffset);
+        currentOffset += 2;
+        while (attributesCount-- > 0) {
+            String attributeName = readUTF8(currentOffset, charBuffer);
+            int attributeLength = readInt(currentOffset + 2);
+            currentOffset += 6;
+            if (FConstants.CODE.equals(attributeName)) {
+                if ((context.parsingOptions & SKIP_CODE) == 0) {
+                    codeOffset = currentOffset;
+                }
+            } else if (FConstants.EXCEPTIONS.equals(attributeName)) {
+                exceptionsOffset = currentOffset;
+                exceptions = new String[readUnsignedShort(exceptionsOffset)];
+                int currentExceptionOffset = exceptionsOffset + 2;
+                for (int i = 0; i < exceptions.length; i++) {
+                    exceptions[i]=readClass(currentExceptionOffset,charBuffer);
+                    currentExceptionOffset+=2;
+                }
+            }
+            currentOffset += attributeLength;
+        }
+
+        FMethodVisitor methodVisitor =
+            classVisitor.visitMethod(
+                context.currentMethodAccessFlags,
+                context.currentMethodName,
+                context.currentMethodDesc,
+                signatureIndex == 0 ? null : readUtf(signatureIndex, charBuffer),
+                exceptions
+            );
+        if (methodVisitor==null){
+            return currentOffset;
+        }
+
+        if (methodVisitor instanceof FMethodWriter) {
+            FMethodWriter methodWriter = (FMethodWriter) methodVisitor;
+            if (methodWriter.canCopyMethodAttributes(
+                this,
+
+            ))
+        }
+
+        return 0;
     }
 
     private int getFirstAttributeOffset() {

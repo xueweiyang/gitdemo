@@ -1,0 +1,89 @@
+Classfile /home/fcl/demopro/android/PluginDemo2/app/src/main/java/com/example/fcl/plugindemo2/Cat.class
+  Last modified 2019-3-28; size 597 bytes
+  MD5 checksum 4bf329f426ead282424dc9389f9a12d3
+  Compiled from "Cat.java"
+public class com.example.fcl.plugindemo2.Cat
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #5.#28         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #4.#29         // com/example/fcl/plugindemo2/Cat.testFlag:I
+   #3 = String             #30            // 汪汪汪
+   #4 = Class              #31            // com/example/fcl/plugindemo2/Cat
+   #5 = Class              #32            // java/lang/Object
+   #6 = Class              #33            // com/example/fcl/plugindemo2/Cat$CatA
+   #7 = Utf8               CatA
+   #8 = Utf8               InnerClasses
+   #9 = Utf8               testFlag
+  #10 = Utf8               I
+  #11 = Utf8               a
+  #12 = Utf8               ConstantValue
+  #13 = Integer            3
+  #14 = Utf8               B
+  #15 = Utf8               Ljava/lang/String;
+  #16 = String             #34            // 哈哈哈
+  #17 = Utf8               Deprecated
+  #18 = Utf8               RuntimeVisibleAnnotations
+  #19 = Utf8               Ljava/lang/Deprecated;
+  #20 = Utf8               <init>
+  #21 = Utf8               ()V
+  #22 = Utf8               Code
+  #23 = Utf8               LineNumberTable
+  #24 = Utf8               show
+  #25 = Utf8               ()Ljava/lang/String;
+  #26 = Utf8               SourceFile
+  #27 = Utf8               Cat.java
+  #28 = NameAndType        #20:#21        // "<init>":()V
+  #29 = NameAndType        #9:#10         // testFlag:I
+  #30 = Utf8               汪汪汪
+  #31 = Utf8               com/example/fcl/plugindemo2/Cat
+  #32 = Utf8               java/lang/Object
+  #33 = Utf8               com/example/fcl/plugindemo2/Cat$CatA
+  #34 = Utf8               哈哈哈
+{
+  int testFlag;
+    descriptor: I
+    flags:
+
+  static final int a;
+    descriptor: I
+    flags: ACC_STATIC, ACC_FINAL
+    ConstantValue: int 3
+
+  static final java.lang.String B;
+    descriptor: Ljava/lang/String;
+    flags: ACC_STATIC, ACC_FINAL
+    ConstantValue: String 哈哈哈
+    Deprecated: true
+    RuntimeVisibleAnnotations:
+      0: #19()
+
+  public com.example.fcl.plugindemo2.Cat();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iconst_1
+         6: putfield      #2                  // Field testFlag:I
+         9: return
+      LineNumberTable:
+        line 6: 0
+        line 8: 4
+
+  public java.lang.String show();
+    descriptor: ()Ljava/lang/String;
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: ldc           #3                  // String 汪汪汪
+         2: areturn
+      LineNumberTable:
+        line 14: 0
+}
+SourceFile: "Cat.java"
+InnerClasses:
+     #7= #6 of #4; //CatA=class com/example/fcl/plugindemo2/Cat$CatA of class com/example/fcl/plugindemo2/Cat

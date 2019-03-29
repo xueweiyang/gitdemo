@@ -61,4 +61,10 @@ public abstract class FClassVisitor {
         }
         return null;
     }
+
+    void visitEnd() {
+        if (cv!=null){
+            cv.visitEnd();
+        }
+    }
 }

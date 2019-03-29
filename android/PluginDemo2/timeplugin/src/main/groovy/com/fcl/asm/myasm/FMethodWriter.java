@@ -90,6 +90,41 @@ public class FMethodWriter extends FMethodVisitor {
         }
     }
 
+    boolean canCopyMethodAttributes(
+        FClassReader source,
+        boolean hasSyntheticAttribute,
+        boolean hasDeprecatedAttribute,
+        int descIndex,
+        int signatureIndex,
+        int exceptionsOffset
+    ) {
+        if (source != symbolTable.getSource()
+            || descIndex != this.descIndex
+            || signatureIndex != this.signatureIndex
+            || hasDeprecatedAttribute != ((accessFlags & FOpcodes.ACC_DEPRECATED) !=0)) {
+            return false;
+        }
+        boolean needSyntheticAttribute =
+            symbolTable.getMajorVersion() < FOpcodes.V1_5 && (accessFlags&FOpcodes.ACC_SYNTHETIC)!=0;
+        if (hasSyntheticAttribute!=needSyntheticAttribute){
+            return false;
+        }
+        if (exceptionsOffset == 0) {
+            if (numberOfExceptions !=0){
+                return false;
+            }
+        } else if (source.readUnsignedShort(exceptionsOffset) == numberOfExceptions) {
+            int currentExceptionOffset = exceptionsOffset+2;
+            for (int i = 0; i < numberOfExceptions; i++) {
+                if (source.readUnsignedShort(currentExceptionOffset) != exceptionIndexTable[i]) {
+                    return false;
+                }
+                currentExceptionOffset+=2;
+            }
+        }
+        return true;
+    }
+
     private void visitLabel(FLabel label) {
         //hasAsmInstructions |= label.resolve()
     }
