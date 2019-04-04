@@ -6,7 +6,7 @@ import java.lang.Exception
 /**
  * Created by galio.fang on 19-4-2
  */
-class SystemInfo {
+object SystemInfo {
 
     fun closeQuietly(closeable: Closeable?) {
         try {

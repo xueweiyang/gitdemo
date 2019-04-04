@@ -255,7 +255,8 @@ public class ProcessCpuTracker {
         return null;
     }
 
-    private void collectProcsStats(String procFile, Stats st) {
+    private void
+    collectProcsStats(String procFile, Stats st) {
         String[] procStats = readProcFile(procFile);
         //for (int i = 0; i < procStats.length; i++) {
         //    android.util.Log.e(TAG,"i:" + i + ", sys:" + procStats[i]);

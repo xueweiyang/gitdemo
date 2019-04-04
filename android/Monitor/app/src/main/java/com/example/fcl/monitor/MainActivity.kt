@@ -2,16 +2,19 @@ package com.example.fcl.monitor
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Process
+import com.example.fcl.monitor.cpu.ProcessCpuTracker
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
+    val processCpuTracker = ProcessCpuTracker(Process.myPid())
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Example of a call to a native method
-        sample_text.text = stringFromJNI()
+        testGc.setOnClickListener {
+            processCpuTracker.update()
+        }
     }
 
     /**
