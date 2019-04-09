@@ -82,8 +82,17 @@ public class TestTraceMainActivity extends Activity {
     }
 
     public void testJank(View view) {
-        for (int i = 0; i < 30; i++) {
-            tryHeavyMethod();
+        //for (int i = 0; i < 30; i++) {
+        //    tryHeavyMethod();
+        //}
+        tryDelay();
+    }
+
+    private void tryDelay() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 

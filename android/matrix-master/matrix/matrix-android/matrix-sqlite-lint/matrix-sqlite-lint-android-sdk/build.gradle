@@ -16,7 +16,7 @@ android {
                 arguments "-Dplatform=android"
             }
             ndk {
-                abiFilters "armeabi"
+                abiFilters "armeabi-v7a"
             }
         }
     }
