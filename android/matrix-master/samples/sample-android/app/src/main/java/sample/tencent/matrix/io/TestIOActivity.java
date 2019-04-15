@@ -116,6 +116,10 @@ public class TestIOActivity extends Activity {
         readSth();
     }
 
+    private void writeByMmap() {
+
+    }
+
     private void writeLongSth() {
         try {
             File f = new File("/sdcard/a_long.txt");
