@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/matrix-android.iml" filepath="$PROJECT_DIR$/matrix-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matrix-android-commons/matrix-android-commons.iml" filepath="$PROJECT_DIR$/matrix-android-commons/matrix-android-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matrix-android-lib/matrix-android-lib.iml" filepath="$PROJECT_DIR$/matrix-android-lib/matrix-android-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matrix-apk-canary/matrix-apk-canary.iml" filepath="$PROJECT_DIR$/matrix-apk-canary/matrix-apk-canary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matrix-arscutil/matrix-arscutil.iml" filepath="$PROJECT_DIR$/matrix-arscutil/matrix-arscutil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matrix-commons/matrix-commons.iml" filepath="$PROJECT_DIR$/matrix-commons/matrix-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matrix-gradle-plugin/matrix-gradle-plugin.iml" filepath="$PROJECT_DIR$/matrix-gradle-plugin/matrix-gradle-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matrix-io-canary/matrix-io-canary.iml" filepath="$PROJECT_DIR$/matrix-io-canary/matrix-io-canary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary.iml" filepath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-analyzer/matrix-resource-canary-analyzer.iml" filepath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-analyzer/matrix-resource-canary-analyzer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-android/matrix-resource-canary-android.iml" filepath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-android/matrix-resource-canary-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-common/matrix-resource-canary-common.iml" filepath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-common/matrix-resource-canary-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint.iml" filepath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/matrix-sqlite-lint-android-sdk.iml" filepath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/matrix-sqlite-lint-android-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matrix-trace-canary/matrix-trace-canary.iml" filepath="$PROJECT_DIR$/matrix-trace-canary/matrix-trace-canary.iml" />
+    </modules>
+  </component>
+</project>

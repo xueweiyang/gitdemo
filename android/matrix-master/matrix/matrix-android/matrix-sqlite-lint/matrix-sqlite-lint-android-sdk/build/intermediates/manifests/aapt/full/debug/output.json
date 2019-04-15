@@ -1,0 +1,1 @@
+[{"outputType":{"type":"AAPT_FRIENDLY_MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":1,"versionName":"0.4.10","enabled":true,"outputFile":"matrix-sqlite-lint-android-sdk-full-debug.aar","fullName":"fullDebug","baseName":"full-debug"},"path":"AndroidManifest.xml","properties":{"packageId":"com.tencent.sqlitelint","split":""}}]

@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-io-canary/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/aaron/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "io-canary-Release-armeabi-v7a": {
+      "artifactName": "io-canary",
+      "buildCommand": "/Users/aaron/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a --target io-canary",
+      "abi": "armeabi-v7a",
+      "output": "/Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-io-canary/build/intermediates/cmake/release/obj/armeabi-v7a/libio-canary.so"
+    }
+  }
+}

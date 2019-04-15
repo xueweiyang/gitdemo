@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tencent.sqlitelint.test" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for com.tencent.sqlitelint.test"
+        android:targetPackage="com.tencent.sqlitelint.test" />
+
+    <application android:debuggable="true" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.tencent.sqlitelint.behaviour.alert.CheckedDatabaseListActivity"
+            android:exported="true"
+            android:icon="@drawable/sqlite_lint_icon"
+            android:label="SQLiteLint"
+            android:taskAffinity="com.tencent.sqlitelint" >
+        </activity>
+        <activity
+            android:name="com.tencent.sqlitelint.behaviour.alert.CheckResultActivity"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.tencent.sqlitelint" >
+        </activity>
+        <activity
+            android:name="com.tencent.sqlitelint.behaviour.alert.IssueDetailActivity"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.tencent.sqlitelint" >
+        </activity>
+    </application>
+
+</manifest>

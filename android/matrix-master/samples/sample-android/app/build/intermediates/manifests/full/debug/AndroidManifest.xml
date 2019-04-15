@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sample.tencent.matrix"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="sample.tencent.matrix.MatrixApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="sample.tencent.matrix.MainActivity" >
+        </activity>
+        <activity
+            android:name="sample.tencent.matrix.issue.IssuesListActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="sample.tencent.matrix.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="sample.tencent.matrix.io.TestIOActivity" />
+        <activity android:name="sample.tencent.matrix.resource.TestLeakActivity" />
+        <activity android:name="sample.tencent.matrix.trace.TestTraceMainActivity" />
+        <activity android:name="sample.tencent.matrix.trace.TestEnterActivity" />
+        <activity android:name="sample.tencent.matrix.trace.TestFpsActivity" />
+        <activity android:name="sample.tencent.matrix.sqlitelint.TestSQLiteLintActivity" />
+        <activity
+            android:name="com.tencent.sqlitelint.behaviour.alert.CheckedDatabaseListActivity"
+            android:exported="true"
+            android:icon="@drawable/sqlite_lint_icon"
+            android:label="SQLiteLint"
+            android:taskAffinity="com.tencent.sqlitelint" >
+        </activity>
+        <activity
+            android:name="com.tencent.sqlitelint.behaviour.alert.CheckResultActivity"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.tencent.sqlitelint" >
+        </activity>
+        <activity
+            android:name="com.tencent.sqlitelint.behaviour.alert.IssueDetailActivity"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.tencent.sqlitelint" >
+        </activity>
+
+        <service
+            android:name="com.tencent.matrix.resource.CanaryWorkerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":res_can_worker" >
+        </service>
+        <service
+            android:name="com.tencent.matrix.resource.CanaryResultService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+    </application>
+
+</manifest>

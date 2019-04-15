@@ -1,0 +1,4 @@
+#Mon Apr 08 22:11:54 CST 2019
+base.0=/Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

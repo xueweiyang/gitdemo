@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/build/intermediates/incremental/mergeFullDebugAndroidTestResources/merged.dir/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/aaron/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.0.aar/aef7a0bda4103eb8b28ef26564a0d1cf/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "276",
+                        "endColumns": "55",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

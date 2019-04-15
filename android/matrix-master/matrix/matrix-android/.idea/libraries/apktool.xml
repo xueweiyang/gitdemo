@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="apktool">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/matrix-apk-canary/libs/apktool.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
