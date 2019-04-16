@@ -359,10 +359,10 @@ public class FClassReader {
 
         if (methodVisitor instanceof FMethodWriter) {
             FMethodWriter methodWriter = (FMethodWriter) methodVisitor;
-            if (methodWriter.canCopyMethodAttributes(
-                this,
-
-            ))
+            //if (methodWriter.canCopyMethodAttributes(
+            //    this,
+            //
+            //))
         }
 
         return 0;
