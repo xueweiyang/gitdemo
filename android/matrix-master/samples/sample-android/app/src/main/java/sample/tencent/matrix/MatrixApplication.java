@@ -77,6 +77,11 @@ public class MatrixApplication extends Application {
         TracePlugin tracePlugin = (new TracePlugin(traceConfig));
         builder.plugin(tracePlugin);
 
+        Matrix.init(builder.build());
+
+        //start only startup tracer, close other tracer.
+        tracePlugin.start();
+
         if (matrixEnable) {
 
             //resource
@@ -101,10 +106,7 @@ public class MatrixApplication extends Application {
             builder.plugin(sqLiteLintPlugin);
         }
 
-        Matrix.init(builder.build());
 
-        //start only startup tracer, close other tracer.
-        tracePlugin.start();
         //only stop at sample app, in your app do not call onDestroy
         tracePlugin.getFPSTracer().onDestroy();
 
