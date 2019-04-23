@@ -13,7 +13,9 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="true">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/build/classes/java/main" />
+    <output-test url="file://$MODULE_DIR$/build/classes/java/test" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
@@ -25,8 +27,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="matrix-commons" />
-    <orderEntry type="module" module-name="matrix-commons" />
-    <orderEntry type="library" scope="PROVIDED" name="commons-io-2.6" level="project" />
+    <orderEntry type="module" module-name="matrix-commons" exported="" />
+    <orderEntry type="module" module-name="matrix-commons" exported="" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="commons-io-2.6" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="commons-io-2.6" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="commons-io-2.6" level="project" />
   </component>
 </module>

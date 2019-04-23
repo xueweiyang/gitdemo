@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml",
+            "outputFile": "/home/fcl/demopro/android/matrix-master/samples/sample-android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml",
             "map": [
                 {
-                    "source": "/Users/aaron/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.0.0.aar/b47ccdc9d1790feeee2b443c66d895b2/res/values-hr/values-hr.xml",
+                    "source": "/home/fcl/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.0.0.aar/0a04ea03588696fddf51ab15cf04c041/res/values-hr/values-hr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
