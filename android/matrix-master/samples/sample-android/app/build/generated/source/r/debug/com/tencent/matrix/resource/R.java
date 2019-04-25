@@ -8,10 +8,10 @@ package com.tencent.matrix.resource;
 
 public final class R {
     public static final class id {
-        public static final int tv_message = 0x7f07008c;
+        public static final int tv_message = 0x7f07009b;
     }
     public static final class layout {
-        public static final int resource_canary_toast_wait_for_heapdump = 0x7f09002c;
+        public static final int resource_canary_toast_wait_for_heapdump = 0x7f09002d;
     }
     public static final class string {
         public static final int app_name = 0x7f0b001f;

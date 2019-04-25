@@ -1,6 +1,7 @@
 -1,1,sample.tencent.matrix.io.TestIOActivity onWindowFocusChanged (Z)V
 -1,1,sample.tencent.matrix.issue.IssuesListActivity onWindowFocusChanged (Z)V
 -1,1,sample.tencent.matrix.resource.TestLeakActivity onWindowFocusChanged (Z)V
+-1,1,sample.tencent.matrix.resource.Leak2Activity onWindowFocusChanged (Z)V
 -1,1,com.tencent.sqlitelint.behaviour.alert.SQLiteLintBaseActivity onWindowFocusChanged (Z)V
 -1,1,sample.tencent.matrix.trace.TestTraceMainActivity onWindowFocusChanged (Z)V
 -1,1,sample.tencent.matrix.sqlitelint.TestSQLiteLintActivity onWindowFocusChanged (Z)V
@@ -339,3 +340,12 @@
 324,9,com.tencent.sqlitelint.util.SQLiteLintUtil stackTraceToString ([Ljava.lang.StackTraceElement;)Ljava.lang.String;
 325,9,com.tencent.sqlitelint.util.SQLiteLintUtil getThrowableStack (Ljava.lang.Throwable;)Ljava.lang.String;
 326,9,com.tencent.sqlitelint.util.SQLiteLintUtil getThrowableStack ()Ljava.lang.String;
+327,2,sample.tencent.matrix.trace.TestTraceMainActivity tryDelay ()V
+328,1,sample.tencent.matrix.resource.TestLeakActivity$2 run ()V
+329,1,sample.tencent.matrix.resource.TestLeakActivity <init> ()V
+330,1,sample.tencent.matrix.resource.TestLeakActivity$1 handleMessage (Landroid.os.Message;)V
+331,1,sample.tencent.matrix.resource.Leak2Activity <init> ()V
+332,4,sample.tencent.matrix.resource.Leak2Activity onCreate (Landroid.os.Bundle;)V
+333,1,sample.tencent.matrix.resource.Leak2Activity$1 handleMessage (Landroid.os.Message;)V
+334,1,sample.tencent.matrix.MatrixApplication jumpToIssueActivity ()V
+335,1,sample.tencent.matrix.MatrixApplication$1 onReportIssue (Lcom.tencent.matrix.report.Issue;)V

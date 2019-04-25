@@ -1,222 +1,231 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:1:1-39:12
-MERGED from [com.tencent.matrix:matrix-io-canary:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-io-canary-0.4.10.aar/b10db0fd1da39ea744692b74f316383a/AndroidManifest.xml:2:1-14:12
-MERGED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:2:1-31:12
-MERGED from [com.tencent.matrix:matrix-android-commons:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-android-commons-0.4.10.aar/6ddbff28afdb8e93d390d52c22aa226b/AndroidManifest.xml:2:1-14:12
-MERGED from [com.tencent.matrix:matrix-trace-canary:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-trace-canary-0.4.10.aar/cff12c74708cf3f6d82962d994b8f089/AndroidManifest.xml:2:1-14:12
-MERGED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/a9d570df671605fc0a631d0ba2f5d0a6/AndroidManifest.xml:2:1-27:12
-MERGED from [com.tencent.matrix:matrix-android-lib:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-android-lib-0.4.10.aar/3e90921cc38f4a0a0d6e2596b16ea37d/AndroidManifest.xml:2:1-14:12
-MERGED from [com.android.support:appcompat-v7:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.0.0.aar/b47ccdc9d1790feeee2b443c66d895b2/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:recyclerview-v7:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-24.0.0.aar/eb3aaf6306ebee82de8ea9f8410ca029/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-24.0.0.aar/dae6a177abe1c152ef6f98ccc1d9a9f6/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-24.0.0.aar/05c9f5bfe5cb3f94a52f9da1377a64b9/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:support-v4:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/febc29c554a22a8b07026654304124bf/AndroidManifest.xml:17:1-27:12
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:1:1-39:12
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:2:1-40:12
+MERGED from [com.tencent.matrix:matrix-io-canary:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-io-canary-0.4.10.aar/2dbdc4fd983cffe66e351104546e597c/AndroidManifest.xml:2:1-14:12
+MERGED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:2:1-31:12
+MERGED from [com.tencent.matrix:matrix-android-commons:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-android-commons-0.4.10.aar/4f770e18e949331e902044d09e256fc2/AndroidManifest.xml:2:1-14:12
+MERGED from [com.tencent.matrix:matrix-trace-canary:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-trace-canary-0.4.10.aar/6b8bca583b74e6e7466816d82efd5722/AndroidManifest.xml:2:1-14:12
+MERGED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/233de4575076e47618eaf896366c4b4f/AndroidManifest.xml:2:1-27:12
+MERGED from [com.tencent.matrix:matrix-android-lib:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-android-lib-0.4.10.aar/9f6c157835178ac108baec03f2ef42e6/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:appcompat-v7:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.0.0.aar/0a04ea03588696fddf51ab15cf04c041/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:recyclerview-v7:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-24.0.0.aar/74dafce4412149c515dbe7457d098e1b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/fcl/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/d24afec8f4bfe961ed2ff9f613d7a4ce/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-24.0.0.aar/ff6cda06c5fb06f6a9b3a0616f8ad75d/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-vector-drawable:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-24.0.0.aar/cd3d1124c849b71c2d52c85d95d640a8/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:support-v4:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/ae22b278a4e8b32e86ddf2b611bc2063/AndroidManifest.xml:17:1-27:12
+INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:2:1-40:12
 	package
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:3:11-42
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:3:5-36
+		INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:1:1-39:12
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:2:1-40:12
+		INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:1:1-39:12
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:2:1-40:12
+		INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:5:5-66
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:5:5-66
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:6:5-80
-MERGED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/a9d570df671605fc0a631d0ba2f5d0a6/AndroidManifest.xml:11:5-81
-MERGED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/a9d570df671605fc0a631d0ba2f5d0a6/AndroidManifest.xml:11:5-81
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:6:5-80
+MERGED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/233de4575076e47618eaf896366c4b4f/AndroidManifest.xml:11:5-81
+MERGED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/233de4575076e47618eaf896366c4b4f/AndroidManifest.xml:11:5-81
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:6:22-78
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:6:22-78
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:7:5-83
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:7:5-83
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:7:22-81
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:7:22-81
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:8:5-79
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:8:5-79
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:8:22-77
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:8:22-77
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:9:5-67
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:9:5-67
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:9:22-65
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:9:22-65
 application
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:11:5-37:19
-MERGED from [com.tencent.matrix:matrix-io-canary:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-io-canary-0.4.10.aar/b10db0fd1da39ea744692b74f316383a/AndroidManifest.xml:11:5-12:19
-MERGED from [com.tencent.matrix:matrix-io-canary:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-io-canary-0.4.10.aar/b10db0fd1da39ea744692b74f316383a/AndroidManifest.xml:11:5-12:19
-MERGED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:11:5-29:19
-MERGED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:11:5-29:19
-MERGED from [com.tencent.matrix:matrix-android-commons:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-android-commons-0.4.10.aar/6ddbff28afdb8e93d390d52c22aa226b/AndroidManifest.xml:11:5-12:19
-MERGED from [com.tencent.matrix:matrix-android-commons:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-android-commons-0.4.10.aar/6ddbff28afdb8e93d390d52c22aa226b/AndroidManifest.xml:11:5-12:19
-MERGED from [com.tencent.matrix:matrix-trace-canary:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-trace-canary-0.4.10.aar/cff12c74708cf3f6d82962d994b8f089/AndroidManifest.xml:11:5-12:19
-MERGED from [com.tencent.matrix:matrix-trace-canary:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-trace-canary-0.4.10.aar/cff12c74708cf3f6d82962d994b8f089/AndroidManifest.xml:11:5-12:19
-MERGED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/a9d570df671605fc0a631d0ba2f5d0a6/AndroidManifest.xml:13:5-25:19
-MERGED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/a9d570df671605fc0a631d0ba2f5d0a6/AndroidManifest.xml:13:5-25:19
-MERGED from [com.tencent.matrix:matrix-android-lib:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-android-lib-0.4.10.aar/3e90921cc38f4a0a0d6e2596b16ea37d/AndroidManifest.xml:11:5-12:19
-MERGED from [com.tencent.matrix:matrix-android-lib:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-android-lib-0.4.10.aar/3e90921cc38f4a0a0d6e2596b16ea37d/AndroidManifest.xml:11:5-12:19
-MERGED from [com.android.support:appcompat-v7:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.0.0.aar/b47ccdc9d1790feeee2b443c66d895b2/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.0.0.aar/b47ccdc9d1790feeee2b443c66d895b2/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-24.0.0.aar/dae6a177abe1c152ef6f98ccc1d9a9f6/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-24.0.0.aar/dae6a177abe1c152ef6f98ccc1d9a9f6/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-24.0.0.aar/05c9f5bfe5cb3f94a52f9da1377a64b9/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-24.0.0.aar/05c9f5bfe5cb3f94a52f9da1377a64b9/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-v4:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/febc29c554a22a8b07026654304124bf/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/febc29c554a22a8b07026654304124bf/AndroidManifest.xml:25:5-20
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:11:5-38:19
+MERGED from [com.tencent.matrix:matrix-io-canary:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-io-canary-0.4.10.aar/2dbdc4fd983cffe66e351104546e597c/AndroidManifest.xml:11:5-12:19
+MERGED from [com.tencent.matrix:matrix-io-canary:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-io-canary-0.4.10.aar/2dbdc4fd983cffe66e351104546e597c/AndroidManifest.xml:11:5-12:19
+MERGED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:11:5-29:19
+MERGED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:11:5-29:19
+MERGED from [com.tencent.matrix:matrix-android-commons:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-android-commons-0.4.10.aar/4f770e18e949331e902044d09e256fc2/AndroidManifest.xml:11:5-12:19
+MERGED from [com.tencent.matrix:matrix-android-commons:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-android-commons-0.4.10.aar/4f770e18e949331e902044d09e256fc2/AndroidManifest.xml:11:5-12:19
+MERGED from [com.tencent.matrix:matrix-trace-canary:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-trace-canary-0.4.10.aar/6b8bca583b74e6e7466816d82efd5722/AndroidManifest.xml:11:5-12:19
+MERGED from [com.tencent.matrix:matrix-trace-canary:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-trace-canary-0.4.10.aar/6b8bca583b74e6e7466816d82efd5722/AndroidManifest.xml:11:5-12:19
+MERGED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/233de4575076e47618eaf896366c4b4f/AndroidManifest.xml:13:5-25:19
+MERGED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/233de4575076e47618eaf896366c4b4f/AndroidManifest.xml:13:5-25:19
+MERGED from [com.tencent.matrix:matrix-android-lib:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-android-lib-0.4.10.aar/9f6c157835178ac108baec03f2ef42e6/AndroidManifest.xml:11:5-12:19
+MERGED from [com.tencent.matrix:matrix-android-lib:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-android-lib-0.4.10.aar/9f6c157835178ac108baec03f2ef42e6/AndroidManifest.xml:11:5-12:19
+MERGED from [com.android.support:appcompat-v7:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.0.0.aar/0a04ea03588696fddf51ab15cf04c041/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.0.0.aar/0a04ea03588696fddf51ab15cf04c041/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/fcl/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/d24afec8f4bfe961ed2ff9f613d7a4ce/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/fcl/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/d24afec8f4bfe961ed2ff9f613d7a4ce/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-24.0.0.aar/ff6cda06c5fb06f6a9b3a0616f8ad75d/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-24.0.0.aar/ff6cda06c5fb06f6a9b3a0616f8ad75d/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-24.0.0.aar/cd3d1124c849b71c2d52c85d95d640a8/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-vector-drawable:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-24.0.0.aar/cd3d1124c849b71c2d52c85d95d640a8/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/ae22b278a4e8b32e86ddf2b611bc2063/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/ae22b278a4e8b32e86ddf2b611bc2063/AndroidManifest.xml:25:5-20
 	android:supportsRtl
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:16:9-35
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:15:9-41
 	android:icon
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:14:9-43
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:17:9-40
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:17:9-40
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:12:9-42
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:12:9-42
 activity#sample.tencent.matrix.MainActivity
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:18:9-20:20
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:18:9-19:20
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:18:19-47
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:18:19-47
 activity#sample.tencent.matrix.issue.IssuesListActivity
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:22:9-93
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:20:9-22:46
 	android:launchMode
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:22:60-91
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:22:13-44
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:22:19-59
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:21:13-53
 activity#sample.tencent.matrix.SplashActivity
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:24:9-30:20
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:23:9-29:20
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:24:19-49
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:23:19-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:25:13-29:29
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:26:17-68
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:25:17-68
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:26:25-66
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:28:17-76
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:27:17-76
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:28:27-74
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:27:27-74
 activity#sample.tencent.matrix.io.TestIOActivity
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:31:9-64
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:30:9-54
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:31:19-52
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:30:19-52
 activity#sample.tencent.matrix.resource.TestLeakActivity
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:32:9-72
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:31:9-62
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:32:19-60
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:31:19-60
 activity#sample.tencent.matrix.trace.TestTraceMainActivity
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:33:9-74
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:32:9-64
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:33:19-62
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:32:19-62
 activity#sample.tencent.matrix.trace.TestEnterActivity
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:34:9-70
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:33:9-60
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:34:19-58
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:33:19-58
 activity#sample.tencent.matrix.trace.TestFpsActivity
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:35:9-68
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:34:9-58
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:35:19-56
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:34:19-56
 activity#sample.tencent.matrix.sqlitelint.TestSQLiteLintActivity
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:36:9-80
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:35:9-70
 	android:name
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:36:19-68
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:35:19-68
+activity#sample.tencent.matrix.resource.Leak2Activity
+ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:36:9-37:20
+	android:name
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml:36:19-57
 uses-sdk
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
-MERGED from [com.tencent.matrix:matrix-io-canary:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-io-canary-0.4.10.aar/b10db0fd1da39ea744692b74f316383a/AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.matrix:matrix-io-canary:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-io-canary-0.4.10.aar/b10db0fd1da39ea744692b74f316383a/AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.matrix:matrix-android-commons:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-android-commons-0.4.10.aar/6ddbff28afdb8e93d390d52c22aa226b/AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.matrix:matrix-android-commons:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-android-commons-0.4.10.aar/6ddbff28afdb8e93d390d52c22aa226b/AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.matrix:matrix-trace-canary:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-trace-canary-0.4.10.aar/cff12c74708cf3f6d82962d994b8f089/AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.matrix:matrix-trace-canary:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-trace-canary-0.4.10.aar/cff12c74708cf3f6d82962d994b8f089/AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/a9d570df671605fc0a631d0ba2f5d0a6/AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/a9d570df671605fc0a631d0ba2f5d0a6/AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.matrix:matrix-android-lib:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-android-lib-0.4.10.aar/3e90921cc38f4a0a0d6e2596b16ea37d/AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.matrix:matrix-android-lib:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-android-lib-0.4.10.aar/3e90921cc38f4a0a0d6e2596b16ea37d/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.0.0.aar/b47ccdc9d1790feeee2b443c66d895b2/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.0.0.aar/b47ccdc9d1790feeee2b443c66d895b2/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:recyclerview-v7:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-24.0.0.aar/eb3aaf6306ebee82de8ea9f8410ca029/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-24.0.0.aar/eb3aaf6306ebee82de8ea9f8410ca029/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-24.0.0.aar/dae6a177abe1c152ef6f98ccc1d9a9f6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-24.0.0.aar/dae6a177abe1c152ef6f98ccc1d9a9f6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-24.0.0.aar/05c9f5bfe5cb3f94a52f9da1377a64b9/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-24.0.0.aar/05c9f5bfe5cb3f94a52f9da1377a64b9/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-v4:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/febc29c554a22a8b07026654304124bf/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/febc29c554a22a8b07026654304124bf/AndroidManifest.xml:21:5-23:54
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
+INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
+INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
+MERGED from [com.tencent.matrix:matrix-io-canary:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-io-canary-0.4.10.aar/2dbdc4fd983cffe66e351104546e597c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent.matrix:matrix-io-canary:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-io-canary-0.4.10.aar/2dbdc4fd983cffe66e351104546e597c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent.matrix:matrix-android-commons:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-android-commons-0.4.10.aar/4f770e18e949331e902044d09e256fc2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent.matrix:matrix-android-commons:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-android-commons-0.4.10.aar/4f770e18e949331e902044d09e256fc2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent.matrix:matrix-trace-canary:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-trace-canary-0.4.10.aar/6b8bca583b74e6e7466816d82efd5722/AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent.matrix:matrix-trace-canary:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-trace-canary-0.4.10.aar/6b8bca583b74e6e7466816d82efd5722/AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/233de4575076e47618eaf896366c4b4f/AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/233de4575076e47618eaf896366c4b4f/AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent.matrix:matrix-android-lib:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-android-lib-0.4.10.aar/9f6c157835178ac108baec03f2ef42e6/AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent.matrix:matrix-android-lib:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-android-lib-0.4.10.aar/9f6c157835178ac108baec03f2ef42e6/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.0.0.aar/0a04ea03588696fddf51ab15cf04c041/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.0.0.aar/0a04ea03588696fddf51ab15cf04c041/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:recyclerview-v7:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-24.0.0.aar/74dafce4412149c515dbe7457d098e1b/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-24.0.0.aar/74dafce4412149c515dbe7457d098e1b/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/fcl/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/d24afec8f4bfe961ed2ff9f613d7a4ce/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/fcl/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/d24afec8f4bfe961ed2ff9f613d7a4ce/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-24.0.0.aar/ff6cda06c5fb06f6a9b3a0616f8ad75d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-24.0.0.aar/ff6cda06c5fb06f6a9b3a0616f8ad75d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-24.0.0.aar/cd3d1124c849b71c2d52c85d95d640a8/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-vector-drawable:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-24.0.0.aar/cd3d1124c849b71c2d52c85d95d640a8/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/ae22b278a4e8b32e86ddf2b611bc2063/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/ae22b278a4e8b32e86ddf2b611bc2063/AndroidManifest.xml:21:5-23:54
+INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
+INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:24.0.0] /Users/aaron/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.0.0.aar/b47ccdc9d1790feeee2b443c66d895b2/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:24.0.0] /home/fcl/.gradle/caches/transforms-1/files-1.1/appcompat-v7-24.0.0.aar/0a04ea03588696fddf51ab15cf04c041/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
+		ADDED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/fcl/demopro/android/matrix-master/samples/sample-android/app/src/main/AndroidManifest.xml
 activity#com.tencent.sqlitelint.behaviour.alert.CheckedDatabaseListActivity
-ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:12:9-18:20
+ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:12:9-18:20
 	android:label
-		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:16:13-39
+		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:16:13-39
 	android:exported
-		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:14:13-36
+		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:14:13-36
 	android:icon
-		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:15:13-54
+		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:15:13-54
 	android:taskAffinity
-		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:17:13-58
+		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:17:13-58
 	android:name
-		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:13:13-94
+		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:13:13-94
 activity#com.tencent.sqlitelint.behaviour.alert.CheckResultActivity
-ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:19:9-23:20
+ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:19:9-23:20
 	android:launchMode
-		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:21:13-43
+		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:21:13-43
 	android:taskAffinity
-		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:22:13-58
+		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:22:13-58
 	android:name
-		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:20:13-86
+		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:20:13-86
 activity#com.tencent.sqlitelint.behaviour.alert.IssueDetailActivity
-ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:24:9-28:20
+ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:24:9-28:20
 	android:launchMode
-		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:26:13-43
+		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:26:13-43
 	android:taskAffinity
-		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:27:13-58
+		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:27:13-58
 	android:name
-		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/5d7c7150a3247eff9293e6bce2472543/AndroidManifest.xml:25:13-86
+		ADDED from [com.tencent.matrix:matrix-sqlite-lint-android-sdk:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-sqlite-lint-android-sdk-0.4.10.aar/4569bbc2cd9ec97056df3f2aa24416ae/AndroidManifest.xml:25:13-86
 service#com.tencent.matrix.resource.CanaryWorkerService
-ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/a9d570df671605fc0a631d0ba2f5d0a6/AndroidManifest.xml:14:9-19:19
+ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/233de4575076e47618eaf896366c4b4f/AndroidManifest.xml:14:9-19:19
 	android:process
-		ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/a9d570df671605fc0a631d0ba2f5d0a6/AndroidManifest.xml:18:13-46
+		ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/233de4575076e47618eaf896366c4b4f/AndroidManifest.xml:18:13-46
 	android:exported
-		ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/a9d570df671605fc0a631d0ba2f5d0a6/AndroidManifest.xml:16:13-37
+		ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/233de4575076e47618eaf896366c4b4f/AndroidManifest.xml:16:13-37
 	android:permission
-		ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/a9d570df671605fc0a631d0ba2f5d0a6/AndroidManifest.xml:17:13-69
+		ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/233de4575076e47618eaf896366c4b4f/AndroidManifest.xml:17:13-69
 	android:name
-		ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/a9d570df671605fc0a631d0ba2f5d0a6/AndroidManifest.xml:15:13-75
+		ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/233de4575076e47618eaf896366c4b4f/AndroidManifest.xml:15:13-75
 service#com.tencent.matrix.resource.CanaryResultService
-ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/a9d570df671605fc0a631d0ba2f5d0a6/AndroidManifest.xml:20:9-24:19
+ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/233de4575076e47618eaf896366c4b4f/AndroidManifest.xml:20:9-24:19
 	android:exported
-		ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/a9d570df671605fc0a631d0ba2f5d0a6/AndroidManifest.xml:22:13-37
+		ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/233de4575076e47618eaf896366c4b4f/AndroidManifest.xml:22:13-37
 	android:permission
-		ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/a9d570df671605fc0a631d0ba2f5d0a6/AndroidManifest.xml:23:13-69
+		ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/233de4575076e47618eaf896366c4b4f/AndroidManifest.xml:23:13-69
 	android:name
-		ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /Users/aaron/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/a9d570df671605fc0a631d0ba2f5d0a6/AndroidManifest.xml:21:13-75
+		ADDED from [com.tencent.matrix:matrix-resource-canary-android:0.4.10] /home/fcl/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/233de4575076e47618eaf896366c4b4f/AndroidManifest.xml:21:13-75

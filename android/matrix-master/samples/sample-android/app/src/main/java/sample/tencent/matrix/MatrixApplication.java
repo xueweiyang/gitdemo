@@ -19,9 +19,14 @@ package sample.tencent.matrix;
 import android.app.Application;
 import android.content.Context;
 
+import android.content.Intent;
+import android.util.Log;
 import com.tencent.matrix.Matrix;
 import com.tencent.matrix.iocanary.IOCanaryPlugin;
 import com.tencent.matrix.iocanary.config.IOConfig;
+import com.tencent.matrix.plugin.Plugin;
+import com.tencent.matrix.plugin.PluginListener;
+import com.tencent.matrix.report.Issue;
 import com.tencent.matrix.resource.ResourcePlugin;
 import com.tencent.matrix.resource.config.ResourceConfig;
 import com.tencent.matrix.trace.TracePlugin;
@@ -32,6 +37,9 @@ import com.tencent.sqlitelint.SQLiteLintPlugin;
 import com.tencent.sqlitelint.config.SQLiteLintConfig;
 
 import sample.tencent.matrix.config.DynamicConfigImplDemo;
+import sample.tencent.matrix.issue.IssueFilter;
+import sample.tencent.matrix.issue.IssuesListActivity;
+import sample.tencent.matrix.issue.IssuesMap;
 import sample.tencent.matrix.listener.TestPluginListener;
 
 /**
@@ -67,37 +75,65 @@ public class MatrixApplication extends Application {
 
         //trace
         TraceConfig traceConfig = new TraceConfig.Builder()
-                .dynamicConfig(dynamicConfig)
-                .enableFPS(fpsEnable)
-                .enableMethodTrace(traceEnable)
-                .enableStartUp(traceEnable)
-                .splashActivity("sample.tencent.matrix.SplashActivity")
-                .build();
+            .dynamicConfig(dynamicConfig)
+            .enableFPS(fpsEnable)
+            .enableMethodTrace(traceEnable)
+            .enableStartUp(traceEnable)
+            .splashActivity("sample.tencent.matrix.SplashActivity")
+            .build();
 
         TracePlugin tracePlugin = (new TracePlugin(traceConfig));
         builder.plugin(tracePlugin);
 
-        Matrix.init(builder.build());
+
 
         //start only startup tracer, close other tracer.
-        tracePlugin.start();
+
 
         if (matrixEnable) {
 
             //resource
-            builder.plugin(new ResourcePlugin(new ResourceConfig.Builder()
-                    .dynamicConfig(dynamicConfig)
-                    .setDumpHprof(false)
-                    .setDetectDebuger(true)     //only set true when in sample, not in your app
-                    .build()));
+            ResourcePlugin resourcePlugin = new ResourcePlugin(new ResourceConfig.Builder()
+                .dynamicConfig(dynamicConfig)
+                .setDumpHprof(false)
+                .setDetectDebuger(true)     //only set true when in sample, not in your app
+                .build());
+            builder.plugin(resourcePlugin);
+            //resourcePlugin.init(this, new PluginListener() {
+            //    @Override
+            //    public void onInit(Plugin plugin) {
+            //
+            //    }
+            //
+            //    @Override
+            //    public void onStart(Plugin plugin) {
+            //
+            //    }
+            //
+            //    @Override
+            //    public void onStop(Plugin plugin) {
+            //
+            //    }
+            //
+            //    @Override
+            //    public void onDestroy(Plugin plugin) {
+            //
+            //    }
+            //
+            //    @Override
+            //    public void onReportIssue(Issue issue) {
+            //        Log.e("MatrixMemory", issue.toString());
+            //        IssuesMap.put(IssueFilter.getCurrentFilter(), issue);
+            //        jumpToIssueActivity();
+            //    }
+            //});
             ResourcePlugin.activityLeakFixer(this);
 
             //io
             IOCanaryPlugin ioCanaryPlugin = new IOCanaryPlugin(new IOConfig.Builder()
-                    .dynamicConfig(dynamicConfig)
-                    .build());
+                .dynamicConfig(dynamicConfig)
+                .build());
             builder.plugin(ioCanaryPlugin);
-
 
             // prevent api 19 UnsatisfiedLinkError
             //sqlite
@@ -105,14 +141,20 @@ public class MatrixApplication extends Application {
             SQLiteLintPlugin sqLiteLintPlugin = new SQLiteLintPlugin(config);
             builder.plugin(sqLiteLintPlugin);
         }
-
-
+        Matrix.init(builder.build()).startAllPlugins();
         //only stop at sample app, in your app do not call onDestroy
         tracePlugin.getFPSTracer().onDestroy();
 
         MatrixLog.i("Matrix.HackCallback", "end:%s", System.currentTimeMillis());
     }
 
+    public void jumpToIssueActivity() {
+        Intent intent = new Intent(this, IssuesListActivity.class);
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+        startActivity(intent);
+    }
 
     public static Context getContext() {
         return sContext;

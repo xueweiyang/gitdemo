@@ -18,10 +18,13 @@ package sample.tencent.matrix.resource;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.Nullable;
 
 import com.tencent.matrix.Matrix;
@@ -47,6 +50,18 @@ public class TestLeakActivity extends Activity {
     private static Set<Activity> testLeaks = new HashSet<>();
 
     private static ArrayList<Bitmap> bitmaps = new ArrayList<>();
+    //
+    Handler handler = new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            try {
+                Thread.sleep(10000);
+            }catch (Exception e){
+
+            }
+        }
+    };
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -55,6 +70,8 @@ public class TestLeakActivity extends Activity {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.clear();
         editor.commit();
+
+
 
         testLeaks.add(this);
         Plugin plugin = Matrix.with().getPluginByClass(ResourcePlugin.class);
@@ -68,9 +85,17 @@ public class TestLeakActivity extends Activity {
         bitmaps.add(BitmapFactory.decodeResource(getResources(), R.drawable.welcome_bg, options));
         MatrixLog.i(TAG, "test leak activity size: %d, bitmaps size: %d", testLeaks.size(), bitmaps.size());
 
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.welcome_bg, options);
+        Bitmap bitmap2 = BitmapFactory.decodeResource(getResources(), R.drawable.welcome_bg, options);
+        bitmaps.add(bitmap);
+        bitmaps.add(bitmap2);
+
         setContentView(R.layout.test_leak);
 
         IssueFilter.setCurrentFilter(IssueFilter.ISSUE_LEAK);
+        handler.sendEmptyMessageDelayed(0, 10000);
+
+        startActivity(new Intent(this,Leak2Activity.class));
     }
 
     @Override
