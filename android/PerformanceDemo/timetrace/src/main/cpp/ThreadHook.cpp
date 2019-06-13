@@ -19,9 +19,28 @@ jclass kJavaClass;
 jmethodID  kMethodGetStack;
 JavaVM* kJvm;
 
+char* jstringToChars(JNIEnv* env,jstring jstr){
+    if (jstr== nullptr){
+        return nullptr;
+    }
+    jboolean  iscopy = JNI_FALSE;
+    const char *str=env->GetStringUTFChars(jstr,&iscopy);
+    char *ret=strdup(str);
+    env->ReleaseStringUTFChars(jstr,str);
+    return ret;
+}
+
 void printJavaStack() {
     JNIEnv* jniEnv=NULL;
-    kJvm->GetEnv()
+    kJvm->GetEnv((void**)&jniEnv, JNI_VERSION_1_6);
+    jstring java_stack = static_cast<jstring > (jniEnv->CallStaticObjectMethod(kJavaClass, kMethodGetStack));
+    if(NULL==java_stack){
+        return;
+    }
+    char* stack = jstringToChars(jniEnv,java_stack);
+    free(stack);
+    jniEnv->DeleteLocalRef(java_stack);
+
 }
 
 int pthread_create_hook(pthread_t* thread, const pthread_attr_t* attr,
@@ -60,7 +79,17 @@ bool InitJniEnv(JavaVM* vm){
         ALOG("InitJniEnv GetEnv !JNI_OK");
         return false;
     }
-    kJavaClass = reinterpret_cast<jclass >(env->NewGlobalRef(env->FindClass("com/dodola/thread/ThreadHook")));
+    kJavaClass = reinterpret_cast<jclass>(env->NewGlobalRef(env->FindClass("com/example/timetrace/thread/ThreadHook")));
+    if(kJavaClass==NULL){
+        ALOG("InitJniEnv kJavaClass NULL");
+        return false;
+    }
+    kMethodGetStack = env->GetStaticMethodID(kJavaClass, "getStack", "()Ljava/lang/String;");
+    if(kMethodGetStack==NULL){
+        ALOG("InitJniEnv kMethodGetStack NULL");
+        return false;
+    }
+    return true;
 }
 
 JNIEXPORT jint JNICALL JNI_LOAD(JavaVM* vm, void* reserved){
