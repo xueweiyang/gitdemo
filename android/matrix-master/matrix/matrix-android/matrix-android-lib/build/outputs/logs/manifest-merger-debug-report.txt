@@ -1,39 +1,39 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
+ADDED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
+INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
+INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
+INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
+INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
+INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
+INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
 	package
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:11-39
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
+		ADDED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:11-39
+		INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
+		INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
+		INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
+		ADDED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
+		INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
+		INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
+		ADDED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:1:1-8:12
+		INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:5:5-6:19
+ADDED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml:5:5-6:19
 uses-sdk
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
-INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
+INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
+INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
+INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
+INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
+		INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
+		ADDED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
+		INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
-		ADDED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
-		INJECTED from /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
+		INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
+		ADDED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml
+		INJECTED from /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-android-lib/src/main/AndroidManifest.xml

@@ -1,16 +1,16 @@
 {
   "buildFiles": [
-    "/Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-io-canary/CMakeLists.txt"
+    "/home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-io-canary/CMakeLists.txt"
   ],
   "cleanCommands": [
-    "/Users/aaron/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+    "/home/f/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
   ],
   "libraries": {
     "io-canary-Debug-armeabi-v7a": {
       "artifactName": "io-canary",
-      "buildCommand": "/Users/aaron/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a --target io-canary",
+      "buildCommand": "/home/f/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a --target io-canary",
       "abi": "armeabi-v7a",
-      "output": "/Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-io-canary/build/intermediates/cmake/debug/obj/armeabi-v7a/libio-canary.so"
+      "output": "/home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-io-canary/build/intermediates/cmake/debug/obj/armeabi-v7a/libio-canary.so"
     }
   }
 }

@@ -1,16 +1,16 @@
 {
   "buildFiles": [
-    "/Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-sqlite-lint/CMakeLists.txt"
+    "/home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-sqlite-lint/CMakeLists.txt"
   ],
   "cleanCommands": [
-    "/Users/aaron/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a --target clean"
+    "/home/f/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a --target clean"
   ],
   "libraries": {
     "SqliteLint-lib-Release-armeabi-v7a": {
       "artifactName": "SqliteLint-lib",
-      "buildCommand": "/Users/aaron/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a --target SqliteLint-lib",
+      "buildCommand": "/home/f/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a --target SqliteLint-lib",
       "abi": "armeabi-v7a",
-      "output": "/Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/build/intermediates/cmake/full/release/obj/armeabi-v7a/libSqliteLint-lib.so"
+      "output": "/home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/build/intermediates/cmake/full/release/obj/armeabi-v7a/libSqliteLint-lib.so"
     }
   }
 }
