@@ -45,21 +45,27 @@ public class MappingReader {
         }
     }
 
-    String parseClassMapping(String line,MappingProcessor mappingProcessor) {
-        int leftIndex=line.indexOf(ARROW);
-        if (leftIndex<0){
+    String parseClassMapping(String line, MappingProcessor mappingProcessor) {
+        int leftIndex = line.indexOf(ARROW);
+        if (leftIndex < 0) {
             return null;
         }
         int offset = 2;
-        int rightIndex = line.indexOf(SPLIT,leftIndex+offset);
-        if (rightIndex < 0){
+        int rightIndex = line.indexOf(SPLIT, leftIndex + offset);
+        if (rightIndex < 0) {
             return null;
         }
-        String className = line.substring(0,leftIndex).trim();
-        String newClassName = line.substring(leftIndex+offset,rightIndex).trim();
+        String className = line.substring(0, leftIndex).trim();
+        String newClassName = line.substring(leftIndex + offset, rightIndex).trim();
 
         boolean ret = mappingProcessor.processClassMapping(className, newClassName);
-        return ret?className:null;
+        return ret ? className : null;
     }
 
+    void parseClassMemberMapping(String className, String line, MappingProcessor mappingProcessor) {
+        int leftIndex1 = line.indexOf(SPLIT);
+        int leftIndex2 = leftIndex1 < 0 ? -1 : line.indexOf(SPLIT, leftIndex1 + 1);
+        int spaceIndex = line.indexOf(SPACE, leftIndex2+1);
+        int argIndex1 = line.indexOf(LEFT_PUNC, spaceIndex+1);
+    }
 }

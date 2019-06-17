@@ -1,9 +1,12 @@
 package com.example.systrace;
 
+import com.example.systrace.retrace.MappingCollector;
+
+import java.io.File;
 import java.util.HashSet;
 
 public class TraceBuildConfig {
-
+    String TAG = "TraceBuildConfig";
     String packageName;
     String mappingPath;
     String baseMethodMap;
@@ -53,6 +56,68 @@ public class TraceBuildConfig {
 
     public HashSet<String> getBlackPackageMap() {
         return blackPackageMap;
+    }
+
+    void parseBlackFile(MappingCollector processor) {
+        File blackConfigFile = new File(blackListDir);
+        if (!blackConfigFile.exists()) {
+            Log.i(TAG, "black config file not exist " + blackConfigFile.getAbsoluteFile());
+        }
+        String blackStr = TraceBuildConstants.DEFAULT_BLACK_TRACE + Util.readFileAsString(blackListDir);
+        String[] blackArray = blackStr.split("\n");
+        for (String black : blackArray) {
+            black = black.trim().replace("/", ".");
+            if (black.length() == 0) {
+                continue;
+            }
+            if (black.startsWith("#")) {
+                Log.i(TAG, "[parseBlackFile] comment:%s", black);
+                continue;
+            }
+            if (black.startsWith("[")){
+                continue;
+            }
+            if (black.startsWith("-keepclass ")) {
+                black = black.replace("-keepclass ","");
+                blackClassMap.add(processor.proguardClassName(black, black));
+            } else if (black.startsWith("-keeppackage ")) {
+                black = black.replace("-keeppackage ", "");
+                blackPackageMap.add(black);
+            }
+        }
+    }
+
+    public boolean isNeedTraceClass(String fileName){
+        boolean isNeed=true;
+        if (fileName.endsWith(".class")){
+            for (String unTraceCls:TraceBuildConstants.UN_TRACE_CLASS){
+                if (fileName.contains(unTraceCls)){
+                    isNeed=false;
+                    break;
+                }
+            }
+        } else {
+            isNeed=false;
+        }
+        return isNeed;
+    }
+
+    public boolean isNeedTrace(String className,MappingCollector mappingCollector) {
+        boolean isNeed = true;
+        if (blackClassMap.contains(className)){
+            isNeed = false;
+        } else {
+            if (null!=mappingCollector){
+                className=mappingCollector.originalClassName(className,className);
+            }
+            for (String packageName:blackPackageMap) {
+                if (className.startsWith(packageName.replaceAll("/","."))) {
+                    isNeed = false;
+                    break;
+                }
+            }
+        }
+        return isNeed;
     }
 
     public static class Builder {

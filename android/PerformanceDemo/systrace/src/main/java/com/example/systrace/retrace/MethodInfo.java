@@ -26,4 +26,11 @@ public class MethodInfo {
         this.desc=methodInfo.desc;
     }
 
+    public static MethodInfo defaultObject() {
+        return new MethodInfo("","","","");
+    }
+
+    public boolean matches(String type,String arguments){
+        return (type==null||type.equals(originalType)) && (arguments==null||arguments.equals(originalArguments));
+    }
 }

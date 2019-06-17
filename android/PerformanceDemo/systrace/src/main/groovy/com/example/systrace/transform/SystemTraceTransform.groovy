@@ -1,10 +1,14 @@
 package com.example.systrace.transform
 
+import com.android.build.api.transform.DirectoryInput
+import com.android.build.api.transform.Status
 import com.android.build.api.transform.Transform
 import com.android.build.api.transform.TransformException
 import com.android.build.api.transform.TransformInvocation
 import com.android.build.gradle.internal.pipeline.TransformTask
+import com.example.systrace.MethodCollector
 import com.example.systrace.TraceBuildConfig
+import com.example.systrace.item.TraceMethod
 import com.example.systrace.retrace.MappingCollector
 import com.example.systrace.retrace.MappingReader
 import org.gradle.api.Project
@@ -70,9 +74,68 @@ public class SystemTraceTransform extends BaseProxyTransform {
         TraceBuildConfig traceConfig = initConfig()
         MappingCollector mappingCollector = new MappingCollector()
         File mappingFile = new File(traceConfig.getMappingPath())
-        if (mappingFile.exists() && mappingFile.isFile()){
-            MappingReader mappingReader=new MappingReader()
+        if (mappingFile.exists() && mappingFile.isFile()) {
+            MappingReader mappingReader = new MappingReader()
+            mappingReader.read(mappingCollector)
         }
+
+        Map<File, File> jarInputMap = new HashMap<>()
+        Map<File, File> srcInputMap = new HashMap<>()
+
+        transformInvocation.inputs.each { input ->
+            input.directoryInputs.each { dirInput ->
+                collectAndIdentifyDir(srcInputMap, dirInput, rootOutput, isIncremental)
+            }
+            input.jarInputs.each { jarInput ->
+                if (jarInput.status != Status.REMOVED) {
+
+                }
+            }
+        }
+
+        MethodCollector methodCollector = new MethodCollector(traceConfig, mappingCollector)
+        HashMap<String, TraceMethod> collectMethodMap = methodCollector.
+    }
+
+    void collectAndIdentifyDir(Map<File, File> dirInputMap, DirectoryInput input, File rootOutput, boolean isIncremental) {
+        File dirInput = input.file
+        File dirOutput = new File(rootOutput, dirInput.getName())
+        if (!dirOutput.exists()) {
+            dirOutput.mkdirs()
+        }
+        if (isIncremental) {
+            if (!dirInput.exists()) {
+                dirOutput.deleteDir()
+            } else {
+                Map<File, Status> obfuscatedChangedFiles = new HashMap<>()
+                String rootInputFullPath = dirInput.absolutePath
+                String rootOutputFullPath = dirOutput.absolutePath
+                input.changedFiles.each { entry ->
+                    File changedFileInput = entry.key
+                    String changedFileInputPath = changedFileInput.absolutePath
+                    File changedFileOutput = new File(
+                            changedFileInputPath.replace(rootInputFullPath, rootOutputFullPath)
+                    )
+                    Status status = entry.value
+                    switch (status) {
+                        case Status.NOTCHANGED:
+                            break
+                        case Status.ADDED:
+                        case Status.CHANGED:
+                            dirInputMap.put(changedFileInput, changedFileOutput)
+                            break
+                        case Status.REMOVED:
+                            changedFileOutput.delete()
+                            break
+                    }
+                    obfuscatedChangedFiles.put(changedFileOutput, status)
+                }
+                replaceChangedFile(input, obfuscatedChangedFiles)
+            }
+        } else {
+            dirInputMap.put(dirInput, dirOutput)
+        }
+        replaceFile(input, dirOutput)
     }
 
     TraceBuildConfig initConfig() {
