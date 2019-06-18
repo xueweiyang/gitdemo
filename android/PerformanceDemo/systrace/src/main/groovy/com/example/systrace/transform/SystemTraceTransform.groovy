@@ -6,7 +6,9 @@ import com.android.build.api.transform.Transform
 import com.android.build.api.transform.TransformException
 import com.android.build.api.transform.TransformInvocation
 import com.android.build.gradle.internal.pipeline.TransformTask
+import com.example.systrace.Log
 import com.example.systrace.MethodCollector
+import com.example.systrace.MethodTracker
 import com.example.systrace.TraceBuildConfig
 import com.example.systrace.item.TraceMethod
 import com.example.systrace.retrace.MappingCollector
@@ -94,7 +96,10 @@ public class SystemTraceTransform extends BaseProxyTransform {
         }
 
         MethodCollector methodCollector = new MethodCollector(traceConfig, mappingCollector)
-        HashMap<String, TraceMethod> collectMethodMap = methodCollector.
+        HashMap<String, TraceMethod> collectMethodMap = methodCollector.collect(srcInputMap.keySet().toList(),jarInputMap.keySet().toList())
+        MethodTracker methodTracker = new MethodTracker(traceConfig, collectMethodMap, methodCollector.getCollectClassExtendMap())
+        methodTracker.trace(srcInputMap, jarInputMap)
+        originTransform.transform(transformInvocation)
     }
 
     void collectAndIdentifyDir(Map<File, File> dirInputMap, DirectoryInput input, File rootOutput, boolean isIncremental) {
@@ -103,6 +108,7 @@ public class SystemTraceTransform extends BaseProxyTransform {
         if (!dirOutput.exists()) {
             dirOutput.mkdirs()
         }
+        println("--------input:${dirInput.absolutePath} out:${dirOutput.absolutePath}")
         if (isIncremental) {
             if (!dirInput.exists()) {
                 dirOutput.deleteDir()
@@ -129,6 +135,7 @@ public class SystemTraceTransform extends BaseProxyTransform {
                             break
                     }
                     obfuscatedChangedFiles.put(changedFileOutput, status)
+                    println("------------changefileoutput:${changedFileOutput.absolutePath} status:${status}")
                 }
                 replaceChangedFile(input, obfuscatedChangedFiles)
             }

@@ -1,7 +1,8 @@
 package com.example.systrace.retrace;
 
 
-import jdk.internal.org.objectweb.asm.Type;
+
+import org.objectweb.asm.Type;
 
 import java.util.*;
 
@@ -19,6 +20,31 @@ public class MappingCollector implements MappingProcessor {
         mObfuscatedRawClassMap.put(newClassName, className);
         mRawObfuscatedClassMap.put(className, newClassName);
         return true;
+    }
+
+    public MethodInfo originalMethodInfo(String className,String methodName,String desc) {
+        DescInfo descInfo = parseMethodDesc(desc, false);
+
+        Map<String,Set<MethodInfo>> methodMap = mObfuscatedClassMethodMap.get(className);
+        if (methodMap != null){
+            Set<MethodInfo> methodSet = methodMap.get(methodName);
+            if (methodSet != null) {
+                Iterator<MethodInfo> methodInfoIterator = methodSet.iterator();
+                while (methodInfoIterator.hasNext()){
+                    MethodInfo methodInfo = methodInfoIterator.next();
+                    if (methodInfo.matches(descInfo.returnType, descInfo.arguments)) {
+                        MethodInfo newMethodInfo = new MethodInfo(methodInfo);
+                        newMethodInfo.desc=descInfo.desc;
+                        return newMethodInfo;
+                    }
+                }
+            }
+        }
+
+        MethodInfo defaultMethodInfo = MethodInfo.defaultObject();
+        defaultMethodInfo.desc = descInfo.desc;
+        defaultMethodInfo.originalName = methodName;
+        return defaultMethodInfo;
     }
 
     /**

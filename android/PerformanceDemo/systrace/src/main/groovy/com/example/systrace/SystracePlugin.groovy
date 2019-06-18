@@ -23,7 +23,7 @@ class SystracePlugin implements Plugin<Project> {
             def configuration = project.systrace
             android.applicationVariants.all { variant ->
                 String output = configuration.output
-                if (Util.isNull(output)) {
+                if (Util.isNullOrNil(output)) {
                     configuration.output = project.getBuildDir().getAbsolutePath() + File.separator + "systrace_output"
                     Log.i(TAG, "set systrace output file to " + configuration.output)
                 }

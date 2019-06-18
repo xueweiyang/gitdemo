@@ -3,6 +3,7 @@ package com.example.systrace;
 import com.example.systrace.retrace.MappingCollector;
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.HashSet;
 
 public class TraceBuildConfig {
@@ -71,7 +72,7 @@ public class TraceBuildConfig {
                 continue;
             }
             if (black.startsWith("#")) {
-                Log.i(TAG, "[parseBlackFile] comment:%s", black);
+//                Log.i(TAG, "[parseBlackFile] comment:%s", black);
                 continue;
             }
             if (black.startsWith("[")){
@@ -87,6 +88,18 @@ public class TraceBuildConfig {
         }
     }
 
+    public boolean isMethodBeatClass(String className, HashMap<String,String> collectClassExtendMap){
+        className=className.replace(".","/");
+        boolean isApplication = className.equals(TraceBuildConstants.MATRIX_TRACE_METHOD_BEAT_CLASS);
+        if (isApplication){
+            return true;
+        } else if (collectClassExtendMap.containsKey(className)){
+            return collectClassExtendMap.get(className).equals(TraceBuildConstants.MATRIX_TRACE_METHOD_BEAT_CLASS);
+        } else {
+            return false;
+        }
+    }
+
     public boolean isNeedTraceClass(String fileName){
         boolean isNeed=true;
         if (fileName.endsWith(".class")){
@@ -99,7 +112,31 @@ public class TraceBuildConfig {
         } else {
             isNeed=false;
         }
+//        if (isNeed) {
+//
+//            Log.e(TAG, String.format("%s need trace %b", fileName, isNeed));
+//        }
         return isNeed;
+    }
+
+    public boolean isWindowFocusChangeMethod(String name,String desc){
+        return null!=name&&null!=desc&&name.equals(TraceBuildConstants.MATRIX_TRACE_ON_WINDOW_FOCUS_METHOD)
+                &&desc.equals(TraceBuildConstants.MATRIX_TRACE_ON_WINDOW_FOCUS_METHOD_ARGS);
+    }
+
+    public boolean isActivityOrSubClass(String className,HashMap<String,String> collectedClassExtendMap){
+        className = className.replace(".","/");
+        boolean isActivity = className.equals(TraceBuildConstants.MATRIX_TRACE_ACTIVITY_CLASS)
+                || className.equals(TraceBuildConstants.MATRIX_TRACE_V7_ACTIVITY_CLASS);
+        if (isActivity){
+            return true;
+        } else {
+            if (!collectedClassExtendMap.containsKey(className)){
+                return false;
+            } else {
+                return isActivityOrSubClass(collectedClassExtendMap.get(className), collectedClassExtendMap);
+            }
+        }
     }
 
     public boolean isNeedTrace(String className,MappingCollector mappingCollector) {

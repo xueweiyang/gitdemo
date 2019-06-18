@@ -31,6 +31,30 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation project(":resourceanay")
-    implementation project(":timetrace")
+//    compile group: 'org.ow2.asm', name: 'asm', version: '5.1'
+//    compile group: 'org.ow2.asm', name: 'asm-commons', version: '5.1'
+
+//    implementation project(":resourceanay")
+//    implementation project(":timetrace")
+}
+apply plugin: 'systrace'
+buildscript {
+    repositories {
+        maven {
+            url uri('../repo')
+        }
+        mavenCentral()
+        jcenter()
+        mavenLocal()
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        google()
+    }
+    dependencies {
+        classpath 'com.fcl:systrace:1.0.0'
+    }
+}
+systrace{
+    enable = true
+    baseMethodMapFile = "${project.buildDir}/systrace_output/Debug.methodmap"
+    blackListFile = "${project.projectDir}/blacklist/blackMethodList.txt"
 }

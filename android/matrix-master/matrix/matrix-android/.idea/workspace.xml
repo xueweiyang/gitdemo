@@ -6,292 +6,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79792afb-04fe-49cf-a42c-b1f27cdc05cc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../AllocRecordDemo-master/AllocRecordTest/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../AllocRecordDemo-master/AllocRecordTest/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../AllocRecordDemo-master/AllocRecordTest/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../AllocRecordDemo-master/AllocRecordTest/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../AllocRecordDemo-master/AllocRecordTest/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../AllocRecordDemo-master/AllocRecordTest/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../AllocRecordDemo-master/Testddmlib/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../LeakDemo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../LeakDemo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/androidTest/java/com/example/performancedemo/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/java/com/example/performancedemo/Main2Activity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/java/com/example/performancedemo/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/layout/activity_main2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/test/java/com/example/performancedemo/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/resourceanay/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/resourceanay/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/resourceanay/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/resourceanay/src/androidTest/java/com/example/resourceanay/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/resourceanay/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/resourceanay/src/main/java/com/example/resourceanay/AndroidHeapDumper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/resourceanay/src/main/java/com/example/resourceanay/BitmapInstance.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/resourceanay/src/main/java/com/example/resourceanay/DumplicatedCollectInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/resourceanay/src/main/java/com/example/resourceanay/HahaHelper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/resourceanay/src/main/java/com/example/resourceanay/HeapAn.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/resourceanay/src/main/java/com/example/resourceanay/HeaperAnayler.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/resourceanay/src/main/java/com/example/resourceanay/TraceUtils.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/resourceanay/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/resourceanay/src/test/java/com/example/resourceanay/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/timetrace/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/timetrace/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/timetrace/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/timetrace/src/androidTest/java/com/example/timetrace/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/timetrace/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/timetrace/src/main/java/com/example/timetrace/atrace/Atrace.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/timetrace/src/main/java/com/example/timetrace/cpu/ProcessCpuTracker.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/timetrace/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/timetrace/src/test/java/com/example/timetrace/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ST4_4_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__annotations_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__annotations_25_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr4_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr4_annotations_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr4_runtime_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr_3_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr_runtime_3_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__apktool.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__asm_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__asm_analysis_5_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__asm_commons_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__asm_debug_all_5_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__asm_tree_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__baseLibrary_2_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__bcpkix_jdk15on_1_48.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__bcprov_jdk15on_1_48.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__builder_2_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__builder_model_2_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__builder_test_api_2_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_23_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_27_0_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_23_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_tencent_tinker_tinker_ziputils_1_9_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__common_25_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_cli_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_compress_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__compilerCommon_2_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ddmlib_25_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__dvlib_25_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ecj_4_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__gradle_2_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__gradle_api_2_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__gradle_api_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__gradle_core_2_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__gradle_installation_beacon_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__groovy_all_2_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__gson_2_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__gson_2_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__guava_17_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__haha_2_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__httpclient_4_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__httpcore_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__httpmime_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jack_api_0_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javawriter_2_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jill_api_0_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__json_20170516.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__juniversalchardet_1_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__kxml2_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__layoutlib_api_25_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__lint_25_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__lint_api_25_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__lint_checks_25_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__lombok_ast_0_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__manifest_merger_25_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_abego_treelayout_core_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jacoco_core_0_7_4_201502262128.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__proguard_base_5_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__proguard_gradle_5_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__repository_25_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__sdk_common_25_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__sdklib_25_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__transform_api_2_0_0_deprecated_use_gradle_api.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../LeakDemo/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/blacklist/blackMethodList.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/java/com/example/performancedemo/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/java/com/example/performancedemo/TraceTag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/java/com/example/performancedemo/Main2Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/java/com/example/performancedemo/Main2Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/java/com/example/performancedemo/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/java/com/example/performancedemo/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/groovy/com/example/systrace/SystracePlugin.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/groovy/com/example/systrace/SystracePlugin.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/groovy/com/example/systrace/transform/SystemTraceTransform.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/groovy/com/example/systrace/transform/SystemTraceTransform.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/MethodCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/MethodCollector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/MethodTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/MethodTracker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/TraceBuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/TraceBuildConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/TraceBuildConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/TraceBuildConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/item/TraceMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/item/TraceMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/retrace/MappingCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/retrace/MappingCollector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/resources/META-INF/gradle-plugins/com.example.systrace-plugin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/resources/META-INF/gradle-plugins/systrace.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-android-commons/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-android-commons/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-android-commons/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-android-commons/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-android-commons/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-android-commons/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-android-commons/matrix-android-commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-android-commons/matrix-android-commons.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-android-lib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-android-lib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-android-lib/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-android-lib/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-android-lib/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-android-lib/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-android-lib/matrix-android-lib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-android-lib/matrix-android-lib.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-android.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-apk-canary/matrix-apk-canary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-apk-canary/matrix-apk-canary.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-arscutil/matrix-arscutil.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-arscutil/matrix-arscutil.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-commons/matrix-commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-commons/matrix-commons.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrix-gradle-plugin/matrix-gradle-plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-gradle-plugin/matrix-gradle-plugin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/cmake_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/cmake_build_output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/debug/armeabi-v7a/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/cmake_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/cmake_build_output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-io-canary/matrix-io-canary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-io-canary/matrix-io-canary.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-analyzer/matrix-resource-canary-analyzer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-analyzer/matrix-resource-canary-analyzer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-android/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-android/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-android/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-android/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-android/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-android/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-android/matrix-resource-canary-android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-android/matrix-resource-canary-android.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-common/matrix-resource-canary-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-common/matrix-resource-canary-common.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/cmake_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/cmake_build_output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullDebug/armeabi-v7a/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/cmake_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/cmake_build_output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/fullRelease/armeabi-v7a/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/cmake_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/cmake_build_output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubDebug/armeabi-v7a/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/android_gradle_build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/android_gradle_build_mini.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/cmake_build_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/cmake_build_command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/cmake_build_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/cmake_build_output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/build/intermediates/incremental/packageFullDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/build/intermediates/incremental/packageFullDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/build/intermediates/incremental/packageFullDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/build/intermediates/incremental/packageFullDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/build/outputs/logs/manifest-merger-full-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/build/outputs/logs/manifest-merger-full-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/matrix-sqlite-lint-android-sdk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/matrix-sqlite-lint-android-sdk.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-trace-canary/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-trace-canary/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-trace-canary/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-trace-canary/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-trace-canary/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-trace-canary/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-trace-canary/matrix-trace-canary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-trace-canary/matrix-trace-canary.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -315,33 +50,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-analyzer/src/main/java/com/squareup/haha/perflib/HahaHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-analyzer/src/main/java/com/tencent/matrix/resource/analyzer/DuplicatedBitmapAnalyzer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-analyzer/src/main/java/com/tencent/matrix/resource/analyzer/CLIMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3210">
-              <caret line="275" column="12" selection-start-line="275" selection-start-column="12" selection-end-line="275" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-android/src/main/java/com/tencent/matrix/resource/watcher/AndroidHeapDumper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="301">
@@ -351,10 +59,77 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-android/src/main/java/com/tencent/matrix/resource/watcher/DumpStorageManager.java">
+        <entry file="file://$PROJECT_DIR$/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/TracePlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            <state relative-caret-position="-900">
+              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/tracer/FrameTracer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="64" column="65" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/groovy/com/tencent/matrix/plugin/transform/MatrixTraceTransform.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="128" column="22" lean-forward="true" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/MethodTracer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="521">
+              <caret line="387" column="5" lean-forward="true" selection-start-line="387" selection-start-column="5" selection-end-line="387" selection-end-column="5" />
+              <folding>
+                <element signature="e#8798#8799#0" expanded="true" />
+                <element signature="e#8844#8845#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/TraceBuildConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="133" column="86" selection-start-line="133" selection-start-column="86" selection-end-line="133" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/TraceBuildConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/MethodCollector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-784">
+              <caret line="451" column="1" lean-forward="true" selection-start-line="451" selection-start-column="1" selection-end-line="451" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/java/io/File.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -409,10 +184,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="232" />
-    <option name="y" value="261" />
+    <option name="x" value="67" />
+    <option name="y" value="276" />
     <option name="width" value="1280" />
-    <option name="height" value="868" />
+    <option name="height" value="907" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -422,7 +197,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -432,10 +206,249 @@
               <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
               <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="groovy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="groovy" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="groovy" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tencent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="groovy" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tencent" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="groovy" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tencent" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="groovy" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tencent" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="extension" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="groovy" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tencent" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="task" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="groovy" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tencent" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="transform" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tencent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tencent" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tencent" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
+              <item name="trace" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tencent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tencent" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tencent" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
+              <item name="trace" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tencent" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
+              <item name="trace" type="462c0819:PsiDirectoryNode" />
+              <item name="tracer" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -551,9 +564,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="232" y="261" width="1280" height="868" extended-state="0" />
+    <frame x="67" y="276" width="1280" height="907" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12012987" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22970779" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Build Variants" order="3" side_tool="true" />
@@ -576,7 +590,7 @@
       <window_info anchor="bottom" id="Logcat" order="11" weight="0.16399287" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3286119" />
-      <window_info anchor="bottom" id="Build" order="14" visible="true" weight="0.042075735" />
+      <window_info anchor="bottom" id="Build" order="14" visible="true" weight="0.039893616" />
       <window_info anchor="bottom" id="Fastdex" order="15" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -594,48 +608,25 @@
       <window_info anchor="right" id="ASM" order="13" />
     </layout>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/MethodCollector.java</url>
+          <line>446</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/MethodCollector.java</url>
+          <line>510</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/hacker/HackCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="50" column="25" lean-forward="true" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/tracer/StartUpTracer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matrix-io-canary/src/main/cpp/core/io_canary.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="65" column="34" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matrix-io-canary/src/main/cpp/detector/detector.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-307" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matrix-io-canary/src/main/cpp/core/io_canary.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="99" column="33" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Android/Sdk/sources/android-26/java/io/FileInputStream.java" />
-    <entry file="file://$PROJECT_DIR$/matrix-io-canary/src/main/java/com/tencent/matrix/iocanary/core/IOCanaryJniBridge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2358">
-          <caret line="149" column="45" selection-start-line="149" selection-start-column="31" selection-end-line="149" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/matrix-io-canary/src/main/java/com/tencent/matrix/iocanary/detect/IOCloseLeakDetector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -814,19 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/tracer/FrameTracer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="64" column="65" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
-          <folding>
-            <element signature="e#2324#2644#0" expanded="true" />
-            <element signature="e#2643#2644#0" expanded="true" />
-            <element signature="e#3193#3536#0" expanded="true" />
-            <element signature="e#3535#3536#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/java/io/FileInputStream.java" />
     <entry file="file://$PROJECT_DIR$/matrix-io-canary/src/main/java/com/tencent/matrix/iocanary/IOCanaryPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -969,6 +947,66 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
           <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/TracePlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-900">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/tracer/FrameTracer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="64" column="65" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/groovy/com/tencent/matrix/plugin/transform/MatrixTraceTransform.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="128" column="22" lean-forward="true" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/java/io/File.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/MethodCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-784">
+          <caret line="451" column="1" lean-forward="true" selection-start-line="451" selection-start-column="1" selection-end-line="451" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/TraceBuildConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/TraceBuildConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="133" column="86" selection-start-line="133" selection-start-column="86" selection-end-line="133" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/MethodTracer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="387" column="5" lean-forward="true" selection-start-line="387" selection-start-column="5" selection-end-line="387" selection-end-column="5" />
+          <folding>
+            <element signature="e#8798#8799#0" expanded="true" />
+            <element signature="e#8844#8845#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

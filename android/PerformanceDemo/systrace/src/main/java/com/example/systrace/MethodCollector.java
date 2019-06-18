@@ -33,56 +33,110 @@ public class MethodCollector {
         this.mappingCollector = mappingCollector;
     }
 
-    HashMap collect(List<File> srcFolderList, List<File> dependencyJarList) {
+    public HashMap collect(List<File> srcFolderList, List<File> dependencyJarList) {
         traceConfig.parseBlackFile(mappingCollector);
 
         File originMethodMapFile = new File(traceConfig.getBaseMethodMap());
         getMethodFromBaseMethod(originMethodMapFile);
         retraceMethodMap(mappingCollector, collectMethodMap);
 
-collectMethodFromSrc(srcFolderList,true);
-collectMethodFromSrc(srcFolderList,false);
-collectMethodFromJar(dependencyJarList,true);
-collectMethodFromJar(dependencyJarList,false);
+        collectMethodFromSrc(srcFolderList, true);
+        collectMethodFromSrc(srcFolderList, false);
+        collectMethodFromJar(dependencyJarList, true);
+        collectMethodFromJar(dependencyJarList, false);
 
-
+        saveCollectedMethod(mappingCollector);
+        saveIgnoreCollectMethod(mappingCollector);
 
         return collectMethodMap;
     }
 
-    void saveCollectedMethod(MappingCollector mappingCollector){
-        File methodMapFile=new File(traceConfig.methodMapFile);
-        if (!methodMapFile.getParentFile().exists()){
+    public HashMap<String,String> getCollectClassExtendMap() {
+        return collectClassExtendMap;
+    }
+
+    void saveCollectedMethod(MappingCollector mappingCollector) {
+        File methodMapFile = new File(traceConfig.methodMapFile);
+        if (!methodMapFile.getParentFile().exists()) {
             methodMapFile.getParentFile().mkdirs();
         }
         List<TraceMethod> methodList = new ArrayList<>(collectMethodMap.values());
-        Collections.sort(methodList, (t1, t2) -> t1.id-t2.id);
+        Collections.sort(methodList, (t1, t2) -> t1.id - t2.id);
 
-        PrintWriter pw=null;
+        PrintWriter pw = null;
+        try {
+            FileOutputStream fileOutputStream = new FileOutputStream(methodMapFile, false);
+            Writer w = new OutputStreamWriter(fileOutputStream, "UTF-8");
+            pw = new PrintWriter(w);
+            for (TraceMethod traceMethod : methodList) {
+                traceMethod.revert(mappingCollector);
+                pw.println(traceMethod.toString());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (pw != null) {
+
+                pw.flush();
+                pw.close();
+            }
+        }
+    }
+
+
+    void saveIgnoreCollectMethod(MappingCollector mappingCollector) {
+        File methodMapFile = new File(traceConfig.getIgnoreMethodMapFile());
+        if (!methodMapFile.getParentFile().exists()) {
+            methodMapFile.getParentFile().mkdirs();
+        }
+        List<TraceMethod> ignoreMethodList = new ArrayList<>();
+        ignoreMethodList.addAll(collectIgnoreMethodMap.values());
+
+        List<TraceMethod> blackMethodList = new ArrayList<>();
+        blackMethodList.addAll(collectBlackMethodMap.values());
+
+        Collections.sort(ignoreMethodList, (t1, t2) -> (t1.className.compareTo(t2.className)));
+        Collections.sort(blackMethodList, (t1, t2) -> (t1.className.compareTo(t2.className)));
+
+        PrintWriter pw = null;
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(methodMapFile,false);
             Writer w = new OutputStreamWriter(fileOutputStream, "UTF-8");
             pw = new PrintWriter(w);
-            for(TraceMethod traceMethod : methodList){
-                traceMethod.
+            pw.println("ignore methods:");
+            for (TraceMethod traceMethod : ignoreMethodList){
+                traceMethod.revert(mappingCollector);
+                pw.println(traceMethod.toIgnoreString());
+            }
+            pw.println("");
+            pw.println("black methods:");
+            for(TraceMethod traceMethod:blackMethodList){
+                traceMethod.revert(mappingCollector);
+                pw.println(traceMethod.toIgnoreString());
             }
         } catch (Exception e){
             e.printStackTrace();
+        }finally {
+            if (pw!=null){
+                pw.flush();
+                pw.close();
+            }
         }
+
     }
 
     void collectMethodFromSrc(List<File> srcFolderList, boolean isSingle) {
         if (null != srcFolderList) {
             for (File srcFile : srcFolderList) {
-                innerCollectMethodFromSrc(srcFile,isSingle);
+                innerCollectMethodFromSrc(srcFile, isSingle);
             }
         }
     }
 
-    void collectMethodFromJar(List<File> dependencyJarList,boolean isSingle){
-        if (null!=dependencyJarList){
-            for(File jarFile:dependencyJarList){
-                innerCollectMethodFromJar(jarFile,isSingle);
+    void collectMethodFromJar(List<File> dependencyJarList, boolean isSingle) {
+        if (null != dependencyJarList) {
+            for (File jarFile : dependencyJarList) {
+                innerCollectMethodFromJar(jarFile, isSingle);
             }
         }
     }
@@ -102,14 +156,14 @@ collectMethodFromJar(dependencyJarList,false);
                 ClassWriter classWriter = new ClassWriter(ClassWriter.COMPUTE_MAXS);
                 ClassVisitor visitor;
                 if (isSingle) {
-                    visitor = new SingleTraceClassAdapter(Opcodes.ASM5,classWriter);
-                } else  {
-                    visitor=new TraceClassAdapter(Opcodes.ASM5,classWriter);
+                    visitor = new SingleTraceClassAdapter(Opcodes.ASM5, classWriter);
+                } else {
+                    visitor = new TraceClassAdapter(Opcodes.ASM5, classWriter);
                 }
-                classReader.accept(visitor,0);
+                classReader.accept(visitor, 0);
             } catch (Exception e) {
                 e.printStackTrace();
-            }finally {
+            } finally {
                 try {
                     is.close();
                 } catch (IOException e) {
@@ -119,28 +173,28 @@ collectMethodFromJar(dependencyJarList,false);
         }
     }
 
-    void innerCollectMethodFromJar(File fromJar,boolean isSingle){
+    void innerCollectMethodFromJar(File fromJar, boolean isSingle) {
         ZipFile zipFile = null;
         try {
             zipFile = new ZipFile(fromJar);
             Enumeration<? extends ZipEntry> enumeration = zipFile.entries();
-            while (enumeration.hasMoreElements()){
+            while (enumeration.hasMoreElements()) {
                 ZipEntry zipEntry = enumeration.nextElement();
-                String zipEntryName =zipEntry.getName();
-                if (traceConfig.isNeedTraceClass(zipEntryName)){
+                String zipEntryName = zipEntry.getName();
+                if (traceConfig.isNeedTraceClass(zipEntryName)) {
                     InputStream inputStream = zipFile.getInputStream(zipEntry);
                     ClassReader classReader = new ClassReader(inputStream);
                     ClassWriter classWriter = new ClassWriter(ClassWriter.COMPUTE_MAXS);
                     ClassVisitor visitor;
-                    if (isSingle){
-                        visitor = new SingleTraceClassAdapter(Opcodes.ASM5,classWriter);
+                    if (isSingle) {
+                        visitor = new SingleTraceClassAdapter(Opcodes.ASM5, classWriter);
                     } else {
-                        visitor=new TraceClassAdapter(Opcodes.ASM5,classWriter);
+                        visitor = new TraceClassAdapter(Opcodes.ASM5, classWriter);
                     }
                     classReader.accept(visitor, 0);
                 }
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -190,7 +244,7 @@ collectMethodFromJar(dependencyJarList,false);
             fileReader = new Scanner(baseMethodFile, "UTF-8");
             while (fileReader.hasNext()) {
                 String nextLine = fileReader.nextLine();
-                if (!Util.isNullOrNil(nextLine)) {
+                if (nextLine == null || nextLine.isEmpty()) {
                     nextLine = nextLine.trim();
                     if (nextLine.startsWith("#")) {
                         Log.i("[getMethodFromBaseMethod] comment %s", nextLine);
@@ -232,6 +286,7 @@ collectMethodFromJar(dependencyJarList,false);
         @Override
         public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {
             super.visit(version, access, name, signature, superName, interfaces);
+            collectClassExtendMap.put(name,superName);
         }
     }
 
@@ -282,13 +337,21 @@ collectMethodFromJar(dependencyJarList,false);
             if ("<init>".equals(name)) {
                 isConstructor = true;
             }
-            if ((isEmptyMethod() || isGetSetMethod() || isSingleMethod())
-            && traceConfig.isNeedTrace(traceMethod.className,mappingCollector)){
+            //todo 待改回来
+            if ((isEmptyMethod() && isGetSetMethod() && isSingleMethod())
+                    && traceConfig.isNeedTrace(traceMethod.className, mappingCollector)) {
+                Log.e(TAG, String.format("class:%s method:%s 不收集", className, name));
                 ignoreCount++;
-                collectIgnoreMethodMap.put(traceMethod.methodName,traceMethod);
+                collectIgnoreMethodMap.put(traceMethod.methodName, traceMethod);
+                return;
+            }
+            if (traceConfig.isNeedTrace(traceMethod.className, mappingCollector) && !collectMethodMap.containsKey(traceMethod.methodName)){
+                Log.e(TAG, String.format("class:%s method:%s 收集", className, name));
+                traceMethod.id = methodId.incrementAndGet();
+                collectMethodMap.put(traceMethod.methodName, traceMethod);
                 incrementCount++;
-            } else if (!traceConfig.isNeedTrace(traceMethod.className, mappingCollector)
-            && !collectBlackMethodMap.containsKey(traceMethod.className)){
+            } else if (!traceConfig.isNeedTrace(traceMethod.className,mappingCollector)){
+                Log.e(TAG, String.format("class:%s method:%s 忽略", className, name));
                 ignoreCount++;
                 collectBlackMethodMap.put(traceMethod.methodName,traceMethod);
             }
@@ -303,6 +366,7 @@ collectMethodFromJar(dependencyJarList,false);
                 if (-1 == opcode) {
                     continue;
                 }
+                Log.e(TAG, String.format("class:%s method:%s opcode:%d",className,name,opcode));
                 if (opcode != Opcodes.GETFIELD
                         && opcode != Opcodes.GETSTATIC
                         && opcode != Opcodes.H_GETFIELD
@@ -321,9 +385,9 @@ collectMethodFromJar(dependencyJarList,false);
                         && opcode != Opcodes.H_PUTSTATIC
                         && opcode > Opcodes.SALOAD
                 ) {
-                    if (isConstructor && opcode == Opcodes.INVOKESPECIAL){
+                    if (isConstructor && opcode == Opcodes.INVOKESPECIAL) {
                         ignoreCount++;
-                        if (ignoreCount>1){
+                        if (ignoreCount > 1) {
                             return false;
                         }
                         continue;
