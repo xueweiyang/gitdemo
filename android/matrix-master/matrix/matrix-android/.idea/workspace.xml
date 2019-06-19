@@ -6,27 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79792afb-04fe-49cf-a42c-b1f27cdc05cc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/blacklist/blackMethodList.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/java/com/example/performancedemo/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/java/com/example/performancedemo/TraceTag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/java/com/example/performancedemo/Main2Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/java/com/example/performancedemo/Main2Activity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/java/com/example/performancedemo/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/java/com/example/performancedemo/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/groovy/com/example/systrace/SystracePlugin.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/groovy/com/example/systrace/SystracePlugin.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/groovy/com/example/systrace/transform/SystemTraceTransform.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/groovy/com/example/systrace/transform/SystemTraceTransform.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/MethodCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/MethodCollector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/MethodTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/MethodTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/TraceBuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/TraceBuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/TraceBuildConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/TraceBuildConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/item/TraceMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/item/TraceMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/retrace/MappingCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/java/com/example/systrace/retrace/MappingCollector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/resources/META-INF/gradle-plugins/com.example.systrace-plugin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/systrace/src/main/resources/META-INF/gradle-plugins/systrace.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-gradle-plugin/matrix-gradle-plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-gradle-plugin/matrix-gradle-plugin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint.iml" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-sqlite-lint/matrix-sqlite-lint.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,18 +31,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-android/src/main/java/com/tencent/matrix/resource/watcher/AndroidHeapDumper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/TracePlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-900">
+            <state relative-caret-position="180">
               <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
             </state>
           </provider>
@@ -70,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/tracer/FrameTracer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="540">
               <caret line="64" column="65" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
             </state>
           </provider>
@@ -79,17 +51,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/groovy/com/tencent/matrix/plugin/transform/MatrixTraceTransform.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="128" column="22" lean-forward="true" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
+            <state relative-caret-position="1485">
+              <caret line="128" column="22" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/MethodTracer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="387" column="5" lean-forward="true" selection-start-line="387" selection-start-column="5" selection-end-line="387" selection-end-column="5" />
+            <state relative-caret-position="4275">
+              <caret line="325" column="76" selection-start-line="325" selection-start-column="76" selection-end-line="325" selection-end-column="76" />
               <folding>
                 <element signature="e#8798#8799#0" expanded="true" />
                 <element signature="e#8844#8845#0" expanded="true" />
@@ -99,9 +71,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.1/5ef31c4fe953b1fd00b8a88fa1d6820e8785bb45/asm-5.1.jar!/org/objectweb/asm/MethodVisitor.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1785">
+              <caret line="124" column="16" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/TraceBuildConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
+            <state relative-caret-position="1515">
               <caret line="133" column="86" selection-start-line="133" selection-start-column="86" selection-end-line="133" selection-end-column="86" />
             </state>
           </provider>
@@ -110,8 +91,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/TraceBuildConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+            <state relative-caret-position="135">
+              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/core/MethodBeat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -119,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/MethodCollector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-784">
-              <caret line="451" column="1" lean-forward="true" selection-start-line="451" selection-start-column="1" selection-end-line="451" selection-end-column="1" />
+            <state relative-caret-position="5970">
+              <caret line="451" column="1" selection-start-line="451" selection-start-column="1" selection-end-line="451" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -130,15 +120,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-android/src/main/java/com/tencent/matrix/resource/watcher/ActivityRefWatcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3345">
-              <caret line="266" column="55" selection-start-line="266" selection-start-column="55" selection-end-line="266" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -184,10 +165,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
-    <option name="y" value="276" />
+    <option name="x" value="238" />
+    <option name="y" value="242" />
     <option name="width" value="1280" />
-    <option name="height" value="907" />
+    <option name="height" value="890" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -564,7 +545,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="276" width="1280" height="907" extended-state="0" />
+    <frame x="238" y="242" width="1280" height="890" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.22970779" />
@@ -590,7 +571,7 @@
       <window_info anchor="bottom" id="Logcat" order="11" weight="0.16399287" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3286119" />
-      <window_info anchor="bottom" id="Build" order="14" visible="true" weight="0.039893616" />
+      <window_info anchor="bottom" id="Build" order="14" visible="true" weight="0.04489796" />
       <window_info anchor="bottom" id="Fastdex" order="15" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -627,20 +608,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/matrix-io-canary/src/main/java/com/tencent/matrix/iocanary/detect/IOCloseLeakDetector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matrix-io-canary/src/main/java/com/tencent/matrix/iocanary/detect/MatrixCloseGuard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2538">
-          <caret line="141" column="23" selection-start-line="141" selection-start-column="23" selection-end-line="141" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/matrix-resource-canary/matrix-resource-canary-android/src/main/java/com/tencent/matrix/resource/ResourcePlugin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1110">
@@ -952,22 +919,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/TracePlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-900">
+        <state relative-caret-position="180">
           <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/tracer/FrameTracer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="540">
           <caret line="64" column="65" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/groovy/com/tencent/matrix/plugin/transform/MatrixTraceTransform.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="128" column="22" lean-forward="true" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
+        <state relative-caret-position="1485">
+          <caret line="128" column="22" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/MethodTracer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4275">
+          <caret line="325" column="76" selection-start-line="325" selection-start-column="76" selection-end-line="325" selection-end-column="76" />
+          <folding>
+            <element signature="e#8798#8799#0" expanded="true" />
+            <element signature="e#8844#8845#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.1/5ef31c4fe953b1fd00b8a88fa1d6820e8785bb45/asm-5.1.jar!/org/objectweb/asm/MethodVisitor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="124" column="16" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/TraceBuildConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="133" column="86" selection-start-line="133" selection-start-column="86" selection-end-line="133" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/TraceBuildConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/MethodCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5970">
+          <caret line="451" column="1" selection-start-line="451" selection-start-column="1" selection-end-line="451" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -978,35 +984,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/MethodCollector.java">
+    <entry file="file://$PROJECT_DIR$/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/core/MethodBeat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-784">
-          <caret line="451" column="1" lean-forward="true" selection-start-line="451" selection-start-column="1" selection-end-line="451" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/TraceBuildConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/TraceBuildConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="133" column="86" selection-start-line="133" selection-start-column="86" selection-end-line="133" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matrix-gradle-plugin/src/main/java/com/tencent/matrix/trace/MethodTracer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="387" column="5" lean-forward="true" selection-start-line="387" selection-start-column="5" selection-end-line="387" selection-end-column="5" />
-          <folding>
-            <element signature="e#8798#8799#0" expanded="true" />
-            <element signature="e#8844#8845#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="358">
+          <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
         </state>
       </provider>
     </entry>
