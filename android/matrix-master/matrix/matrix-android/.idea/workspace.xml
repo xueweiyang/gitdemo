@@ -5,10 +5,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79792afb-04fe-49cf-a42c-b1f27cdc05cc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/java/com/example/performancedemo/Main2Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../PerformanceDemo/app/src/main/java/com/example/performancedemo/Main2Activity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="79792afb-04fe-49cf-a42c-b1f27cdc05cc" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -165,8 +162,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="238" />
-    <option name="y" value="242" />
+    <option name="x" value="860" />
+    <option name="y" value="233" />
     <option name="width" value="1280" />
     <option name="height" value="890" />
   </component>
@@ -174,263 +171,10 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-              <item name="matrix" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-              <item name="matrix" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-              <item name="matrix" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="extension" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-              <item name="matrix" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="groovy" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-              <item name="matrix" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="transform" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-              <item name="matrix" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-gradle-plugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-              <item name="matrix" type="462c0819:PsiDirectoryNode" />
-              <item name="trace" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-              <item name="matrix" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-              <item name="matrix" type="462c0819:PsiDirectoryNode" />
-              <item name="trace" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matrix-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matrix-android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="matrix-trace-canary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-              <item name="matrix" type="462c0819:PsiDirectoryNode" />
-              <item name="trace" type="462c0819:PsiDirectoryNode" />
-              <item name="tracer" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="ioc&#9;FILE&#9;file:///Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-io-canary/src/main/java/com/tencent/matrix/iocanary/IOCanaryPlugin.java&#10;fileinp&#9;PSI&#9;JAVA://java.io.FileInputStream&#10;framet&#9;PSI&#9;JAVA://com.tencent.matrix.trace.tracer.FrameTracer&#10;checkre&#9;PSI&#9;JAVA://com.tencent.sqlitelint.behaviour.alert.CheckResultActivity&#10;reso&#9;FILE&#9;file:///Users/aaron/dada/demo/gitdemo/android/matrix-master/matrix/matrix-android/matrix-resource-canary/matrix-resource-canary-android/src/main/java/com/tencent/matrix/resource/ResourcePlugin.java&#10;ioca&#9;FILE&#9;file:///home/fcl/demopro/android/matrix-master/matrix/matrix-android/matrix-io-canary/src/main/java/com/tencent/matrix/iocanary/IOCanaryPlugin.java&#10;hac&#9;FILE&#9;file:///home/fcl/demopro/android/matrix-master/matrix/matrix-android/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/hacker/HackCallback.java&#10;hack&#9;FILE&#9;file:///home/fcl/demopro/android/matrix-master/matrix/matrix-android/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/hacker/Hacker.java&#10;method&#9;FILE&#9;file:///home/fcl/demopro/android/matrix-master/matrix/matrix-android/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/core/MethodBeat.java&#10;sta&#9;FILE&#9;file:///home/fcl/demopro/android/matrix-master/matrix/matrix-android/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/tracer/StartUpTracer.java&#10;resopl&#9;PSI&#9;JAVA://com.tencent.matrix.resource.ResourcePlugin&#10;methodb&#9;FILE&#9;file:///home/fcl/demopro/android/matrix-master/matrix/matrix-android/matrix-trace-canary/src/main/java/com/tencent/matrix/trace/core/MethodBeat.java&#10;frbe&#9;PSI&#9;JAVA://com.tencent.matrix.trace.core.FrameBeat" />
@@ -545,7 +289,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="238" y="242" width="1280" height="890" extended-state="0" />
+    <frame x="860" y="233" width="1280" height="890" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.22970779" />
