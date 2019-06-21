@@ -1,5 +1,6 @@
 package com.example.performancedemo
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Trace
 import android.support.v7.app.AppCompatActivity
@@ -36,7 +37,9 @@ class Main2Activity : AppCompatActivity() {
 //            Log.e("Main2", "value:$it")
 //        }
 
-
+        linto.setOnClickListener {
+            startActivity(Intent(this, LintoActivity::class.java))
+        }
 
     }
 

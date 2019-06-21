@@ -36,6 +36,7 @@ dependencies {
 
 //    implementation project(":resourceanay")
 //    implementation project(":timetrace")
+    implementation project(":litho")
 }
 apply plugin: 'systrace'
 buildscript {
@@ -53,7 +54,7 @@ buildscript {
         classpath 'com.fcl:systrace:1.0.0'
     }
 }
-systrace{
+systrace {
     enable = true
     baseMethodMapFile = "${project.buildDir}/systrace_output/Debug.methodmap"
     blackListFile = "${project.projectDir}/blacklist/blackMethodList.txt"
