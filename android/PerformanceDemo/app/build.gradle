@@ -36,26 +36,26 @@ dependencies {
 
 //    implementation project(":resourceanay")
 //    implementation project(":timetrace")
-    implementation project(":litho")
+//    implementation project(":litho")
 }
-apply plugin: 'systrace'
-buildscript {
-    repositories {
-        maven {
-            url uri('../repo')
-        }
-        mavenCentral()
-        jcenter()
-        mavenLocal()
-        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
-        google()
-    }
-    dependencies {
-        classpath 'com.fcl:systrace:1.0.0'
-    }
-}
-systrace {
-    enable = true
-    baseMethodMapFile = "${project.buildDir}/systrace_output/Debug.methodmap"
-    blackListFile = "${project.projectDir}/blacklist/blackMethodList.txt"
-}
+//apply plugin: 'systrace'
+//buildscript {
+//    repositories {
+//        maven {
+//            url uri('../repo')
+//        }
+//        mavenCentral()
+//        jcenter()
+//        mavenLocal()
+//        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+//        google()
+//    }
+//    dependencies {
+//        classpath 'com.fcl:systrace:1.0.0'
+//    }
+//}
+//systrace {
+//    enable = true
+//    baseMethodMapFile = "${project.buildDir}/systrace_output/Debug.methodmap"
+//    blackListFile = "${project.projectDir}/blacklist/blackMethodList.txt"
+//}

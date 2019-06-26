@@ -1,1 +1,1 @@
-include ':app', ':resourceanay', ':timetrace', ':systrace', ':libraryuse', ':litho'
+include ':app', ':resourceanay', ':timetrace', ':systrace', ':libraryuse'

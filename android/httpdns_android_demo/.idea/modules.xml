@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../alicloud-android-demo-master.iml" filepath="$PROJECT_DIR$/../alicloud-android-demo-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android.iml" filepath="$PROJECT_DIR$/.idea/modules/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../feedback_android_demo/feedback_android_demo.iml" filepath="$PROJECT_DIR$/../feedback_android_demo/feedback_android_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hotfix_android_demo/hotfix_android_demo.iml" filepath="$PROJECT_DIR$/../hotfix_android_demo/hotfix_android_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../httpdns_api_demo/httpdns_api_demo.iml" filepath="$PROJECT_DIR$/../httpdns_api_demo/httpdns_api_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../man_android_demo/man_android_demo.iml" filepath="$PROJECT_DIR$/../man_android_demo/man_android_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mpush_android_demo/mpush_android_demo.iml" filepath="$PROJECT_DIR$/../mpush_android_demo/mpush_android_demo.iml" />
+    </modules>
+  </component>
+</project>
