@@ -1,8 +1,6 @@
 package com.example.performancedemo
 
-import android.content.Intent
 import android.os.Bundle
-import android.os.Trace
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_main2.*
@@ -38,7 +36,6 @@ class Main2Activity : AppCompatActivity() {
 //        }
 
         linto.setOnClickListener {
-            startActivity(Intent(this, LintoActivity::class.java))
         }
 
     }

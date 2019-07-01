@@ -1,2 +1,2 @@
-./gradlew systrace:upload
+./gradlew andresguard:upload
 ./gradlew clean
