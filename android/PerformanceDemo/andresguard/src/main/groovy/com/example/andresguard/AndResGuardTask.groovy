@@ -20,7 +20,8 @@ class AndResGuardTask extends DefaultTask {
     run() {
         Log.i(TAG, "-------configuration--------")
         copyRes()
-        AndResTask.doTask()
+//        AndResTask.doTask()
+        AndRes.doTask()
     }
 
     def copyRes() {
@@ -34,7 +35,7 @@ class AndResGuardTask extends DefaultTask {
     }
 
     static def copyFile(File src, File to, boolean deleteSrc = false) {
-        println "copyFile[${src} to ${to}]"
+//        println "copyFile[${src} to ${to}]"
         to.parentFile.mkdirs()
         if (src.name.endsWith(".png") || src.name.endsWith(".jpeg") || src.name.endsWith(".jpg")) {
             to << src.bytes
