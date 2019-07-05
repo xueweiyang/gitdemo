@@ -1,5 +1,7 @@
 package com.example.andresguard;
 
+import com.example.andresguard.decoder.ARSCDecoder;
+
 public class AndRes {
 
     static String TAG = "AndRes";
@@ -8,6 +10,7 @@ public class AndRes {
         Log.i(TAG, "dotask");
         ProguardCache.INSTANCE.init();
         ApkZip.INSTANCE.unzip();
+        ARSCDecoder.INSTANCE.decode();
     }
 
 }
