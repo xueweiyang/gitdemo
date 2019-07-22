@@ -4,13 +4,15 @@ import com.example.andresguard.Constant
 import com.example.andresguard.Log
 import com.example.andresguard.data.Header
 import com.example.andresguard.data.StringBlock
+import com.example.andresguard.util.readIntLE
 import com.example.andresguard.util.readNullEndedString
+import com.example.andresguard.util.readShortLE
 import java.io.DataInputStream
 import java.io.File
 
 object ARSCDecoder {
 
-    val TAG = "StringBlock"
+    val TAG = "ARSCDecoder"
     val arscPath = "${Constant.PROJECT_PATH}/app/build/outputs/apk/release/app-release-unsigned/resources.arsc"
     var inputStream : DataInputStream
 
@@ -33,7 +35,7 @@ object ARSCDecoder {
     private fun readPackage() {
         val id = readInt()
         val name = inputStream.readNullEndedString(128,true)
-//        Log.i(TAG, "reading package name:$name")
+        Log.i(TAG, "reading package name:$name")
 
     }
 
@@ -41,7 +43,7 @@ object ARSCDecoder {
         Header.read(inputStream)
     }
 
-    fun readInt() = inputStream.readInt()
-    fun readShort() = inputStream.readShort()
+    fun readInt() = inputStream.readIntLE()
+    fun readShort() = inputStream.readShortLE()
 
 }

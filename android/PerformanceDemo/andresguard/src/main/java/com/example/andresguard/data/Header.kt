@@ -1,11 +1,13 @@
 package com.example.andresguard.data
 
 import com.example.andresguard.Log
+import com.example.andresguard.util.readIntLE
+import com.example.andresguard.util.readShortLE
 import java.io.DataInputStream
 import java.io.InputStream
 
 class Header constructor(
-    type: Int,
+    type: Short,
     chunkSize: Int
 ) {
 
@@ -21,14 +23,14 @@ class Header constructor(
 
         fun read(inputStream: DataInputStream): Header {
             return try {
-                val type = inputStream.readInt()
-                inputStream.readShort()
-                val size = inputStream.readInt()
-                Log.i(TAG, "header: type:$type size:$size")
+                val type = inputStream.readShortLE()
+                val headerSize = inputStream.readShortLE()
+                val size = inputStream.readIntLE()
+                Log.i(TAG, "header: type:$type header size:$headerSize size:$size")
                 Header(type, size)
             } catch (e: Exception) {
                 Log.i(TAG, "header: error")
-                Header(TYPE_NONE, 0)
+                Header(TYPE_NONE.toShort(), 0)
             }
         }
     }

@@ -4,8 +4,6 @@ import com.squareup.haha.perflib.ArrayInstance
 import com.squareup.haha.perflib.ClassObj
 import com.squareup.haha.perflib.Instance
 import com.squareup.haha.perflib.Snapshot
-import com.squareup.leakcanary.ExcludedRefs
-import com.squareup.leakcanary.HeapAnalyzer
 
 class BitmapInstance constructor(
     snapshot: Snapshot,
