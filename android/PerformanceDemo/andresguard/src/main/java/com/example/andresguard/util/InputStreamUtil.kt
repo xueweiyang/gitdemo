@@ -2,6 +2,7 @@ package com.example.andresguard.util
 
 import com.android.tools.build.jetifier.core.utils.Log
 import java.io.DataInputStream
+import java.io.DataOutputStream
 import java.lang.StringBuilder
 
 fun DataInputStream.readIntArray(length: Int): IntArray {
@@ -23,9 +24,9 @@ fun DataInputStream.readNullEndedString(length: Int, fixed: Boolean): String {
         builder.append(ch.toChar())
     }
     //todo enenen
-//    if (fixed) {
-//        skipBytes(len * 2)
-//    }
+    if (fixed) {
+        skipBytes(len * 2)
+    }
     return builder.toString()
 }
 
@@ -52,3 +53,14 @@ private fun DataInputStream.readByCountLE(count: Int): Int {
     return result
 }
 
+fun DataOutputStream.writeIntLE(data:Int) {
+    write(0xff and data)
+    write(0xff and (data.shr(8)))
+    write(0xff and (data.shr(16)))
+    write(0xff and (data.shr(24)))
+}
+
+fun DataOutputStream.writeShortLE(data:Int) {
+    write(0xff and data)
+    write(0xff and (data.shr(8)))
+}

@@ -3,11 +3,15 @@ package com.example.andresguard.data
 import com.example.andresguard.Log
 import com.example.andresguard.util.readIntLE
 import com.example.andresguard.util.readShortLE
+import com.example.andresguard.util.writeIntLE
+import com.example.andresguard.util.writeShortLE
 import java.io.DataInputStream
+import java.io.DataOutputStream
 import java.io.InputStream
+import java.io.OutputStream
 
 class Header constructor(
-    type: Short,
+    val type: Short,
     chunkSize: Int
 ) {
 
@@ -30,6 +34,20 @@ class Header constructor(
                 Header(type, size)
             } catch (e: Exception) {
                 Log.i(TAG, "header: error")
+                Header(TYPE_NONE.toShort(), 0)
+            }
+        }
+
+        fun write(inputStream: DataInputStream,outputStream: DataOutputStream) :Header{
+            return try {
+                val type = inputStream.readShortLE()
+                val headerSize = inputStream.readShortLE()
+                val size = inputStream.readIntLE()
+                outputStream.writeShortLE(type.toInt())
+                outputStream.writeShortLE(headerSize.toInt())
+                outputStream.writeIntLE(size)
+                Header(type,size)
+            }  catch (e:Exception) {
                 Header(TYPE_NONE.toShort(), 0)
             }
         }

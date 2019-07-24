@@ -10,7 +10,8 @@ public class AndRes {
         Log.i(TAG, "dotask");
         ProguardCache.INSTANCE.init();
         ApkZip.INSTANCE.unzip();
-        ARSCDecoder.INSTANCE.decode();
+        new ARSCDecoder().decode();
+        new ARSCDecoder().write();
     }
 
 }
