@@ -10,7 +10,7 @@ import java.nio.ByteBuffer
 import java.nio.charset.Charset
 import kotlin.experimental.and
 
-object StringBlock {
+class StringBlock {
 
     val TAG = "StringBlock"
     private val CHUNK_STRINGPOOL_TYPE = 0x001C0001

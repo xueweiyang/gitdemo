@@ -6,10 +6,14 @@ class ResPackage constructor(
 ) {
 
     var canProguard = false
-    val specNameReplace = mapOf<Int,String>()
+    val specNameReplace = hashMapOf<Int,String>()
     val specNameBlock = hashSetOf<String>()
 
     fun getSpecReplace(resid:Int) : String? {
         return specNameReplace[resid]
+    }
+
+    fun putSpecReplace(resid: Int,value:String){
+        specNameReplace.put(resid, value)
     }
 }
