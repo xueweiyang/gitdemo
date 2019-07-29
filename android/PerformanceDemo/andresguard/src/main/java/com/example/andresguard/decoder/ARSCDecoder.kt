@@ -50,6 +50,8 @@ class ARSCDecoder {
         Header.write(inputStream, outputStream)
         val packageCount = inputStream.readIntLE()
         outputStream.writeIntLE(packageCount)
+
+        StringBlock().writeTableNameStringBlock(inputStream, outputStream, tableStringResguard)
     }
 
     /**
@@ -184,10 +186,19 @@ class ARSCDecoder {
 
         if (tableStringResguard[data] == null) {
             val raw = tableStrings.getString(data)
+            Log.i(TAG, "raw:$raw")
             if (raw.isEmpty()) {
                 return
             }
             val proguard = pkg.getSpecReplace(resId)
+            val secondSlash = raw.lastIndexOf("/")
+            if (secondSlash==-1){
+                return
+            }
+            var newFilePath = raw.substring(0,secondSlash)
+            newFilePath = ProguardCache.getDir(newFilePath) ?: newFilePath
+            Log.i(TAG, "proguard:$newFilePath/$proguard")
+            tableStringResguard[data] = "$newFilePath/$proguard"
         }
 
 //        }

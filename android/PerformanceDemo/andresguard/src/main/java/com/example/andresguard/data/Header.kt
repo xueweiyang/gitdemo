@@ -43,8 +43,8 @@ class Header constructor(
                 val type = inputStream.readShortLE()
                 val headerSize = inputStream.readShortLE()
                 val size = inputStream.readIntLE()
-                outputStream.writeShortLE(type.toInt())
-                outputStream.writeShortLE(headerSize.toInt())
+                outputStream.writeShortLE(type)
+                outputStream.writeShortLE(headerSize)
                 outputStream.writeIntLE(size)
                 Header(type,size)
             }  catch (e:Exception) {

@@ -1,9 +1,7 @@
 package com.example.andresguard.data
 
 import com.example.andresguard.Log
-import com.example.andresguard.util.readIntArray
-import com.example.andresguard.util.readIntLE
-import com.example.andresguard.util.readShortLE
+import com.example.andresguard.util.*
 import java.io.DataInputStream
 import java.io.DataOutputStream
 import java.nio.ByteBuffer
@@ -26,7 +24,10 @@ class StringBlock {
     var mStringOwns = intArrayOf()
     val UTF8_DECODER = Charset.forName("UTF-8").newDecoder()
 
-    fun writeTableNameStringBlock(ins:DataInputStream,out:DataOutputStream){
+    fun writeTableNameStringBlock(
+        ins: DataInputStream, out: DataOutputStream,
+        tableProguradMap: Map<Int, String>
+    ) {
         val type = ins.readShortLE()
         val headersize = ins.readShortLE()
         val chunkSize = ins.readIntLE()
@@ -37,20 +38,66 @@ class StringBlock {
         val styleOffset = ins.readIntLE()
 
         val isUtf8 = flags and UTF8_FLAG != 0
-        if(isUtf8){
+        if (isUtf8) {
             Log.i(TAG, "arsc encoding:utf-8")
         } else {
             Log.i(TAG, "arsc encoding:utf-16")
         }
 
         val stringOffsets = ins.readIntArray(stringCount)
-        val strings = IntArray(stringCount)
+
+        val size = chunkSize - stringsOffset
+        val strings = ByteArray(size)
+        ins.readFully(strings)
+
+        var totalSize = 0
+        out.writeShortLE(type)
+        out.writeShortLE(headersize)
+        totalSize += 4
+
+        totalSize += 6 * 4 + 4 * stringCount
+        val mStrings = ByteArray(strings.size)
+        val mStringOffsets = IntArray(stringCount)
+        System.arraycopy(stringOffsets, 0, mStringOffsets, 0, mStringOffsets.size)
 
         var offset = 0
         for (i in 0 until stringCount) {
-            stringOffsets[i] = offset
+            mStringOffsets[i] = offset
+            if (tableProguradMap[i] == null) {
 
+            } else {
+                val name = tableProguradMap[i] ?: continue
+                Log.i(TAG, "table index:$i name:$name")
+                if (isUtf8) {
+                    mStrings[offset++] = name.length.toByte()
+                    mStrings[offset++] = name.length.toByte()
+                    totalSize+=2
+                    val tempByte = name.toByteArray()
+                    System.arraycopy(tempByte,0,mStrings,offset,tempByte.size)
+                    offset+=name.length
+                    mStrings[offset++]=NULL
+                    totalSize+=name.length+1
+                }
+            }
         }
+
+        val mSize = totalSize - stringsOffset
+        if (mSize%4 != 0) {
+            val add = 4 - mSize%4
+            for (i in 0 until add) {
+                mStrings[offset++]=NULL
+                totalSize++
+            }
+        }
+
+        out.writeIntLE(totalSize)
+        out.writeIntLE(stringCount)
+        out.writeIntLE(styleCount)
+        out.writeIntLE(flags)
+        out.writeIntLE(stringsOffset)
+        out.writeIntLE(styleOffset)
+        out.writeIntArray(mStringOffsets)
+        out.write(mStrings, 0, offset)
     }
 
     fun read(ins: DataInputStream): StringBlock {
@@ -93,7 +140,7 @@ class StringBlock {
         return decodeString(data[0], data[1])
     }
 
-    fun decodeString(offset: Int,length:Int):String{
+    fun decodeString(offset: Int, length: Int): String {
         val result = UTF8_DECODER.decode(ByteBuffer.wrap(mStrings, offset, length)).toString()
         return result
     }

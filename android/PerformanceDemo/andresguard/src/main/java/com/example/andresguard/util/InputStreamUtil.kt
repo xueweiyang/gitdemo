@@ -13,6 +13,12 @@ fun DataInputStream.readIntArray(length: Int): IntArray {
     return array
 }
 
+fun DataOutputStream.writeIntArray(array: IntArray){
+    array.forEach {
+        writeIntLE(it)
+    }
+}
+
 fun DataInputStream.readNullEndedString(length: Int, fixed: Boolean): String {
     val builder = StringBuilder(16)
     var len = length
@@ -60,7 +66,7 @@ fun DataOutputStream.writeIntLE(data:Int) {
     write(0xff and (data.shr(24)))
 }
 
-fun DataOutputStream.writeShortLE(data:Int) {
-    write(0xff and data)
-    write(0xff and (data.shr(8)))
+fun DataOutputStream.writeShortLE(data:Short) {
+    write(0xff and data.toInt())
+    write(0xff and (data.toInt().shr(8)))
 }

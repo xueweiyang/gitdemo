@@ -58,18 +58,21 @@ object ProguardCache {
         val dirPath = "${Constant.PROJECT_PATH}/app/src/main/res/"
 //        visitFileRecursive(File(dirPath))
         File(dirPath).walk().forEach {
-            if (it.isDirectory){
+            if (it.isDirectory) {
                 dirNameMap.put("res/${it.name}", "r/${getName(false)}")
-            } else{
+            } else {
             }
         }
-        dirNameMap.forEach{
+        dirNameMap.forEach {
             Log.i(TAG, "key:${it.key} value:${it.value}")
         }
     }
 
+    fun getDir(value: String): String? {
+        return dirNameMap[value]
+    }
 
-    fun getName(isFile:Boolean):String{
+    fun getName(isFile: Boolean): String {
         if (isFile) {
             return nameCacheList.removeAt(0)
         } else {
