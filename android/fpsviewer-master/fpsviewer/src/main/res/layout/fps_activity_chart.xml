@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fps_common_background"
+        >
+
+
+    <FrameLayout
+        android:id="@+id/finish_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/fps_color_primary">
+
+        <ImageView
+            android:id="@+id/finish"
+            android:layout_width="@dimen/fps_title_icon_size"
+            android:layout_height="@dimen/fps_title_icon_size"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/fps_finish"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jank_chart"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/period_jank"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|right"
+            android:scaleType="centerInside"
+            android:src="@mipmap/fps_jank_icon"
+            android:layout_marginRight="10dp"/>
+
+    </FrameLayout>
+
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/fps_chart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+    />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_margin="20dp"
+        android:id="@+id/fps_level_pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

@@ -1,4 +1,4 @@
-#Thu Apr 25 14:51:29 CST 2019
-base.0=/home/fcl/demopro/android/matrix-master/samples/sample-android/app/build/intermediates/transforms/dexMerger/debug/0
+#Mon Aug 12 16:26:09 CST 2019
+base.0=/home/f/demopro/android/gitdemo/android/matrix-master/samples/sample-android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

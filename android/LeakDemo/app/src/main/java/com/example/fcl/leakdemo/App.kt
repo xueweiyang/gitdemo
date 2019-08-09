@@ -20,7 +20,7 @@ import com.tencent.sqlitelint.config.SQLiteLintConfig
 class App : Application() {
     override fun onCreate() {
         super.onCreate()
-//        LeakCanary.install(this)
+        LeakCanary.install(this)
         initMatrix()
     }
 

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tencent.matrix:matrix-resource-canary-android:0.4.10@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/32b36c42f43678e3c01b0ea3acf903a4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/matrix-resource-canary-android-0.4.10.aar/32b36c42f43678e3c01b0ea3acf903a4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.matrix/matrix-resource-canary-android/0.4.10/52ebf4ebb1a80c27a69cf1b734ee324430859e54/matrix-resource-canary-android-0.4.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

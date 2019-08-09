@@ -1,3 +1,0 @@
-/home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
-/home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
-/home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-io-canary/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/io-canary.dir

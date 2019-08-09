@@ -1,3 +1,0 @@
-/home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/edit_cache.dir
-/home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/rebuild_cache.dir
-/home/f/demopro/android/gitdemo/android/matrix-master/matrix/matrix-android/matrix-sqlite-lint/matrix-sqlite-lint-android-sdk/.externalNativeBuild/cmake/stubRelease/armeabi-v7a/CMakeFiles/SqliteLint-lib.dir

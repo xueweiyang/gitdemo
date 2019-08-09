@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tencent.matrix:matrix-android-lib:0.4.10@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/matrix-android-lib-0.4.10.aar/548871907a41d7b1d010cf623f452064/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/matrix-android-lib-0.4.10.aar/548871907a41d7b1d010cf623f452064/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.matrix/matrix-android-lib/0.4.10/349ed21a79be5478fbf9dd9f5e897c9ac50a67f9/matrix-android-lib-0.4.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

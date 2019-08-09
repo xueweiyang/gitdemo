@@ -1,0 +1,16 @@
+
+<resources>
+    <string name="menu_period">一段时间</string>
+    <string name="menu_all">所有卡顿</string>
+    <string name="occurrence_time">发生时间:   %s</string>
+    <string name="cost_time">耗时:   %sms</string>
+    <string name="average_fps">平均帧率：</string>
+    <string name="average_frame_skip">平均每秒丢帧数</string>
+    <string name="sort_by_occurrence_time">按发生时间排序</string>
+    <string name="sort_by_cost_time">按帧卡顿耗时排序</string>
+    <string name="not_prompted">不再提示</string>
+    <string name="same_stack_number">s相同堆栈数</string>
+    <string name="stack_info">堆栈信息</string>
+    <string name="jank_infos">卡顿列表</string>
+    <string name="jank_details">详情</string>
+</resources>
