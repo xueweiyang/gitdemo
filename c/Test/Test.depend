@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1559636161 source:/home/f/demopro/c/Test/support.cpp
+	<iostream>
+
+1559721567 source:/home/f/demopro/c/Test/main.cpp
+	<iostream>
+	<ctime>
+	<cstring>
+	<fstream>
+	<iostream>
+	<vector>
+	<cstdlib>
+	<string>
+	<stdexcept>
+
