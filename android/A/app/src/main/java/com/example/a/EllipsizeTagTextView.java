@@ -16,6 +16,7 @@ import java.util.List;
 /**
  * Created by changle.fang on 2019-11-11.
  * 文本末尾添加标签，过长时在标签前显示省略号
+ *
  * @author changle.fang
  * @email changle.fang@ximalaya.com
  * @phoneNumber 15050162674
@@ -56,8 +57,13 @@ public class EllipsizeTagTextView extends TextView {
         for (String tag : tags) {
             textLength += tag.length();
         }
+        //计算标签区域需要的宽度
         int width = textSize * textLength + padding * tagsize + marginFirst + marginCommon * (tagsize - 1);
-        StringBuilder content = new StringBuilder(getEllipsizeText(getText().toString(), width));
+        String text = getEllipsizeText(getText().toString(), width);
+        if (TextUtils.isEmpty(text)) {
+            return;
+        }
+        StringBuilder content = new StringBuilder(text);
         int start = content.length();
         for (String tag : tags) {
             content.append(tag);
